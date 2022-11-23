@@ -11,3 +11,11 @@ Keep the manually labeled items of each record, update the new scores and new ra
 Results will be saved as [ranking_crawling_202211_automerged.csv](./data/db_engines_ranking_table_full/ranking_crawling_202211_automerged.csv), 
 and with a by-product [df_category_labels_updated.csv](./data/db_engines_ranking_table_full/df_category_labels_updated.csv) point out the 
 mapping relations between the values of 'category_label' and 'Multi_model_info'.
+
+
+---
+# Introduce to the crawling task
+Target: 基于github_log的数据库开源软件生态调查
+- [DB-Engines Ranking中的DBMS分类和采样](https://www.yuque.com/g/zhlou/ln7m80/uqvtd2/collaborator/join?token=AB0FFMTlCGjjED8q)
+- [The calculation method of DB-Engines Ranking scores](https://www.yuque.com/zhlou/ln7m80/pfrgfv)
+
