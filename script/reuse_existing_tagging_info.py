@@ -349,6 +349,7 @@ if __name__ == '__main__':
         'category': 'update__change_colname(category_label)__use_new(Database Model)',  # update values and change the column name
         'Multi_model_info': 'build__basedon(Multi_model_info)',
         'system': 'update__change_colname(DBMS)__use_new',  # update values and change the column name
+        'DBMS_insitelink': 'update__use_new',  # insert values
         'is_open_source': 'update__reuse_old_if_cooccurrence_on(DBMS)',
         'has_company': 'update__reuse_old_if_cooccurrence_on(DBMS)',
         'github_repo_link': 'update__reuse_old_if_cooccurrence_on(DBMS)',

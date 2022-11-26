@@ -25,7 +25,7 @@ from bs4 import BeautifulSoup
 from urllib import request, parse
 
 
-def crawling_soup(url_init, header, use_elem_dict, save_path):
+def crawling_ranking_table_soup(url_init, header, use_elem_dict, save_path):
     request = urllib.request.Request(url_init, headers=header)
     response = urllib.request.urlopen(request)
     # print(response.read().decode("utf-8"))
@@ -38,7 +38,6 @@ def crawling_soup(url_init, header, use_elem_dict, save_path):
     ranking_table = main_contents[0]
 
     # 获取所需文本
-    use_elem_data_list = []
     trs = ranking_table.find_all('tr')
 
     # 1. get dbi_description
@@ -81,6 +80,7 @@ def crawling_soup(url_init, header, use_elem_dict, save_path):
                 idx_suffix += 1
         else:
             dbi_header_cols.append(dbi_header_prefix_text)
+    dbi_header_cols.append('DBMS_insitelink')
     dbi_header_cols.append('Multi_model_info')
     # print(dbi_header_cols)
 
@@ -95,28 +95,51 @@ def crawling_soup(url_init, header, use_elem_dict, save_path):
     for dbi_body_elem in dbi_body_elems:
         record_elems = dbi_body_elem.find_all(th_td_filter_func)
         record_items = []
+        DBMS_insitelink = ''
         multi_model_info = ''
+        USE_FIRST_MATCHED_SPAN__MULTI_MODEL_INFO = True
+        set_flag__multi_model_info = False
         for record_elem in record_elems:
             if record_elem.name == 'th' and "class" in record_elem.attrs:
-                s_extracts = [s.extract() for s in record_elem(['span'])]
+                s_extracts_span = [s.extract() for s in record_elem(['span'])]  # must be executed before get record_elem.text
                 record_item = record_elem.text.strip()  # record_elem has been extracted multi_model tags
 
-                # update multi_model_info when record_elem =
-                # <th class="small pad-r">
-                #   <span class="info">
-                #       <span class="infobox infobox_r"></span>
-                #   </span>
-                # </th>
-                if record_elem.attrs["class"] == ["small", "pad-r"]:
-                    for s_extract in s_extracts:
-                        if "class" in s_extract.attrs:
-                            if s_extract.attrs["class"] == ["infobox", "infobox_r"]:
-                                multi_model_extract = s_extract
-                                multi_model_info = multi_model_extract.text.strip()
+                if record_elem.attrs["class"] == ["pad-l"]:
+                    # get DBMS_insitelink when record_elem = '''
+                    # <th class="pad-l">
+                    # 	<a href="https://db-engines.com/en/system/Oracle">
+                    # 		Oracle
+                    # 		<span class="info"><img /></span>
+                    # 		<span class="infobox infobox_r"></span>
+                    # 	</a>
+                    # </th>
+                    s_extracts_a = [s.extract() for s in record_elem(['a'])]
+                    USE_FIRST_MATCHED_A = True
+                    pos = 0 if USE_FIRST_MATCHED_A else -1  # use the first matched a or the last matched a.
+                    s_extract_a = s_extracts_a[pos]
+                    DBMS_insitelink = s_extract_a.attrs['href'].strip()
+
+                elif record_elem.attrs["class"] == ["small", "pad-r"]:
+                    # update multi_model_info when record_elem = '''
+                    # <th class="small pad-r">
+                    #   <span class="info">
+                    #       <span class="infobox infobox_r"></span>
+                    #   </span>
+                    # </th>
+                    # '''
+                    for s_extract_span in s_extracts_span:
+                        if "class" in s_extract_span.attrs:
+                            if s_extract_span.attrs["class"] == ["infobox", "infobox_r"]:
+                                multi_model_extract_span = s_extract_span
+                                update_flag = not (USE_FIRST_MATCHED_SPAN__MULTI_MODEL_INFO and set_flag__multi_model_info)
+                                if update_flag:
+                                    multi_model_info = multi_model_extract_span.text.strip()
+                                    set_flag__multi_model_info = True
             else:
                 record_item = record_elem.text.strip()
 
             record_items.append(record_item)
+        record_items.append(DBMS_insitelink)
         record_items.append(multi_model_info)
         dbi_body_records.append(record_items)
     # print(dbi_body_records)
@@ -140,4 +163,4 @@ if __name__ == '__main__':
         'main_contents': ['table', {'class': 'dbi'}],
     }
     save_path = os.path.join(pkg_rootdir, 'data/db_engines_ranking_table_full/ranking_crawling_202211_raw.csv')
-    crawling_soup(url_init, header, use_elem_dict, save_path)
+    crawling_ranking_table_soup(url_init, header, use_elem_dict, save_path)
