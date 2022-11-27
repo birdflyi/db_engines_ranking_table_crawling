@@ -16,14 +16,12 @@ if pkg_rootdir not in sys.path:
 print('Add root directory "{}" to system path.'.format(pkg_rootdir))
 
 import re
+import shutil
 import numpy as np
 import pandas as pd
 
 
-src_existing_tagging_info_path = os.path.join(pkg_rootdir, 'data/existing_tagging_info/DB_EngRank_tophalf_githubprj_summary.CSV')
-src_ranking_crawling_raw_path = os.path.join(pkg_rootdir, 'data/db_engines_ranking_table_full/ranking_crawling_202211_raw.csv')
-tar_automerged_path = os.path.join(pkg_rootdir, 'data/db_engines_ranking_table_full/ranking_crawling_202211_automerged.csv')
-tar_category_labels_updated_path = os.path.join(pkg_rootdir, 'data/db_engines_ranking_table_full/df_category_labels_updated.csv')
+encoding = 'utf-8'
 
 
 def auto_gen_dbms_model_type_dict_by_keys(keys, values, ignore_keys=None,
@@ -80,11 +78,9 @@ def auto_gen_dbms_model_type_dict_by_keys(keys, values, ignore_keys=None,
     return dict_dbms_model_type
 
 
-def merge_info(df_src_existing_tagging_info, df_src_ranking_crawling_raw, df_category_labels, update_conf=None):
-    # print(df_src_existing_tagging_info.columns)
-    # print(df_src_ranking_crawling_raw.columns)
-    series_Database_Model = df_src_ranking_crawling_raw['Database Model']
-    series_Multi_model_info = df_src_ranking_crawling_raw['Multi_model_info']
+def merge_info(df_src_existing_tagging, df_src_ranking_new, df_category_labels, update_conf=None):
+    series_Database_Model = df_src_ranking_new['Database Model']
+    series_Multi_model_info = df_src_ranking_new['Multi_model_info']
 
     # 将Database Model, Multi_model_info两列中的str按','切分为类型列表，nan则返回[]，最后series纵向求和，得到拼接列表，去重后得到标签列表
     func_str_split_nan_as_emptylist = lambda x, sep: [s.strip() for s in str(x).split(sep=sep)] if pd.notna(x) else []
@@ -101,14 +97,13 @@ def merge_info(df_src_existing_tagging_info, df_src_ranking_crawling_raw, df_cat
     dict_existing_category_labels = df_category_labels.set_index(['category_label'])['category_name'].to_dict()
     dict_dbms_model_type = auto_gen_dbms_model_type_dict_by_keys(types_Database_Model, types_Multi_model_info,
                                                                  ignore_keys=ignore_keys, default_value=dict_existing_category_labels)
-    # 保存dict_dbms_model_type到csv
+    # 保存dict_dbms_model_type为dataframe，并作为最终结果返回
     df_category_labels_updated = pd.DataFrame(list(dict_dbms_model_type.items()), columns=['category_label', 'category_name'])
-    df_category_labels_updated.to_csv(tar_category_labels_updated_path, encoding=encoding, index=False)
 
     # 当Database Model的值仅有'Multi-model'时，替换为Multi_model_info中的首个类型的key。.replace('Multi-model', '')
     strip_blanks_inside_strs = lambda x: ','.join([s.strip() for s in str(x).split(',')]) if pd.notna(x) else ''
     drop_ignore_keys = lambda x: ','.join([s for s in strip_blanks_inside_strs(x).split(',') if s not in ignore_keys])
-    main_labels_list = list(df_src_ranking_crawling_raw['Database Model'].apply(drop_ignore_keys))
+    main_labels_list = list(df_src_ranking_new['Database Model'].apply(drop_ignore_keys))
     main_label_names_list = []
     for main_labels in main_labels_list:
         temp_main_labels = main_labels.split(',')
@@ -121,7 +116,7 @@ def merge_info(df_src_existing_tagging_info, df_src_ranking_crawling_raw, df_cat
         else:
             main_label_names_list.append('')
 
-    Multi_model_infos = list(df_src_ranking_crawling_raw['Multi_model_info'].apply(strip_blanks_inside_strs))
+    Multi_model_infos = list(df_src_ranking_new['Multi_model_info'].apply(strip_blanks_inside_strs))
 
     # 补全'Multi_model_info'
     for i in range(len(main_label_names_list)):
@@ -141,8 +136,8 @@ def merge_info(df_src_existing_tagging_info, df_src_ranking_crawling_raw, df_cat
             else:
                 pass  # 保持不变
     # print(Multi_model_infos)
-    # print(list(df_src_ranking_crawling_raw['Multi_model_info']))
-    df_src_ranking_crawling_raw['Multi_model_info'] = Multi_model_infos
+    # print(list(df_src_ranking_new['Multi_model_info']))
+    df_src_ranking_new['Multi_model_info'] = Multi_model_infos
 
     # 反过来补全'Database Model'
     dict_dbms_model_type_reverse = {v: k for k, v in dict_dbms_model_type.items()}
@@ -155,8 +150,8 @@ def merge_info(df_src_existing_tagging_info, df_src_ranking_crawling_raw, df_cat
             merge_list = affiliated_label_names.split(',')[0]
             main_label_names_list[i] = dict_dbms_model_type_reverse[merge_list]
     # print(main_label_names_list)
-    # print(list(df_src_ranking_crawling_raw['Database Model']))
-    df_src_ranking_crawling_raw['Database Model'] = main_label_names_list
+    # print(list(df_src_ranking_new['Database Model']))
+    df_src_ranking_new['Database Model'] = main_label_names_list
 
     # 更新
     if not update_conf:
@@ -174,7 +169,7 @@ def merge_info(df_src_existing_tagging_info, df_src_ranking_crawling_raw, df_cat
         }
 
     dbtype_update_conf = {dbtype: 'recalc__calc_basedon(Multi_model_info)' for dbtype in dict_dbms_model_type.keys()}
-    for k, v in dbtype_update_conf.items():
+    for k, v in dbtype_update_conf.items():  # 加入每个dict_dbms_model_type及'recalc__calc_basedon(Multi_model_info)'设置
         if k not in update_conf:
             update_conf[k] = v
 
@@ -190,15 +185,14 @@ def merge_info(df_src_existing_tagging_info, df_src_ranking_crawling_raw, df_cat
     for k_colname, v_updateconf in update_conf.items():
         safe_updatable = False
         if v_updateconf:
-            if k_colname in df_src_existing_tagging_info.columns or k_colname in df_src_ranking_crawling_raw.columns or v_updateconf.startswith('recalc'):
+            if k_colname in df_src_existing_tagging.columns or k_colname in df_src_ranking_new.columns or v_updateconf.startswith('recalc'):
                 safe_updatable = True
 
-        if safe_updatable:
-            df_tar_automerged_colnames.append(k_colname)
-        else:
-            print("Warning: missing the configuration of {k_colname}, bypassed!".format(k_colname=k_colname))
+        if not safe_updatable:
+            print("Warning: missing the configuration of {k_colname}, try to insert a new column!".format(k_colname=k_colname))
+        df_tar_automerged_colnames.append(k_colname)
 
-    shape = (len(df_src_ranking_crawling_raw), len(df_tar_automerged_colnames))
+    shape = (len(df_src_ranking_new), len(df_tar_automerged_colnames))
     df_tar_automerged = pd.DataFrame(np.full(shape, fill_value=np.nan), columns=df_tar_automerged_colnames)  # init all value as np.nan
     changed_colnames = []
     # print('df_tar_automerged.columns:\n', df_tar_automerged.columns)
@@ -207,10 +201,10 @@ def merge_info(df_src_existing_tagging_info, df_src_ranking_crawling_raw, df_cat
             v_updateconf_settings = v_updateconf.split('__')
             if conf_func_word in v_updateconf_settings:
                 df_tar_automerged, changed_colnames = exe_conf(df_tar_automerged, conf_func_word, k_colname, v_updateconf_settings[1:],
-                                             df_src_existing_tagging_info, df_src_ranking_crawling_raw, changed_colnames, dict_dbms_model_type)
-    pd.set_option('display.max_columns', None)  # 展示所有列
+                                                               df_src_existing_tagging, df_src_ranking_new, changed_colnames, dict_dbms_model_type)
+    # pd.set_option('display.max_columns', None)  # 展示所有列
     # print(df_tar_automerged.head())
-    return df_tar_automerged
+    return df_tar_automerged, df_category_labels_updated
 
 
 def exe_conf(df_merged, conf_func_word, k_colname, v_exe_settings, df_old, df_new, changed_colnames, dict_dbms_model_type):
@@ -313,36 +307,57 @@ def exe_conf(df_merged, conf_func_word, k_colname, v_exe_settings, df_old, df_ne
     return df_merged, changed_colnames
 
 
+def merge_info_to_csv(df_src_existing_tagging, df_src_ranking_new, df_category_labels, update_conf,
+                      save_automerged_path, save_category_labels_path=None):
+    df_tar_automerged, df_category_labels_updated = merge_info(df_src_existing_tagging, df_src_ranking_new,
+                                                               df_category_labels, update_conf)
+    df_tar_automerged.to_csv(save_automerged_path, encoding=encoding, index=True)
+    df_category_labels_updated.to_csv(save_category_labels_path, encoding=encoding, index=False)
+    return None
+
+
 if __name__ == '__main__':
-    encoding = 'utf-8'
+    src_existing_tagging_info_path = os.path.join(pkg_rootdir, 'data/existing_tagging_info/DB_EngRank_tophalf_githubprj_summary.CSV')
+    src_ranking_crawling_raw_path = os.path.join(pkg_rootdir, 'data/db_engines_ranking_table_full/ranking_crawling_202211_raw.csv')
+    tar_automerged_path = os.path.join(pkg_rootdir, 'data/db_engines_ranking_table_full/ranking_crawling_202211_automerged.csv')
+    src_category_labels_path = os.path.join(pkg_rootdir, 'data/existing_tagging_info/category_labels.csv')
+    tar_category_labels_updated_path = os.path.join(pkg_rootdir, 'data/db_engines_ranking_table_full/category_labels_updated.csv')
+
+    OVERWRITE_CATEGORY_LABELS = True
+
     df_src_existing_tagging_info = pd.read_csv(src_existing_tagging_info_path, encoding=encoding, index_col=0)
     df_src_ranking_crawling_raw = pd.read_csv(src_ranking_crawling_raw_path, encoding=encoding, index_col=False)
-    from io import StringIO
 
-    category_labels = '''
-    id	category_name	category_label
-    1	Relational DBMS	Relational DBMS
-    2	Key-value stores	Key-value
-    3	Document stores	Document
-    4	Time Series DBMS	Time Series
-    5	Graph DBMS	Graph
-    6	Object oriented DBMS	Object oriented
-    7	Search engines	Search engine
-    8	RDF stores	RDF
-    9	Wide column stores	Wide column
-    10	Multivalue DBMS	Multivalue
-    11	Native XML DBMS	Native XML
-    12	Spatial DBMS	Spatial DBMS
-    13	Event Stores	Event
-    14	Content stores	Content
-    15	Navigational DBMS	Navigational
-    '''
-    df_category_labels = pd.read_table(StringIO(category_labels), sep='\t', header='infer', index_col=0)
+    try:
+        df_category_labels = pd.read_csv(src_category_labels_path, encoding=encoding, index_col=False)
+    except FileNotFoundError:
 
-    # pd.set_option('display.max_columns', None)  # 展示所有列
-    # print(df_src_existing_tagging_info.head())
-    # print(df_src_ranking_crawling_raw.head())
-    # print(df_category_labels)
+        from io import StringIO
+
+        category_labels = '''
+        id	category_name	category_label
+        1	Relational DBMS	Relational DBMS
+        2	Key-value stores	Key-value
+        3	Document stores	Document
+        4	Time Series DBMS	Time Series
+        5	Graph DBMS	Graph
+        6	Object oriented DBMS	Object oriented
+        7	Search engines	Search engine
+        8	RDF stores	RDF
+        9	Wide column stores	Wide column
+        10	Multivalue DBMS	Multivalue
+        11	Native XML DBMS	Native XML
+        12	Spatial DBMS	Spatial DBMS
+        13	Event Stores	Event
+        14	Content stores	Content
+        15	Navigational DBMS	Navigational
+        '''
+        df_category_labels = pd.read_table(StringIO(category_labels), sep='\t', header='infer', index_col=0)
+
+        # pd.set_option('display.max_columns', None)  # 展示所有列
+        # print(df_src_existing_tagging_info.head())
+        # print(df_src_ranking_crawling_raw.head())
+        # print(df_category_labels)
 
     # 更新设置
     update_conf = {
@@ -359,5 +374,8 @@ if __name__ == '__main__':
         'repo_name': 'update__reuse_old_if_cooccurrence_on(DBMS)',  # 依赖于手动更新的列github_repo_link
     }
 
-    df_tar_automerged = merge_info(df_src_existing_tagging_info, df_src_ranking_crawling_raw, df_category_labels, update_conf)
-    df_tar_automerged.to_csv(tar_automerged_path, encoding=encoding, index=True)
+    merge_info_to_csv(df_src_existing_tagging_info, df_src_ranking_crawling_raw, df_category_labels, update_conf,
+                      save_automerged_path=tar_automerged_path, save_category_labels_path=tar_category_labels_updated_path)
+
+    if OVERWRITE_CATEGORY_LABELS:
+        shutil.copy(tar_category_labels_updated_path, src_category_labels_path)

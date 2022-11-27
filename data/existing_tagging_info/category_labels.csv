@@ -1,0 +1,16 @@
+category_label,category_name
+Content,Content stores
+Document,Document store
+Event,Event Store
+Graph,Graph DBMS
+Key-value,Key-value store
+Multivalue,Multivalue DBMS
+Native XML,Native XML DBMS
+Navigational,Navigational DBMS
+Object oriented,Object oriented DBMS
+RDF,RDF store
+Relational,Relational DBMS
+Search engine,Search engine
+Spatial DBMS,Spatial DBMS
+Time Series,Time Series DBMS
+Wide column,Wide column store

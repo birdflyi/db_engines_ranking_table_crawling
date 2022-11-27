@@ -154,7 +154,7 @@ def crawling_ranking_table_soup(url_init, header, use_elem_dict, save_path):
 if __name__ == '__main__':
     # db-engines http link
     url_init = "https://db-engines.com/en/ranking"
-    # 在浏览器下获取他们的headers信息
+    # headers info when use Chrome explorer
     header = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.221 Safari/537.36 SE 2.X MetaSr 1.0',
         'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
@@ -162,5 +162,5 @@ if __name__ == '__main__':
     use_elem_dict = {
         'main_contents': ['table', {'class': 'dbi'}],
     }
-    save_path = os.path.join(pkg_rootdir, 'data/db_engines_ranking_table_full/ranking_crawling_202211_raw.csv')
-    crawling_ranking_table_soup(url_init, header, use_elem_dict, save_path)
+    ranking_table_crawling_path = os.path.join(pkg_rootdir, 'data/db_engines_ranking_table_full/ranking_crawling_202211_raw.csv')
+    crawling_ranking_table_soup(url_init, header, use_elem_dict, ranking_table_crawling_path)

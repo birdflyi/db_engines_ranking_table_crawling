@@ -1,398 +1,398 @@
-,category_label,Multi_model_info,DBMS,DBMS_insitelink,is_open_source,has_company,github_repo_link,Score_Nov-2022,Rank_Nov-2022,org_name,repo_name,Content,Document,Event,Graph,Key-value,Multivalue,Native XML,Navigational,Object oriented,RDF,Relational,Search engine,Spatial DBMS,Time Series,Wide column
-0,Relational,"Relational DBMS,Document store,Graph DBMS,RDF store,Spatial DBMS",Oracle,https://db-engines.com/en/system/Oracle,N,Y,-,1241.69,1,-,-,0,1,0,1,0,0,0,0,0,1,1,0,1,0,0
-1,Relational,"Relational DBMS,Document store,Spatial DBMS",MySQL,https://db-engines.com/en/system/MySQL,Y,Y,mysql/mysql-server,1205.54,2,mysql,mysql-server,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0
-2,Relational,"Relational DBMS,Document store,Graph DBMS,Spatial DBMS",Microsoft SQL Server,https://db-engines.com/en/system/Microsoft+SQL+Server,N,Y,-,912.51,3,-,-,0,1,0,1,0,0,0,0,0,0,1,0,1,0,0
-3,Relational,"Relational DBMS,Document store,Spatial DBMS",PostgreSQL,https://db-engines.com/en/system/PostgreSQL,Y,N,postgres/postgres,623.16,4,postgres,postgres,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0
-4,Document,"Document store,Spatial DBMS,Search engine,Time Series DBMS",MongoDB,https://db-engines.com/en/system/MongoDB,Y,,mongodb/mongo,477.9,5,mongodb,mongo,0,1,0,0,0,0,0,0,0,0,0,1,1,1,0
-5,Key-value,"Key-value store,Document store,Graph DBMS,Spatial DBMS,Search engine,Time Series DBMS",Redis,https://db-engines.com/en/system/Redis,Y,,redis/redis,182.05,6,redis,redis,0,1,0,1,1,0,0,0,0,0,0,1,1,1,0
-6,Search engine,"Search engine,Document store,Spatial DBMS",Elasticsearch,https://db-engines.com/en/system/Elasticsearch,Y,,elastic/elasticsearch,150.32,7,elastic,elasticsearch,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0
-7,Relational,"Relational DBMS,Document store,RDF store,Spatial DBMS",IBM Db2,https://db-engines.com/en/system/IBM+Db2,N,Y,-,149.56,8,-,-,0,1,0,0,0,0,0,0,0,1,1,0,1,0,0
-8,Relational,Relational DBMS,Microsoft Access,https://db-engines.com/en/system/Microsoft+Access,N,Y,-,135.03,9,-,-,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-9,Relational,Relational DBMS,SQLite,https://db-engines.com/en/system/SQLite,Y,N,sqlite/sqlite,134.63,10,sqlite,sqlite,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-10,Wide column,Wide column store,Cassandra,https://db-engines.com/en/system/Cassandra,Y,,apache/cassandra,118.12,11,apache,cassandra,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
-11,Relational,Relational DBMS,Snowflake,https://db-engines.com/en/system/Snowflake,N,Y,-,110.15,12,-,-,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-12,Relational,"Relational DBMS,Document store,Graph DBMS,Spatial DBMS",MariaDB,https://db-engines.com/en/system/MariaDB,Y,Y_借壳上市,MariaDB/server,104.91,13,MariaDB,server,0,1,0,1,0,0,0,0,0,0,1,0,1,0,0
-13,Search engine,Search engine,Splunk,https://db-engines.com/en/system/Splunk,N,,-,94.23,14,-,-,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
-14,Document,"Document store,Key-value store",Amazon DynamoDB,https://db-engines.com/en/system/Amazon+DynamoDB,N,,-,85.4,15,-,-,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0
-15,Relational,"Relational DBMS,Document store,Graph DBMS,Spatial DBMS",Microsoft Azure SQL Database,https://db-engines.com/en/system/Microsoft+Azure+SQL+Database,N,Y,-,83.66,16,-,-,0,1,0,1,0,0,0,0,0,0,1,0,1,0,0
-16,Relational,Relational DBMS,Hive,https://db-engines.com/en/system/Hive,Y,N_Facebook开源,apache/hive,81.89,17,apache,hive,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-17,Relational,"Relational DBMS,Document store,Graph DBMS,Spatial DBMS,Time Series DBMS",Teradata,https://db-engines.com/en/system/Teradata,,,,65.23,18,,,0,1,0,1,0,0,0,0,0,0,1,0,1,1,0
-18,Document,"Document store,Relational DBMS",Databricks,https://db-engines.com/en/system/Databricks,,,,60.89,19,,,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0
-19,Graph,Graph DBMS,Neo4j,https://db-engines.com/en/system/Neo4j,Y,,neo4j/neo4j,57.3,20,neo4j,neo4j,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
-20,Relational,Relational DBMS,FileMaker,https://db-engines.com/en/system/FileMaker,,,,54.31,21,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-21,Relational,Relational DBMS,Google BigQuery,https://db-engines.com/en/system/Google+BigQuery,,,,54.13,22,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-22,Relational,"Relational DBMS,Document store,Graph DBMS,Spatial DBMS",SAP HANA,https://db-engines.com/en/system/SAP+HANA,,,,51.45,23,,,0,1,0,1,0,0,0,0,0,0,1,0,1,0,0
-23,Search engine,"Search engine,Spatial DBMS",Solr,https://db-engines.com/en/system/Solr,Y,,apache/solr,51.33,24,apache,solr,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0
-24,Relational,"Relational DBMS,Spatial DBMS",SAP Adaptive Server,https://db-engines.com/en/system/SAP+Adaptive+Server,,,,43.58,25,,,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0
-25,Wide column,Wide column store,HBase,https://db-engines.com/en/system/HBase,Y,,apache/hbase,40.41,26,apache,hbase,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
-26,Document,"Document store,Graph DBMS,Key-value store,Wide column store,Spatial DBMS",Microsoft Azure Cosmos DB,https://db-engines.com/en/system/Microsoft+Azure+Cosmos+DB,N,,-,39.75,27,-,-,0,1,0,1,1,0,0,0,0,0,0,0,1,0,1
-27,Spatial DBMS,"Spatial DBMS,Relational DBMS",PostGIS,https://db-engines.com/en/system/PostGIS,Y,,postgis/postgis,30.78,28,postgis,postgis,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0
-28,Time Series,"Time Series DBMS,Spatial DBMS",InfluxDB,https://db-engines.com/en/system/InfluxDB,Y,,influxdata/influxdb,29.96,29,influxdata,influxdb,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0
-29,Document,"Document store,Key-value store,Spatial DBMS",Couchbase,https://db-engines.com/en/system/Couchbase,Y,,couchbase/couchbase-lite-ios,28.62,30,couchbase,couchbase-lite-ios,0,1,0,0,1,0,0,0,0,0,0,0,1,0,0
-30,Relational,Relational DBMS,Amazon Redshift,https://db-engines.com/en/system/Amazon+Redshift,,,,27.04,31,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-31,Relational,Relational DBMS,Firebird,https://db-engines.com/en/system/Firebird,Y,N,FirebirdSQL/firebird,25.37,32,FirebirdSQL,firebird,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-32,Key-value,Key-value store,Memcached,https://db-engines.com/en/system/Memcached,Y,,memcached/memcached,24.45,33,memcached,memcached,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
-33,Relational,Relational DBMS,Microsoft Azure Synapse Analytics,https://db-engines.com/en/system/Microsoft+Azure+Synapse+Analytics,,,,23.03,34,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-34,Relational,"Relational DBMS,Document store,Spatial DBMS,Time Series DBMS",Informix,https://db-engines.com/en/system/Informix,N,Y,-,22.82,35,-,-,0,1,0,0,0,0,0,0,0,0,1,0,1,1,0
-35,Relational,Relational DBMS,Spark SQL,https://db-engines.com/en/system/Spark+SQL,,,,21.9,36,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-36,Document,Document store,Firebase Realtime Database,https://db-engines.com/en/system/Firebase+Realtime+Database,N,,-,19.84,37,-,-,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
-37,Relational,"Relational DBMS,Spatial DBMS,Time Series DBMS",Vertica,https://db-engines.com/en/system/Vertica,N,Y,-,19.7,38,-,-,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0
-38,Relational,"Relational DBMS,Document store",Impala,https://db-engines.com/en/system/Impala,,,,17.92,39,,,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0
-39,Relational,Relational DBMS,Netezza,https://db-engines.com/en/system/Netezza,,,,17.27,40,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-40,Document,"Document store,Spatial DBMS",CouchDB,https://db-engines.com/en/system/CouchDB,Y,,apache/couchdb,15.98,41,apache,couchdb,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0
-41,Relational,Relational DBMS,Presto,https://db-engines.com/en/system/Presto,Y,N_Facebook开源,prestodb/presto,15.15,42,prestodb,presto,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-42,Relational,Relational DBMS,dBASE,https://db-engines.com/en/system/dBASE,,,,14.25,43,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-43,Relational,"Relational DBMS,Time Series DBMS",ClickHouse,https://db-engines.com/en/system/ClickHouse,Y,Y_新成立,ClickHouse/ClickHouse,13.88,44,ClickHouse,ClickHouse,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0
-44,Relational,"Relational DBMS,Document store",Amazon Aurora,https://db-engines.com/en/system/Amazon+Aurora,,,,12.66,45,,,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0
-45,Relational,"Relational DBMS,Document store,Spatial DBMS",Greenplum,https://db-engines.com/en/system/Greenplum,Y,Y,greenplum-db/gpdb,12.29,46,greenplum-db,gpdb,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0
-46,Document,Document store,Google Cloud Firestore,https://db-engines.com/en/system/Google+Cloud+Firestore,Y,,googleapis/python-firestore,11.09,47,googleapis,python-firestore,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
-47,Search engine,Search engine,OpenSearch,https://db-engines.com/en/system/OpenSearch,,,,10.3,48,,,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
-48,Document,"Document store,Native XML DBMS,RDF store,Search engine",MarkLogic,https://db-engines.com/en/system/MarkLogic,Y,,marklogic/marklogic-data-hub,9.75,49,marklogic,marklogic-data-hub,0,1,0,0,0,0,1,0,0,1,0,1,0,0,0
-49,Key-value,"Key-value store,Document store",Hazelcast,https://db-engines.com/en/system/Hazelcast,Y,,hazelcast/hazelcast,9.6,50,hazelcast,hazelcast,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0
-50,Relational,"Relational DBMS,Spatial DBMS",H2,https://db-engines.com/en/system/H2,Y,N,h2database/h2database,9.06,51,h2database,h2database,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0
-51,Document,Document store,Realm,https://db-engines.com/en/system/Realm,Y,,realm/realm-cocoa,9.03,52,realm,realm-cocoa,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
-52,Key-value,Key-value store,etcd,https://db-engines.com/en/system/etcd,Y,,etcd-io/etcd,8.71,53,etcd-io,etcd,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
-53,Wide column,"Wide column store,Document store,Graph DBMS,Spatial DBMS,Search engine",Datastax Enterprise,https://db-engines.com/en/system/Datastax+Enterprise,N,,-,8.68,54,-,-,0,1,0,1,0,0,0,0,0,0,0,1,1,0,1
-54,Relational,Relational DBMS,Oracle Essbase,https://db-engines.com/en/system/Oracle+Essbase,,,,8.37,55,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-55,Relational,Relational DBMS,CockroachDB,https://db-engines.com/en/system/CockroachDB,Y,Y,cockroachdb/cockroach,7.98,56,cockroachdb,cockroach,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-56,Search engine,Search engine,Algolia,https://db-engines.com/en/system/Algolia,N,,-,7.83,57,-,-,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
-57,Relational,"Relational DBMS,Document store,Spatial DBMS,Time Series DBMS",SingleStore,https://db-engines.com/en/system/SingleStore,,,,7.81,58,,,0,1,0,0,0,0,0,0,0,0,1,0,1,1,0
-58,Time Series,"Time Series DBMS,Relational DBMS",Kdb+,https://db-engines.com/en/system/Kdb%2B,Y,,KxSystems/kdb,7.48,59,KxSystems,kdb,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0
-59,Relational,"Relational DBMS,Document store,Event Store,Spatial DBMS,Search engine,Time Series DBMS",Microsoft Azure Data Explorer,https://db-engines.com/en/system/Microsoft+Azure+Data+Explorer,,,,7.34,60,,,0,1,1,0,0,0,0,0,0,0,1,1,1,1,0
-60,Search engine,Search engine,Microsoft Azure Search,https://db-engines.com/en/system/Microsoft+Azure+Search,N,,-,7.24,61,-,-,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
-61,Document,Document store,Google Cloud Datastore,https://db-engines.com/en/system/Google+Cloud+Datastore,,,,7.1,62,,,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
-62,Document,"Document store,Key-value store,Spatial DBMS",Aerospike,https://db-engines.com/en/system/Aerospike,Y,,aerospike/aerospike-server,6.95,63,aerospike,aerospike-server,0,1,0,0,1,0,0,0,0,0,0,0,1,0,0
-63,Search engine,Search engine,Sphinx,https://db-engines.com/en/system/Sphinx,Y,,sphinxsearch/sphinx,6.88,64,sphinxsearch,sphinx,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
-64,Time Series,Time Series DBMS,Graphite,https://db-engines.com/en/system/Graphite,Y,,graphite-project/graphite-web,6.8,65,graphite-project,graphite-web,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
-65,Key-value,Key-value store,Ehcache,https://db-engines.com/en/system/Ehcache,Y,,ehcache/ehcache3,6.66,66,ehcache,ehcache3,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
-66,Time Series,Time Series DBMS,Prometheus,https://db-engines.com/en/system/Prometheus,Y,,prometheus/prometheus,6.28,67,prometheus,prometheus,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
-67,Key-value,"Key-value store,Relational DBMS",Ignite,https://db-engines.com/en/system/Ignite,Y,,apache/ignite,6.14,68,apache,ignite,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0
-68,Key-value,Key-value store,Riak KV,https://db-engines.com/en/system/Riak+KV,Y,,basho/riak_kv,6.09,69,basho,riak_kv,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
-69,Relational,Relational DBMS,Interbase,https://db-engines.com/en/system/Interbase,,,,6.04,70,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-70,Wide column,Wide column store,Microsoft Azure Table Storage,https://db-engines.com/en/system/Microsoft+Azure+Table+Storage,N,,-,6.02,71,-,-,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
-71,Relational,Relational DBMS,Ingres,https://db-engines.com/en/system/Ingres,,,,5.93,72,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-72,Relational,Relational DBMS,HyperSQL,https://db-engines.com/en/system/HyperSQL,Y,N,ryenus/hsqldb,5.91,73,ryenus,hsqldb,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-73,Relational,Relational DBMS,SAP SQL Anywhere,https://db-engines.com/en/system/SAP+SQL+Anywhere,,,,5.88,74,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-74,Document,"Document store,Graph DBMS,Native XML DBMS,Relational DBMS,RDF store,Search engine,Spatial DBMS",Virtuoso,https://db-engines.com/en/system/Virtuoso,Y,,openlink/virtuoso-opensource,5.84,75,openlink,virtuoso-opensource,0,1,0,1,0,0,1,0,0,1,1,1,1,0,0
-75,Document,"Document store,Graph DBMS,Key-value store,Search engine",ArangoDB,https://db-engines.com/en/system/ArangoDB,Y,,arangodb/arangodb,5.84,76,arangodb,arangodb,0,1,0,1,1,0,0,0,0,0,0,1,0,0,0
-76,Content,Content stores,Jackrabbit,https://db-engines.com/en/system/Jackrabbit,Y,,apache/jackrabbit,5.79,77,apache,jackrabbit,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-77,Relational,Relational DBMS,Derby,https://db-engines.com/en/system/Derby,Y,N,apache/derby,5.66,78,apache,derby,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-78,Time Series,"Time Series DBMS,Relational DBMS",TimescaleDB,https://db-engines.com/en/system/TimescaleDB,Y,,timescale/timescaledb,5.32,79,timescale,timescaledb,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0
-79,Key-value,"Key-value store,Wide column store",Google Cloud Bigtable,https://db-engines.com/en/system/Google+Cloud+Bigtable,N,,-,5.24,80,-,-,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1
-80,Document,"Document store,Graph DBMS,Key-value store",OrientDB,https://db-engines.com/en/system/OrientDB,Y,,orientechnologies/orientdb,5.04,81,orientechnologies,orientdb,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0
-81,Wide column,Wide column store,Accumulo,https://db-engines.com/en/system/Accumulo,Y,,apache/accumulo,4.98,82,apache,accumulo,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
-82,Wide column,"Wide column store,Key-value store",ScyllaDB,https://db-engines.com/en/system/ScyllaDB,Y,,scylladb/scylla,4.95,83,scylladb,scylla,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1
-83,Relational,Relational DBMS,SAP IQ,https://db-engines.com/en/system/SAP+IQ,,,,4.72,84,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-84,Multivalue,Multivalue DBMS,Adabas,https://db-engines.com/en/system/Adabas,N,,-,4.63,85,-,-,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
-85,Key-value,Key-value store,RocksDB,https://db-engines.com/en/system/RocksDB,Y,,facebook/rocksdb,4.61,86,facebook,rocksdb,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
-86,Document,"Document store,Graph DBMS,Spatial DBMS,Time Series DBMS",RavenDB,https://db-engines.com/en/system/RavenDB,Y,,ravendb/ravendb,4.55,87,ravendb,ravendb,0,1,0,1,0,0,0,0,0,0,0,0,1,1,0
-87,Relational,Relational DBMS,OpenEdge,https://db-engines.com/en/system/OpenEdge,,,,4.5,88,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-88,Document,"Document store,Key-value store,Relational DBMS",Oracle NoSQL,https://db-engines.com/en/system/Oracle+NoSQL,Y,N,oracle/nosql-go-sdk,4.42,89,oracle,nosql-go-sdk,0,1,0,0,1,0,0,0,0,0,1,0,0,0,0
-89,Multivalue,Multivalue DBMS,"UniData,UniVerse",https://db-engines.com/en/system/UniData%2CUniVerse,N,,-,4.28,90,-,-,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
-90,Relational,Relational DBMS,Google Cloud Spanner,https://db-engines.com/en/system/Google+Cloud+Spanner,,,,4.24,91,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-91,Document,Document store,IBM Cloudant,https://db-engines.com/en/system/IBM+Cloudant,,,,4.21,92,,,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
-92,Relational,"Relational DBMS,Document store,Wide column store",YugabyteDB,https://db-engines.com/en/system/YugabyteDB,,,,4.15,93,,,0,1,0,0,0,0,0,0,0,0,1,0,0,0,1
-93,Relational,"Relational DBMS,Document store,Key-value store,Spatial DBMS,Search engine,Time Series DBMS,Wide column store",Trino,https://db-engines.com/en/system/Trino,Y,,trinodb/trino,3.98,94,trinodb,trino,0,1,0,0,1,0,0,0,0,0,1,1,1,1,1
-94,Relational,"Relational DBMS,Document store",TiDB,https://db-engines.com/en/system/TiDB,Y,Y,pingcap/tidb,3.69,95,pingcap,tidb,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0
-95,Relational,Relational DBMS,MaxDB,https://db-engines.com/en/system/MaxDB,,,,3.68,96,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-96,Key-value,Key-value store,LevelDB,https://db-engines.com/en/system/LevelDB,Y,,google/leveldb,3.68,97,google,leveldb,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
-97,RDF,RDF store,Apache Jena - TDB,https://db-engines.com/en/system/Apache+Jena+-+TDB,Y,,apache/jena,3.63,98,apache,jena,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
-98,Document,"Document store,Spatial DBMS",RethinkDB,https://db-engines.com/en/system/RethinkDB,Y,,rethinkdb/rethinkdb,3.48,99,rethinkdb,rethinkdb,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0
-99,Document,Document store,PouchDB,https://db-engines.com/en/system/PouchDB,Y,,pouchdb/pouchdb,3.44,100,pouchdb,pouchdb,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
-100,Relational,Relational DBMS,Apache Phoenix,https://db-engines.com/en/system/Apache+Phoenix,Y,N,apache/phoenix,3.42,101,apache,phoenix,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-101,Key-value,Key-value store,Infinispan,https://db-engines.com/en/system/Infinispan,Y,,infinispan/infinispan,3.42,102,infinispan,infinispan,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
-102,Relational,Relational DBMS,EXASOL,https://db-engines.com/en/system/EXASOL,,,,3.37,103,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-103,Document,"Document store,Relational DBMS",Apache Drill,https://db-engines.com/en/system/Apache+Drill,Y,N,apache/drill,3.33,104,apache,drill,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0
-104,Relational,Relational DBMS,SAP Advantage Database Server,https://db-engines.com/en/system/SAP+Advantage+Database+Server,,,,3.3,105,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-105,Key-value,"Key-value store,Native XML DBMS",Oracle Berkeley DB,https://db-engines.com/en/system/Oracle+Berkeley+DB,Y,,berkeleydb/libdb,3.26,106,berkeleydb,libdb,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0
-106,Graph,"Graph DBMS,RDF store",Amazon Neptune,https://db-engines.com/en/system/Amazon+Neptune,N,,-,3.09,107,-,-,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0
-107,Relational,Relational DBMS,Percona Server for MySQL,https://db-engines.com/en/system/Percona+Server+for+MySQL,Y,N_forMySQL,percona/percona-server,3.02,108,percona,percona-server,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-108,Graph,Graph DBMS,JanusGraph,https://db-engines.com/en/system/JanusGraph,Y,,JanusGraph/janusgraph,2.99,109,JanusGraph,janusgraph,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
-109,Navigational,Navigational DBMS,IMS,https://db-engines.com/en/system/IMS,N,,-,2.99,110,-,-,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
-110,Key-value,"Key-value store,Object oriented DBMS,Relational DBMS,Document store",InterSystems Caché,https://db-engines.com/en/system/InterSystems+Cach%C3%A9,N,,-,2.94,111,-,-,0,1,0,0,1,0,0,0,1,0,1,0,0,0,0
-111,Document,Document store,CloudKit,https://db-engines.com/en/system/CloudKit,,,,2.87,112,,,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
-112,Relational,"Relational DBMS,Document store",Citus,https://db-engines.com/en/system/Citus,Y,,citusdata/citus,2.87,113,citusdata,citus,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0
-113,Relational,"Relational DBMS,Document store,Spatial DBMS",EDB Postgres,https://db-engines.com/en/system/EDB+Postgres,,,,2.72,114,,,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0
-114,Time Series,Time Series DBMS,RRDtool,https://db-engines.com/en/system/RRDtool,Y,,oetiker/rrdtool-1.x,2.69,115,oetiker,rrdtool-1.x,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
-115,Key-value,Key-value store,Oracle Coherence,https://db-engines.com/en/system/Oracle+Coherence,,,,2.69,116,,,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
-116,Key-value,Key-value store,Amazon SimpleDB,https://db-engines.com/en/system/Amazon+SimpleDB,,,,2.65,117,,,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
-117,Relational,Relational DBMS,4D,https://db-engines.com/en/system/4D,,,,2.64,118,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-118,Time Series,Time Series DBMS,OpenTSDB,https://db-engines.com/en/system/OpenTSDB,Y,,OpenTSDB/opentsdb,2.62,119,OpenTSDB,opentsdb,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
-119,Key-value,Key-value store,LMDB,https://db-engines.com/en/system/LMDB,Y,,LMDB/lmdb,2.6,120,LMDB,lmdb,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
-120,Search engine,Search engine,Amazon CloudSearch,https://db-engines.com/en/system/Amazon+CloudSearch,N,,-,2.54,121,-,-,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
-121,Document,"Document store,Key-value store,Object oriented DBMS,Relational DBMS",InterSystems IRIS,https://db-engines.com/en/system/InterSystems+IRIS,N,,-,2.52,122,-,-,0,1,0,0,1,0,0,0,1,0,1,0,0,0,0
-122,Graph,"Graph DBMS,RDF store",GraphDB,https://db-engines.com/en/system/GraphDB,N,,-,2.46,123,-,-,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0
-123,Relational,"Relational DBMS,Time Series DBMS",Apache Druid,https://db-engines.com/en/system/Apache+Druid,Y,,apache/druid,2.39,124,apache,druid,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0
-124,Spatial DBMS,"Spatial DBMS,Relational DBMS",SpatiaLite,https://db-engines.com/en/system/SpatiaLite,Y,,illarionov/SpatiaLite,2.37,125,illarionov,SpatiaLite,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0
-125,Time Series,"Time Series DBMS,Relational DBMS",DolphinDB,https://db-engines.com/en/system/DolphinDB,,,,2.32,126,,,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0
-126,Key-value,"Key-value store,Relational DBMS",GridGain,https://db-engines.com/en/system/GridGain,,,,2.31,127,,,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0
-127,Key-value,Key-value store,Geode,https://db-engines.com/en/system/Geode,Y,,apache/geode,2.25,128,apache,geode,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
-128,Search engine,Search engine,Coveo,https://db-engines.com/en/system/Coveo,,,,2.25,129,,,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
-129,Relational,Relational DBMS,IBM Db2 warehouse,https://db-engines.com/en/system/IBM+Db2+warehouse,,,,2.21,130,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-130,Relational,"Relational DBMS,Document store,Spatial DBMS",MonetDB,https://db-engines.com/en/system/MonetDB,Y,,MonetDB/MonetDB,2.19,131,MonetDB,MonetDB,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0
-131,Relational,Relational DBMS,Datomic,https://db-engines.com/en/system/Datomic,,,,2.18,132,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-132,Graph,Graph DBMS,TigerGraph,https://db-engines.com/en/system/TigerGraph,N,,-,2.17,133,-,-,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
-133,Relational,Relational DBMS,VoltDB,https://db-engines.com/en/system/VoltDB,Y,,VoltDB/voltdb,2.1,134,VoltDB,voltdb,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-134,Relational,"Relational DBMS,Spatial DBMS",HEAVY.AI,https://db-engines.com/en/system/HEAVY.AI,,,,2.1,135,,,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0
-135,Document,Document store,Amazon DocumentDB,https://db-engines.com/en/system/Amazon+DocumentDB,,,,2.07,136,,,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
-136,Relational,Relational DBMS,TimesTen,https://db-engines.com/en/system/TimesTen,,,,2.02,137,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-137,Object oriented,Object oriented DBMS,Db4o,https://db-engines.com/en/system/Db4o,Y,,iboxdb/db4o-gpl,2.01,138,iboxdb,db4o-gpl,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
-138,Time Series,"Time Series DBMS,Relational DBMS",QuestDB,https://db-engines.com/en/system/QuestDB,Y,,questdb/questd,1.93,139,questdb,questd,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0
-139,Key-value,"Key-value store,Document store,Relational DBMS,Spatial DBMS",Tarantool,https://db-engines.com/en/system/Tarantool,Y,,tarantool/tarantool,1.92,140,tarantool,tarantool,0,1,0,0,1,0,0,0,0,0,1,0,1,0,0
-140,Object oriented,Object oriented DBMS,ObjectStore,https://db-engines.com/en/system/ObjectStore,N,,-,1.86,141,-,-,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
-141,Relational,Relational DBMS,Tibero,https://db-engines.com/en/system/Tibero,,,,1.85,142,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-142,Time Series,"Time Series DBMS,Key-value store,Relational DBMS",GridDB,https://db-engines.com/en/system/GridDB,Y,,griddb/griddb,1.8,143,griddb,griddb,0,0,0,0,1,0,0,0,0,0,1,0,0,1,0
-143,Document,"Document store,Key-value store,Relational DBMS",FoundationDB,https://db-engines.com/en/system/FoundationDB,Y,,apple/foundationdb,1.78,144,apple,foundationdb,0,1,0,0,1,0,0,0,0,0,1,0,0,0,0
-144,Graph,"Graph DBMS,RDF store",Stardog,https://db-engines.com/en/system/Stardog,N,,-,1.76,145,-,-,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0
-145,Multivalue,Multivalue DBMS,jBASE,https://db-engines.com/en/system/jBASE,N,,-,1.75,146,-,-,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
-146,Relational,Relational DBMS,Apache Kylin,https://db-engines.com/en/system/Apache+Kylin,Y,,apache/kylin,1.74,147,apache,kylin,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-147,Graph,Graph DBMS,Dgraph,https://db-engines.com/en/system/Dgraph,Y,,dgraph-io/dgraph,1.71,148,dgraph-io,dgraph,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
-148,Document,"Document store,Graph DBMS,Relational DBMS,Time Series DBMS",Fauna,https://db-engines.com/en/system/Fauna,N,,-,1.7,149,-,-,0,1,0,1,0,0,0,0,0,0,1,0,0,1,0
-149,Document,Document store,Mnesia,https://db-engines.com/en/system/Mnesia,Y,,beardedeagle/mnesiac,1.69,150,beardedeagle,mnesiac,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
-150,Document,Document store,LiteDB,https://db-engines.com/en/system/LiteDB,Y,,mbdavid/LiteDB,1.69,151,mbdavid,LiteDB,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
-151,Object oriented,"Object oriented DBMS,Time Series DBMS",ObjectBox,https://db-engines.com/en/system/ObjectBox,Y,,objectbox/objectbox-java,1.67,152,objectbox,objectbox-java,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0
-152,Native XML,Native XML DBMS,BaseX,https://db-engines.com/en/system/BaseX,Y,,BaseXdb/basex,1.66,153,BaseXdb,basex,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
-153,Object oriented,Object oriented DBMS,Actian NoSQL Database,https://db-engines.com/en/system/Actian+NoSQL+Database,N,,-,1.64,154,-,-,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
-154,Time Series,"Time Series DBMS,Relational DBMS",TDengine,https://db-engines.com/en/system/TDengine,Y,,taosdata/TDengine,1.6,155,taosdata,TDengine,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0
-155,Relational,Relational DBMS,mSQL,https://db-engines.com/en/system/mSQL,,,,1.58,156,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-156,Document,Document store,Datameer,https://db-engines.com/en/system/Datameer,,,,1.54,157,,,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
-157,Relational,Relational DBMS,Infobright,https://db-engines.com/en/system/Infobright,,,,1.52,158,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-158,Relational,Relational DBMS,GBase,https://db-engines.com/en/system/GBase,,,,1.5,159,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-159,Relational,Relational DBMS,Oracle Rdb,https://db-engines.com/en/system/Oracle+Rdb,,,,1.5,160,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-160,Relational,Relational DBMS,NonStop SQL,https://db-engines.com/en/system/NonStop+SQL,,,,1.5,161,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-161,Key-value,Key-value store,GT.M,https://db-engines.com/en/system/GT.M,,,,1.49,162,,,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
-162,Relational,Relational DBMS,DataEase,https://db-engines.com/en/system/DataEase,,,,1.48,163,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-163,Relational,Relational DBMS,HFSQL,https://db-engines.com/en/system/HFSQL,,,,1.48,164,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-164,Relational,Relational DBMS,SQL.JS,https://db-engines.com/en/system/SQL.JS,,,,1.46,165,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-165,Relational,Relational DBMS,SQLBase,https://db-engines.com/en/system/SQLBase,,,,1.45,166,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-166,Document,"Document store,Graph DBMS,RDF store,Spatial DBMS",AllegroGraph,https://db-engines.com/en/system/AllegroGraph,N,,-,1.44,167,-,-,0,1,0,1,0,0,0,0,0,1,0,0,1,0,0
-167,Relational,Relational DBMS,Cubrid,https://db-engines.com/en/system/Cubrid,Y,,CUBRID/cubrid,1.44,168,CUBRID,cubrid,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-168,Relational,Relational DBMS,Empress,https://db-engines.com/en/system/Empress,,,,1.37,169,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-169,Graph,Graph DBMS,Giraph,https://db-engines.com/en/system/Giraph,Y,,apache/giraph,1.37,170,apache,giraph,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
-170,Relational,Relational DBMS,DuckDB,https://db-engines.com/en/system/DuckDB,,,,1.37,171,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-171,Multivalue,Multivalue DBMS,Model 204,https://db-engines.com/en/system/Model+204,N,,-,1.33,172,-,-,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
-172,Relational,Relational DBMS,Altibase,https://db-engines.com/en/system/Altibase,,,,1.32,173,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-173,Relational,Relational DBMS,1010data,https://db-engines.com/en/system/1010data,,,,1.31,174,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-174,Key-value,Key-value store,ZODB,https://db-engines.com/en/system/ZODB,Y,,zopefoundation/ZODB,1.31,175,zopefoundation,ZODB,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
-175,Relational,Relational DBMS,Apache HAWQ,https://db-engines.com/en/system/Apache+HAWQ,,,,1.3,176,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-176,Document,"Document store,Object oriented DBMS,Graph DBMS,Search engine",GigaSpaces,https://db-engines.com/en/system/GigaSpaces,,,,1.3,177,,,0,1,0,1,0,0,0,0,1,0,0,1,0,0,0
-177,Key-value,"Key-value store,Document store,Search engine",NCache,https://db-engines.com/en/system/NCache,Y,,Alachisoft/NCache,1.3,178,Alachisoft,NCache,0,1,0,0,1,0,0,0,0,0,0,1,0,0,0
-178,Object oriented,Object oriented DBMS,Perst,https://db-engines.com/en/system/Perst,Y,,The-Alchemist/perst,1.28,179,The-Alchemist,perst,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
-179,Graph,"Graph DBMS,Key-value store",Graph Engine,https://db-engines.com/en/system/Graph+Engine,Y,,microsoft/GraphEngine,1.27,180,microsoft,GraphEngine,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0
-180,Graph,Graph DBMS,NebulaGraph,https://db-engines.com/en/system/NebulaGraph,,,,1.26,181,,,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
-181,Document,"Document store,Wide column store",HPE Ezmeral Data Fabric,https://db-engines.com/en/system/HPE+Ezmeral+Data+Fabric,N,,-,1.26,182,-,-,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1
-182,Time Series,Time Series DBMS,Amazon Timestream,https://db-engines.com/en/system/Amazon+Timestream,,,,1.22,183,,,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
-183,Native XML,Native XML DBMS,Sedna,https://db-engines.com/en/system/Sedna,Y,,sedna/sedna,1.22,184,sedna,sedna,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
-184,Graph,"Graph DBMS,Relational DBMS",TypeDB,https://db-engines.com/en/system/TypeDB,Y,,vaticle/typedb,1.21,185,vaticle,typedb,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0
-185,Graph,"Graph DBMS,RDF store",Blazegraph,https://db-engines.com/en/system/Blazegraph,Y,,blazegraph/database,1.21,186,blazegraph,database,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0
-186,Native XML,Native XML DBMS,eXist-db,https://db-engines.com/en/system/eXist-db,Y,,eXist-db/exist,1.19,187,eXist-db,exist,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
-187,Relational,Relational DBMS,MatrixOne,https://db-engines.com/en/system/MatrixOne,,,,1.18,188,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-188,Relational,Relational DBMS,Actian Vector,https://db-engines.com/en/system/Actian+Vector,,,,1.16,189,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-189,Relational,Relational DBMS,NuoDB,https://db-engines.com/en/system/NuoDB,,,,1.16,190,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-190,Relational,Relational DBMS,Splice Machine,https://db-engines.com/en/system/Splice+Machine,,,,1.15,191,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-191,Event,Event Store,EventStoreDB,https://db-engines.com/en/system/EventStoreDB,Y,,EventStore/EventStore,1.13,192,EventStore,EventStore,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-192,Relational,"Relational DBMS,Document store,Wide column store",OceanBase,https://db-engines.com/en/system/OceanBase,,,,1.13,193,,,0,1,0,0,0,0,0,0,0,0,1,0,0,0,1
-193,Navigational,Navigational DBMS,IDMS,https://db-engines.com/en/system/IDMS,N,,-,1.11,194,-,-,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
-194,Relational,Relational DBMS,DBISAM,https://db-engines.com/en/system/DBISAM,,,,1.11,195,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-195,RDF,RDF store,RDF4J,https://db-engines.com/en/system/RDF4J,Y,,eclipse/rdf4j,1.11,196,eclipse,rdf4j,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
-196,Multivalue,Multivalue DBMS,D3,https://db-engines.com/en/system/D3,N,,-,1.1,197,-,-,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
-197,Relational,"Relational DBMS,Search engine,Document store,Time Series DBMS",CrateDB,https://db-engines.com/en/system/CrateDB,,,,1.09,198,,,0,1,0,0,0,0,0,0,0,0,1,1,0,1,0
-198,Relational,"Relational DBMS,Document store,Spatial DBMS",openGauss,https://db-engines.com/en/system/openGauss,,,,1.07,199,,,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0
-199,Document,Document store,BigchainDB,https://db-engines.com/en/system/BigchainDB,,,,1.07,200,,,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
-200,Spatial DBMS,Spatial DBMS,GeoMesa,https://db-engines.com/en/system/GeoMesa,Y,,geomesa/geomesa-geoserver,1.06,201,geomesa,geomesa-geoserver,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
-201,Search engine,Search engine,Meilisearch,https://db-engines.com/en/system/Meilisearch,,,,1.05,202,,,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
-202,Relational,Relational DBMS,solidDB,https://db-engines.com/en/system/solidDB,,,,1.05,203,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-203,Search engine,Search engine,Xapian,https://db-engines.com/en/system/Xapian,,,,1.04,204,,,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
-204,Object oriented,Object oriented DBMS,Matisse,https://db-engines.com/en/system/Matisse,N,,-,1.03,205,-,-,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
-205,Key-value,Key-value store,Hibari,https://db-engines.com/en/system/Hibari,,,,0.98,206,,,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
-206,Time Series,Time Series DBMS,VictoriaMetrics,https://db-engines.com/en/system/VictoriaMetrics,Y,,VictoriaMetrics/VictoriaMetrics,0.98,207,VictoriaMetrics,VictoriaMetrics,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
-207,Relational,Relational DBMS,FrontBase,https://db-engines.com/en/system/FrontBase,,,,0.97,208,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-208,Relational,Relational DBMS,OpenBase,https://db-engines.com/en/system/OpenBase,,,,0.97,209,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-209,Relational,"Relational DBMS,Time Series DBMS",eXtremeDB,https://db-engines.com/en/system/eXtremeDB,,,,0.96,210,,,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0
-210,Relational,Relational DBMS,R:BASE,https://db-engines.com/en/system/R%3ABASE,,,,0.95,211,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-211,Relational,"Relational DBMS,Document store",Dolt,https://db-engines.com/en/system/Dolt,,,,0.93,212,,,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0
-212,Relational,Relational DBMS,Kognitio,https://db-engines.com/en/system/Kognitio,,,,0.93,213,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-213,Time Series,Time Series DBMS,KairosDB,https://db-engines.com/en/system/KairosDB,Y,,kairosdb/kairosdb,0.92,214,kairosdb,kairosdb,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
-214,Graph,Graph DBMS,Memgraph,https://db-engines.com/en/system/Memgraph,,,,0.91,215,,,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
-215,Multivalue,Multivalue DBMS,SciDB,https://db-engines.com/en/system/SciDB,Y,,cran/scidb,0.9,216,cran,scidb,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
-216,Relational,"Relational DBMS,Document store,Spatial DBMS",Postgres-XL,https://db-engines.com/en/system/Postgres-XL,,,,0.87,217,,,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0
-217,Key-value,Key-value store,WebSphere eXtreme Scale,https://db-engines.com/en/system/WebSphere+eXtreme+Scale,,,,0.86,218,,,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
-218,Relational,Relational DBMS,SQream DB,https://db-engines.com/en/system/SQream+DB,,,,0.86,219,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-219,Document,"Document store,Relational DBMS,Search engine",Rockset,https://db-engines.com/en/system/Rockset,,,,0.86,220,,,0,1,0,0,0,0,0,0,0,0,1,1,0,0,0
-220,Object oriented,Object oriented DBMS,ObjectDB,https://db-engines.com/en/system/ObjectDB,N,,-,0.86,221,-,-,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
-221,Key-value,Key-value store,BoltDB,https://db-engines.com/en/system/BoltDB,,,,0.85,222,,,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
-222,Key-value,Key-value store,MapDB,https://db-engines.com/en/system/MapDB,,,,0.84,223,,,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
-223,Time Series,Time Series DBMS,M3DB,https://db-engines.com/en/system/M3DB,Y,,m3db/m3,0.83,224,m3db,m3,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
-224,Relational,Relational DBMS,Yellowbrick,https://db-engines.com/en/system/Yellowbrick,,,,0.82,225,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-225,Relational,Relational DBMS,NexusDB,https://db-engines.com/en/system/NexusDB,,,,0.82,226,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-226,RDF,RDF store,4store,https://db-engines.com/en/system/4store,Y,,4store/4store,0.81,227,4store,4store,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
-227,Relational,"Relational DBMS,Document store,Spatial DBMS",TDSQL for MySQL,https://db-engines.com/en/system/TDSQL+for+MySQL,,,,0.8,228,,,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0
-228,Object oriented,Object oriented DBMS,Objectivity/DB,https://db-engines.com/en/system/Objectivity%2FDB,N,,-,0.78,229,-,-,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
-229,Relational,Relational DBMS,ScaleArc,https://db-engines.com/en/system/ScaleArc,,,,0.78,230,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-230,Wide column,Wide column store,Amazon Keyspaces,https://db-engines.com/en/system/Amazon+Keyspaces,,,,0.77,231,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
-231,Relational,Relational DBMS,Tajo,https://db-engines.com/en/system/Tajo,,,,0.77,232,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-232,Document,"Document store,Relational DBMS",AlaSQL,https://db-engines.com/en/system/AlaSQL,,,,0.77,233,,,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0
-233,Multivalue,Multivalue DBMS,Northgate Reality,https://db-engines.com/en/system/Northgate+Reality,N,,-,0.76,234,-,-,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
-234,Relational,Relational DBMS,VistaDB,https://db-engines.com/en/system/VistaDB,,,,0.75,235,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-235,Time Series,Time Series DBMS,Apache IoTDB,https://db-engines.com/en/system/Apache+IoTDB,Y,,apache/iotdb,0.73,236,apache,iotdb,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
-236,Relational,Relational DBMS,Trafodion,https://db-engines.com/en/system/Trafodion,,,,0.72,237,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-237,Relational,Relational DBMS,Datacom/DB,https://db-engines.com/en/system/Datacom%2FDB,,,,0.72,238,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-238,Document,Document store,Percona Server for MongoDB,https://db-engines.com/en/system/Percona+Server+for+MongoDB,,,,0.7,239,,,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
-239,Multivalue,Multivalue DBMS,OpenInsight,https://db-engines.com/en/system/OpenInsight,N,,-,0.7,240,-,-,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
-240,Object oriented,Object oriented DBMS,GemStone/S,https://db-engines.com/en/system/GemStone%2FS,N,,-,0.66,241,-,-,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
-241,Object oriented,Object oriented DBMS,Starcounter,https://db-engines.com/en/system/Starcounter,,,,0.65,242,,,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
-242,Relational,Relational DBMS,Apache Doris,https://db-engines.com/en/system/Apache+Doris,,,,0.64,243,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-243,Document,Document store,LokiJS,https://db-engines.com/en/system/LokiJS,,,,0.64,244,,,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
-244,Relational,Relational DBMS,Apache Pinot,https://db-engines.com/en/system/Apache+Pinot,,,,0.62,245,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-245,Search engine,Search engine,Milvus,https://db-engines.com/en/system/Milvus,Y,,milvus-io/milvus,0.62,246,milvus-io,milvus,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
-246,Key-value,Key-value store,Project Voldemort,https://db-engines.com/en/system/Project+Voldemort,,,,0.62,247,,,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
-247,Object oriented,Object oriented DBMS,atoti,https://db-engines.com/en/system/atoti,,,,0.6,248,,,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
-248,Document,"Document store,Relational DBMS",Sequoiadb,https://db-engines.com/en/system/Sequoiadb,,,,0.6,249,,,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0
-249,Graph,Graph DBMS,InfiniteGraph,https://db-engines.com/en/system/InfiniteGraph,,,,0.6,250,,,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
-250,Document,Document store,HarperDB,https://db-engines.com/en/system/HarperDB,,,,0.59,251,,,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
-251,Key-value,Key-value store,Tokyo Tyrant,https://db-engines.com/en/system/Tokyo+Tyrant,,,,0.59,252,,,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
-252,Search engine,Search engine,SearchBlox,https://db-engines.com/en/system/SearchBlox,,,,0.58,253,,,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
-253,Content,Content stores,ModeShape,https://db-engines.com/en/system/ModeShape,Y,,ModeShape/modeshape,0.58,254,ModeShape,modeshape,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-254,Relational,"Relational DBMS,Document store,Spatial DBMS",Kingbase,https://db-engines.com/en/system/Kingbase,,,,0.57,255,,,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0
-255,Multivalue,Multivalue DBMS,Rasdaman,https://db-engines.com/en/system/Rasdaman,Y,,dioptre/rasdaman,0.57,256,dioptre,rasdaman,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
-256,Wide column,"Wide column store,Search engine",Elassandra,https://db-engines.com/en/system/Elassandra,Y,,strapdata/elassandra,0.57,257,strapdata,elassandra,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1
-257,Key-value,Key-value store,Scalaris,https://db-engines.com/en/system/Scalaris,,,,0.57,258,,,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
-258,Key-value,Key-value store,KeyDB,https://db-engines.com/en/system/KeyDB,,,,0.56,259,,,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
-259,RDF,RDF store,Strabon,https://db-engines.com/en/system/Strabon,,,,0.53,260,,,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
-260,Document,"Document store,Relational DBMS",Yandex Database (YDB),https://db-engines.com/en/system/Yandex+Database+%28YDB%29,,,,0.53,261,,,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0
-261,Relational,Relational DBMS,Alibaba Cloud MaxCompute,https://db-engines.com/en/system/Alibaba+Cloud+MaxCompute,,,,0.5,262,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-262,Relational,Relational DBMS,Comdb2,https://db-engines.com/en/system/Comdb2,,,,0.49,263,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-263,Graph,Graph DBMS,HugeGraph,https://db-engines.com/en/system/HugeGraph,,,,0.48,264,,,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
-264,Relational,Relational DBMS,TransLattice,https://db-engines.com/en/system/TransLattice,,,,0.48,265,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-265,Key-value,Key-value store,Cloudflare Workers KV,https://db-engines.com/en/system/Cloudflare+Workers+KV,,,,0.48,266,,,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
-266,Relational,Relational DBMS,Kyligence Enterprise,https://db-engines.com/en/system/Kyligence+Enterprise,,,,0.46,267,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-267,Relational,"Relational DBMS,Time Series DBMS",Raima Database Manager,https://db-engines.com/en/system/Raima+Database+Manager,,,,0.45,268,,,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0
-268,Relational,Relational DBMS,Brytlyt,https://db-engines.com/en/system/Brytlyt,,,,0.45,269,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-269,Graph,Graph DBMS,FlockDB,https://db-engines.com/en/system/FlockDB,,,,0.44,270,,,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
-270,Relational,"Relational DBMS,Document store",Alibaba Cloud AnalyticDB for MySQL,https://db-engines.com/en/system/Alibaba+Cloud+AnalyticDB+for+MySQL,,,,0.44,271,,,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0
-271,Relational,Relational DBMS,Kinetica,https://db-engines.com/en/system/Kinetica,,,,0.44,272,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-272,Search engine,Search engine,Weaviate,https://db-engines.com/en/system/Weaviate,,,,0.44,273,,,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
-273,Relational,Relational DBMS,PipelineDB,https://db-engines.com/en/system/PipelineDB,,,,0.43,274,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-274,Search engine,Search engine,Alibaba Cloud Log Service,https://db-engines.com/en/system/Alibaba+Cloud+Log+Service,,,,0.42,275,,,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
-275,Object oriented,Object oriented DBMS,Jade,https://db-engines.com/en/system/Jade,N,,-,0.42,276,-,-,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
-276,Relational,Relational DBMS,Mimer SQL,https://db-engines.com/en/system/Mimer+SQL,,,,0.41,277,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-277,Graph,Graph DBMS,Fluree,https://db-engines.com/en/system/Fluree,,,,0.41,278,,,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
-278,RDF,RDF store,Redland,https://db-engines.com/en/system/Redland,,,,0.41,279,,,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
-279,Relational,Relational DBMS,ITTIA,https://db-engines.com/en/system/ITTIA,,,,0.41,280,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-280,Object oriented,Object oriented DBMS,Actian FastObjects,https://db-engines.com/en/system/Actian+FastObjects,,,,0.41,281,,,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
-281,Time Series,Time Series DBMS,Axibase,https://db-engines.com/en/system/Axibase,,,,0.4,282,,,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
-282,Graph,Graph DBMS,TinkerGraph,https://db-engines.com/en/system/TinkerGraph,,,,0.4,283,,,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
-283,Document,Document store,EJDB,https://db-engines.com/en/system/EJDB,,,,0.39,284,,,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
-284,Multivalue,Multivalue DBMS,OpenQM,https://db-engines.com/en/system/OpenQM,Y,,gregjurman/openqm,0.39,285,gregjurman,openqm,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
-285,Relational,Relational DBMS,Valentina Server,https://db-engines.com/en/system/Valentina+Server,,,,0.38,286,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-286,Time Series,Time Series DBMS,Riak TS,https://db-engines.com/en/system/Riak+TS,Y,,basho-labs/Riak-TS-JDBC-Driver,0.37,287,basho-labs,Riak-TS-JDBC-Driver,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
-287,Relational,Relational DBMS,Lovefield,https://db-engines.com/en/system/Lovefield,,,,0.37,288,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-288,RDF,RDF store,RedStore,https://db-engines.com/en/system/RedStore,,,,0.36,289,,,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
-289,RDF,RDF store,CubicWeb,https://db-engines.com/en/system/CubicWeb,,,,0.33,290,,,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
-290,Relational,Relational DBMS,ElevateDB,https://db-engines.com/en/system/ElevateDB,,,,0.33,291,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-291,Wide column,Wide column store,Alibaba Cloud Table Store,https://db-engines.com/en/system/Alibaba+Cloud+Table+Store,,,,0.33,292,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
-292,Graph,Graph DBMS,GraphBase,https://db-engines.com/en/system/GraphBase,,,,0.33,293,,,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
-293,Search engine,"Search engine,Time Series DBMS",Manticore Search,https://db-engines.com/en/system/Manticore+Search,,,,0.32,294,,,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0
-294,Relational,Relational DBMS,Alibaba Cloud ApsaraDB for PolarDB,https://db-engines.com/en/system/Alibaba+Cloud+ApsaraDB+for+PolarDB,,,,0.31,295,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-295,Graph,"Graph DBMS,RDF store",AnzoGraph DB,https://db-engines.com/en/system/AnzoGraph+DB,,,,0.31,296,,,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0
-296,Graph,"Graph DBMS,Document store,RDF store",TerminusDB,https://db-engines.com/en/system/TerminusDB,,,,0.31,297,,,0,1,0,1,0,0,0,0,0,1,0,0,0,0,0
-297,Event,"Event Store,Time Series DBMS",IBM Db2 Event Store,https://db-engines.com/en/system/IBM+Db2+Event+Store,N,,-,0.31,298,-,-,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0
-298,Event,Event Store,NEventStore,https://db-engines.com/en/system/NEventStore,Y,,NEventStore/NEventStore,0.3,299,NEventStore,NEventStore,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-299,Relational,Relational DBMS,Alibaba Cloud AnalyticDB for PostgreSQL,https://db-engines.com/en/system/Alibaba+Cloud+AnalyticDB+for+PostgreSQL,,,,0.3,300,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-300,Graph,Graph DBMS,HyperGraphDB,https://db-engines.com/en/system/HyperGraphDB,,,,0.3,301,,,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
-301,Relational,Relational DBMS,XtremeData,https://db-engines.com/en/system/XtremeData,,,,0.3,302,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-302,Relational,"Relational DBMS,Time Series DBMS",GeoSpock,https://db-engines.com/en/system/GeoSpock,,,,0.3,303,,,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0
-303,Relational,Relational DBMS,Actian PSQL,https://db-engines.com/en/system/Actian+PSQL,,,,0.29,304,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-304,Document,Document store,Acebase,https://db-engines.com/en/system/Acebase,,,,0.28,305,,,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
-305,Search engine,Search engine,Qdrant,https://db-engines.com/en/system/Qdrant,,,,0.28,306,,,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
-306,Relational,Relational DBMS,Tibco ComputeDB,https://db-engines.com/en/system/Tibco+ComputeDB,,,,0.28,307,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-307,Document,"Document store,Graph DBMS",SurrealDB,https://db-engines.com/en/system/SurrealDB,,,,0.26,308,,,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0
-308,Key-value,"Key-value store,Relational DBMS",LeanXcale,https://db-engines.com/en/system/LeanXcale,,,,0.26,309,,,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0
-309,Time Series,Time Series DBMS,Heroic,https://db-engines.com/en/system/Heroic,,,,0.26,310,,,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
-310,Key-value,Key-value store,Speedb,https://db-engines.com/en/system/Speedb,,,,0.26,311,,,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
-311,Key-value,Key-value store,Elliptics,https://db-engines.com/en/system/Elliptics,,,,0.25,312,,,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
-312,RDF,RDF store,Mulgara,https://db-engines.com/en/system/Mulgara,,,,0.25,313,,,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
-313,Relational,Relational DBMS,Transbase,https://db-engines.com/en/system/Transbase,,,,0.25,314,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-314,Graph,"Graph DBMS,RDF store",RDFox,https://db-engines.com/en/system/RDFox,,,,0.25,315,,,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0
-315,Time Series,Time Series DBMS,SiteWhere,https://db-engines.com/en/system/SiteWhere,,,,0.24,316,,,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
-316,Relational,Relational DBMS,Transwarp KunDB,https://db-engines.com/en/system/Transwarp+KunDB,,,,0.23,317,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-317,Key-value,"Key-value store,Relational DBMS",Immudb,https://db-engines.com/en/system/Immudb,,,,0.22,318,,,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0
-318,Time Series,Time Series DBMS,Hawkular Metrics,https://db-engines.com/en/system/Hawkular+Metrics,,,,0.21,319,,,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
-319,Relational,Relational DBMS,FeatureBase,https://db-engines.com/en/system/FeatureBase,,,,0.2,320,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-320,Search engine,Search engine,Typesense,https://db-engines.com/en/system/Typesense,,,,0.2,321,,,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
-321,Document,"Document store,Graph DBMS,Time Series DBMS,Spatial DBMS",Bangdb,https://db-engines.com/en/system/Bangdb,,,,0.2,322,,,0,1,0,1,0,0,0,0,0,0,0,0,1,1,0
-322,Document,"Document store,Graph DBMS,Key-value store,Time Series DBMS",ArcadeDB,https://db-engines.com/en/system/ArcadeDB,,,,0.2,323,,,0,1,0,1,1,0,0,0,0,0,0,0,0,1,0
-323,Time Series,Time Series DBMS,Quasardb,https://db-engines.com/en/system/Quasardb,,,,0.2,324,,,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
-324,Key-value,Key-value store,Kyoto Tycoon,https://db-engines.com/en/system/Kyoto+Tycoon,,,,0.19,325,,,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
-325,Relational,Relational DBMS,EsgynDB,https://db-engines.com/en/system/EsgynDB,,,,0.19,326,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-326,Object oriented,Object oriented DBMS,Eloquera,https://db-engines.com/en/system/Eloquera,,,,0.19,327,,,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
-327,Time Series,Time Series DBMS,Machbase,https://db-engines.com/en/system/Machbase,,,,0.19,327,,,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
-328,Document,"Document store,Object oriented DBMS",OrigoDB,https://db-engines.com/en/system/OrigoDB,,,,0.19,327,,,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0
-329,Document,Document store,RaptorDB,https://db-engines.com/en/system/RaptorDB,,,,0.19,327,,,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
-330,Document,Document store,WhiteDB,https://db-engines.com/en/system/WhiteDB,,,,0.19,327,,,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
-331,Key-value,Key-value store,LedisDB,https://db-engines.com/en/system/LedisDB,,,,0.19,332,,,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
-332,Key-value,"Key-value store,Relational DBMS",Faircom DB,https://db-engines.com/en/system/Faircom+DB,,,,0.18,333,,,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0
-333,Graph,Graph DBMS,Sparksee,https://db-engines.com/en/system/Sparksee,,,,0.18,334,,,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
-334,Spatial DBMS,"Spatial DBMS,Relational DBMS",H2GIS,https://db-engines.com/en/system/H2GIS,Y,,orbisgis/h2gis,0.18,335,orbisgis,h2gis,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0
-335,Relational,Relational DBMS,ActorDB,https://db-engines.com/en/system/ActorDB,,,,0.18,336,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-336,Relational,Relational DBMS,BigObject,https://db-engines.com/en/system/BigObject,,,,0.18,336,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-337,Time Series,Time Series DBMS,Blueflood,https://db-engines.com/en/system/Blueflood,Y,,rackerlabs/blueflood,0.18,336,rackerlabs,blueflood,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
-338,RDF,RDF store,BrightstarDB,https://db-engines.com/en/system/BrightstarDB,,,,0.18,336,,,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
-339,Search engine,Search engine,Exorbyte,https://db-engines.com/en/system/Exorbyte,,,,0.18,336,,,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
-340,Key-value,Key-value store,STSdb,https://db-engines.com/en/system/STSdb,,,,0.18,336,,,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
-341,Key-value,Key-value store,TerarkDB,https://db-engines.com/en/system/TerarkDB,,,,0.18,336,,,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
-342,Key-value,Key-value store,TomP2P,https://db-engines.com/en/system/TomP2P,,,,0.18,336,,,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
-343,Graph,"Graph DBMS,Object oriented DBMS",VelocityDB,https://db-engines.com/en/system/VelocityDB,,,,0.18,336,,,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0
-344,Document,Document store,XTDB,https://db-engines.com/en/system/XTDB,,,,0.18,336,,,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
-345,Graph,Graph DBMS,HGraphDB,https://db-engines.com/en/system/HGraphDB,,,,0.17,346,,,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
-346,Time Series,Time Series DBMS,Warp 10,https://db-engines.com/en/system/Warp+10,,,,0.15,347,,,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
-347,RDF,RDF store,Dydra,https://db-engines.com/en/system/Dydra,,,,0.14,348,,,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
-348,Relational,"Relational DBMS,Document store,Spatial DBMS",Fujitsu Enterprise Postgres,https://db-engines.com/en/system/Fujitsu+Enterprise+Postgres,,,,0.14,349,,,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0
-349,Object oriented,Object oriented DBMS,Siaqodb,https://db-engines.com/en/system/Siaqodb,,,,0.13,350,,,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
-350,Relational,"Relational DBMS,Spatial DBMS",Linter,https://db-engines.com/en/system/Linter,,,,0.13,351,,,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0
-351,Relational,Relational DBMS,Edge Intelligence,https://db-engines.com/en/system/Edge+Intelligence,,,,0.13,352,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-352,Key-value,Key-value store,HyperLevelDB,https://db-engines.com/en/system/HyperLevelDB,,,,0.13,352,,,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
-353,Document,Document store,iBoxDB,https://db-engines.com/en/system/iBoxDB,,,,0.13,352,,,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
-354,Time Series,Time Series DBMS,IRONdb,https://db-engines.com/en/system/IRONdb,,,,0.13,352,,,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
-355,Relational,Relational DBMS,JethroData,https://db-engines.com/en/system/JethroData,,,,0.13,352,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-356,Document,Document store,NosDB,https://db-engines.com/en/system/NosDB,,,,0.13,352,,,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
-357,Document,Document store,SenseiDB,https://db-engines.com/en/system/SenseiDB,,,,0.13,352,,,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
-358,Time Series,Time Series DBMS,SiriDB,https://db-engines.com/en/system/SiriDB,,,,0.13,352,,,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
-359,Document,Document store,ToroDB,https://db-engines.com/en/system/ToroDB,,,,0.13,352,,,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
-360,Key-value,Key-value store,Upscaledb,https://db-engines.com/en/system/Upscaledb,,,,0.13,352,,,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
-361,Relational,Relational DBMS,SmallSQL,https://db-engines.com/en/system/SmallSQL,,,,0.12,362,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-362,Key-value,Key-value store,ScaleOut StateServer,https://db-engines.com/en/system/ScaleOut+StateServer,,,,0.12,363,,,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
-363,Key-value,Key-value store,Badger,https://db-engines.com/en/system/Badger,,,,0.11,364,,,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
-364,RDF,RDF store,SparkleDB,https://db-engines.com/en/system/SparkleDB,,,,0.11,365,,,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
-365,Time Series,Time Series DBMS,Alibaba Cloud TSDB,https://db-engines.com/en/system/Alibaba+Cloud+TSDB,,,,0.1,366,,,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
-366,Key-value,Key-value store,Resin Cache,https://db-engines.com/en/system/Resin+Cache,,,,0.09,367,,,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
-367,Relational,Relational DBMS,OushuDB,https://db-engines.com/en/system/OushuDB,,,,0.08,368,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-368,Wide column,"Wide column store,Time Series DBMS",SWC-DB,https://db-engines.com/en/system/SWC-DB,,,,0.07,369,,,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
-369,Graph,"Graph DBMS,Relational DBMS",AgensGraph,https://db-engines.com/en/system/AgensGraph,,,,0.07,370,,,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0
-370,Graph,Graph DBMS,Galaxybase,https://db-engines.com/en/system/Galaxybase,,,,0.06,371,,,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
-371,Key-value,"Key-value store,Relational DBMS",Faircom EDGE,https://db-engines.com/en/system/Faircom+EDGE,,,,0.03,372,,,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0
-372,Relational,Relational DBMS,Sadas Engine,https://db-engines.com/en/system/Sadas+Engine,,,,0.02,373,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-373,Object oriented,Object oriented DBMS,WakandaDB,https://db-engines.com/en/system/WakandaDB,,,,0.02,374,,,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
-374,Key-value,Key-value store,JaguarDB,https://db-engines.com/en/system/JaguarDB,,,,0.01,375,,,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
-375,Key-value,Key-value store,SwayDB,https://db-engines.com/en/system/SwayDB,,,,0.0,376,,,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
-376,Key-value,Key-value store,BergDB,https://db-engines.com/en/system/BergDB,,,,0.0,377,,,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
-377,Key-value,Key-value store,Cachelot.io,https://db-engines.com/en/system/Cachelot.io,,,,0.0,377,,,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
-378,Document,"Document store,Key-value store",CortexDB,https://db-engines.com/en/system/CortexDB,,,,0.0,377,,,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0
-379,Relational,Relational DBMS,CovenantSQL,https://db-engines.com/en/system/CovenantSQL,,,,0.0,377,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-380,Relational,Relational DBMS,DaggerDB,https://db-engines.com/en/system/DaggerDB,,,,0.0,377,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-381,Relational,Relational DBMS,EdgelessDB,https://db-engines.com/en/system/EdgelessDB,,,,0.0,377,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-382,Key-value,Key-value store,Helium,https://db-engines.com/en/system/Helium,,,,0.0,377,,,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
-383,Search engine,Search engine,Indica,https://db-engines.com/en/system/Indica,,,,0.0,377,,,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
-384,Key-value,Key-value store,InfinityDB,https://db-engines.com/en/system/InfinityDB,,,,0.0,377,,,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
-385,Document,Document store,JasDB,https://db-engines.com/en/system/JasDB,,,,0.0,377,,,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
-386,Relational,Relational DBMS,K-DB,https://db-engines.com/en/system/K-DB,,,,0.0,377,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-387,Time Series,Time Series DBMS,Newts,https://db-engines.com/en/system/Newts,,,,0.0,377,,,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
-388,Time Series,Time Series DBMS,NSDb,https://db-engines.com/en/system/NSDb,,,,0.0,377,,,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
-389,Search engine,"Search engine,Time Series DBMS",Rizhiyi,https://db-engines.com/en/system/Rizhiyi,,,,0.0,377,,,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0
-390,Native XML,"Native XML DBMS,Search engine",searchxml,https://db-engines.com/en/system/searchxml,,,,0.0,377,,,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0
-391,Spatial DBMS,"Spatial DBMS,Relational DBMS",SpaceTime,https://db-engines.com/en/system/SpaceTime,N,,-,0.0,377,-,-,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0
-392,Key-value,Key-value store,Tkrzw,https://db-engines.com/en/system/Tkrzw,,,,0.0,377,,,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
-393,Relational,"Relational DBMS,Search engine",Transwarp ArgoDB,https://db-engines.com/en/system/Transwarp+ArgoDB,,,,0.0,377,,,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0
-394,Graph,Graph DBMS,Transwarp StellarDB,https://db-engines.com/en/system/Transwarp+StellarDB,,,,0.0,377,,,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
-395,Relational,Relational DBMS,Yaacomo,https://db-engines.com/en/system/Yaacomo,,,,0.0,377,,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-396,Time Series,Time Series DBMS,Yanza,https://db-engines.com/en/system/Yanza,,,,0.0,377,,,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+,category_label,Multi_model_info,DBMS,DBMS_insitelink,has_open_source_github_repo,has_company,github_repo_link,Score_Nov-2022,Rank_Nov-2022,org_name,repo_name,Developer,initial_release_recalc,current_release_recalc,open_source_license,cloud_based_only_recalc,Content,Document,Event,Graph,Key-value,Multivalue,Native XML,Navigational,Object oriented,RDF,Relational,Search engine,Spatial DBMS,Time Series,Wide column
+0,Relational,"Relational DBMS,Document store,Graph DBMS,RDF store,Spatial DBMS",Oracle,https://db-engines.com/en/system/Oracle,N,Y,-,1241.69,1,-,-,Oracle,1980.0,2021.0,N,N,0,1,0,1,0,0,0,0,0,1,1,0,1,0,0
+1,Relational,"Relational DBMS,Document store,Spatial DBMS",MySQL,https://db-engines.com/en/system/MySQL,Y,Y,mysql/mysql-server,1205.54,2,mysql,mysql-server,Oracle,1995.0,2022.0,Y,N,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0
+2,Relational,"Relational DBMS,Document store,Graph DBMS,Spatial DBMS",Microsoft SQL Server,https://db-engines.com/en/system/Microsoft+SQL+Server,N,Y,-,912.51,3,-,-,Microsoft,1989.0,2019.0,N,N,0,1,0,1,0,0,0,0,0,0,1,0,1,0,0
+3,Relational,"Relational DBMS,Document store,Spatial DBMS",PostgreSQL,https://db-engines.com/en/system/PostgreSQL,Y,N,postgres/postgres,623.16,4,postgres,postgres,PostgreSQL Global Development Group,1989.0,2022.0,Y,N,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0
+4,Document,"Document store,Spatial DBMS,Search engine,Time Series DBMS",MongoDB,https://db-engines.com/en/system/MongoDB,Y,,mongodb/mongo,477.9,5,mongodb,mongo,"MongoDB, Inc",2009.0,2022.0,Y,N,0,1,0,0,0,0,0,0,0,0,0,1,1,1,0
+5,Key-value,"Key-value store,Document store,Graph DBMS,Spatial DBMS,Search engine,Time Series DBMS",Redis,https://db-engines.com/en/system/Redis,Y,,redis/redis,182.05,6,redis,redis,"Redis project core team, inspired by Salvatore Sanfilippo",2009.0,2022.0,Y,N,0,1,0,1,1,0,0,0,0,0,0,1,1,1,0
+6,Search engine,"Search engine,Document store,Spatial DBMS",Elasticsearch,https://db-engines.com/en/system/Elasticsearch,Y,,elastic/elasticsearch,150.32,7,elastic,elasticsearch,Elastic,2010.0,2020.0,Y,N,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0
+7,Relational,"Relational DBMS,Document store,RDF store,Spatial DBMS",IBM Db2,https://db-engines.com/en/system/IBM+Db2,N,Y,-,149.56,8,-,-,IBM,1983.0,2016.0,N,N,0,1,0,0,0,0,0,0,0,1,1,0,1,0,0
+8,Relational,Relational DBMS,Microsoft Access,https://db-engines.com/en/system/Microsoft+Access,N,Y,-,135.03,9,-,-,Microsoft,1992.0,2019.0,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+9,Relational,Relational DBMS,SQLite,https://db-engines.com/en/system/SQLite,Y,N,sqlite/sqlite,134.63,10,sqlite,sqlite,Dwayne Richard Hipp,2000.0,2022.0,Y,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+10,Wide column,Wide column store,Cassandra,https://db-engines.com/en/system/Cassandra,Y,,apache/cassandra,118.12,11,apache,cassandra,Apache Software Foundation,2008.0,2022.0,Y,N,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+11,Relational,Relational DBMS,Snowflake,https://db-engines.com/en/system/Snowflake,N,Y,-,110.15,12,-,-,Snowflake Computing Inc.,2014.0,,N,Y,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+12,Relational,"Relational DBMS,Document store,Graph DBMS,Spatial DBMS",MariaDB,https://db-engines.com/en/system/MariaDB,Y,Y_借壳上市,MariaDB/server,104.91,13,MariaDB,server,"MariaDB Corporation Ab (MariaDB Enterprise),,MariaDB Foundation (community MariaDB Server)",2009.0,2022.0,Y,N,0,1,0,1,0,0,0,0,0,0,1,0,1,0,0
+13,Search engine,Search engine,Splunk,https://db-engines.com/en/system/Splunk,N,,-,94.23,14,-,-,Splunk Inc.,2003.0,,N,N,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+14,Document,"Document store,Key-value store",Amazon DynamoDB,https://db-engines.com/en/system/Amazon+DynamoDB,N,,-,85.4,15,-,-,Amazon,2012.0,,N,Y,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0
+15,Relational,"Relational DBMS,Document store,Graph DBMS,Spatial DBMS",Microsoft Azure SQL Database,https://db-engines.com/en/system/Microsoft+Azure+SQL+Database,N,Y,-,83.66,16,-,-,Microsoft,2010.0,,N,Y,0,1,0,1,0,0,0,0,0,0,1,0,1,0,0
+16,Relational,Relational DBMS,Hive,https://db-engines.com/en/system/Hive,Y,N_Facebook开源,apache/hive,81.89,17,apache,hive,Apache Software Foundation,2012.0,2022.0,Y,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+17,Relational,"Relational DBMS,Document store,Graph DBMS,Spatial DBMS,Time Series DBMS",Teradata,https://db-engines.com/en/system/Teradata,,,,65.23,18,,,Teradata,1984.0,2019.0,N,N,0,1,0,1,0,0,0,0,0,0,1,0,1,1,0
+18,Document,"Document store,Relational DBMS",Databricks,https://db-engines.com/en/system/Databricks,,,,60.89,19,,,Databricks,2013.0,,Y,Y,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0
+19,Graph,Graph DBMS,Neo4j,https://db-engines.com/en/system/Neo4j,Y,,neo4j/neo4j,57.3,20,neo4j,neo4j,"Neo4j, Inc.",2007.0,2022.0,Y,N,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+20,Relational,Relational DBMS,FileMaker,https://db-engines.com/en/system/FileMaker,,,,54.31,21,,,FileMaker,1983.0,2021.0,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+21,Relational,Relational DBMS,Google BigQuery,https://db-engines.com/en/system/Google+BigQuery,,,,54.13,22,,,Google,2010.0,,N,Y,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+22,Relational,"Relational DBMS,Document store,Graph DBMS,Spatial DBMS",SAP HANA,https://db-engines.com/en/system/SAP+HANA,,,,51.45,23,,,SAP,2010.0,2022.0,N,N,0,1,0,1,0,0,0,0,0,0,1,0,1,0,0
+23,Search engine,"Search engine,Spatial DBMS",Solr,https://db-engines.com/en/system/Solr,Y,,apache/solr,51.33,24,apache,solr,Apache Software Foundation,2006.0,2022.0,Y,N,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0
+24,Relational,"Relational DBMS,Spatial DBMS",SAP Adaptive Server,https://db-engines.com/en/system/SAP+Adaptive+Server,,,,43.58,25,,,"SAP, Sybase",1987.0,,N,N,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0
+25,Wide column,Wide column store,HBase,https://db-engines.com/en/system/HBase,Y,,apache/hbase,40.41,26,apache,hbase,Apache Software Foundation,2008.0,2021.0,Y,N,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+26,Document,"Document store,Graph DBMS,Key-value store,Wide column store,Spatial DBMS",Microsoft Azure Cosmos DB,https://db-engines.com/en/system/Microsoft+Azure+Cosmos+DB,N,,-,39.75,27,-,-,Microsoft,2014.0,,N,Y,0,1,0,1,1,0,0,0,0,0,0,0,1,0,1
+27,Spatial DBMS,"Spatial DBMS,Relational DBMS",PostGIS,https://db-engines.com/en/system/PostGIS,Y,,postgis/postgis,30.78,28,postgis,postgis,,2005.0,2022.0,Y,N,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0
+28,Time Series,"Time Series DBMS,Spatial DBMS",InfluxDB,https://db-engines.com/en/system/InfluxDB,Y,,influxdata/influxdb,29.96,29,influxdata,influxdb,,2013.0,2022.0,Y,N,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0
+29,Document,"Document store,Key-value store,Spatial DBMS",Couchbase,https://db-engines.com/en/system/Couchbase,Y,,couchbase/couchbase-lite-ios,28.62,30,couchbase,couchbase-lite-ios,"Couchbase, Inc.",2011.0,2021.0,Y,N,0,1,0,0,1,0,0,0,0,0,0,0,1,0,0
+30,Relational,Relational DBMS,Amazon Redshift,https://db-engines.com/en/system/Amazon+Redshift,,,,27.04,31,,,"Amazon (based on,PostgreSQL,)",2012.0,,N,Y,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+31,Relational,Relational DBMS,Firebird,https://db-engines.com/en/system/Firebird,Y,N,FirebirdSQL/firebird,25.37,32,FirebirdSQL,firebird,Firebird Foundation,2000.0,2022.0,Y,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+32,Key-value,Key-value store,Memcached,https://db-engines.com/en/system/Memcached,Y,,memcached/memcached,24.45,33,memcached,memcached,Danga Interactive,2003.0,2022.0,Y,N,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+33,Relational,Relational DBMS,Microsoft Azure Synapse Analytics,https://db-engines.com/en/system/Microsoft+Azure+Synapse+Analytics,,,,23.03,34,,,Microsoft,2016.0,,N,Y,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+34,Relational,"Relational DBMS,Document store,Spatial DBMS,Time Series DBMS",Informix,https://db-engines.com/en/system/Informix,N,Y,-,22.82,35,-,-,"IBM, HCL Technologies",1984.0,2020.0,N,N,0,1,0,0,0,0,0,0,0,0,1,0,1,1,0
+35,Relational,Relational DBMS,Spark SQL,https://db-engines.com/en/system/Spark+SQL,,,,21.9,36,,,Apache Software Foundation,2014.0,2022.0,Y,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+36,Document,Document store,Firebase Realtime Database,https://db-engines.com/en/system/Firebase+Realtime+Database,N,,-,19.84,37,-,-,Google,2012.0,,N,Y,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+37,Relational,"Relational DBMS,Spatial DBMS,Time Series DBMS",Vertica,https://db-engines.com/en/system/Vertica,N,Y,-,19.7,38,-,-,Micro Focus,2005.0,2022.0,N,N,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0
+38,Relational,"Relational DBMS,Document store",Impala,https://db-engines.com/en/system/Impala,,,,17.92,39,,,Cloudera,2013.0,2022.0,Y,N,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0
+39,Relational,Relational DBMS,Netezza,https://db-engines.com/en/system/Netezza,,,,17.27,40,,,IBM,2000.0,,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+40,Document,"Document store,Spatial DBMS",CouchDB,https://db-engines.com/en/system/CouchDB,Y,,apache/couchdb,15.98,41,apache,couchdb,Apache Software Foundation,2005.0,2022.0,Y,N,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0
+41,Relational,Relational DBMS,Presto,https://db-engines.com/en/system/Presto,Y,N_Facebook开源,prestodb/presto,15.15,42,prestodb,presto,Facebook; Presto Foundation,2013.0,,Y,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+42,Relational,Relational DBMS,dBASE,https://db-engines.com/en/system/dBASE,,,,14.25,43,,,Asthon Tate,1979.0,2019.0,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+43,Relational,"Relational DBMS,Time Series DBMS",ClickHouse,https://db-engines.com/en/system/ClickHouse,Y,Y_新成立,ClickHouse/ClickHouse,13.88,44,ClickHouse,ClickHouse,Clickhouse Inc.,2016.0,2022.0,Y,N,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0
+44,Relational,"Relational DBMS,Document store",Amazon Aurora,https://db-engines.com/en/system/Amazon+Aurora,,,,12.66,45,,,Amazon,2015.0,,N,Y,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0
+45,Relational,"Relational DBMS,Document store,Spatial DBMS",Greenplum,https://db-engines.com/en/system/Greenplum,Y,Y,greenplum-db/gpdb,12.29,46,greenplum-db,gpdb,Pivotal Software Inc.,2005.0,2020.0,Y,N,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0
+46,Document,Document store,Google Cloud Firestore,https://db-engines.com/en/system/Google+Cloud+Firestore,Y,,googleapis/python-firestore,11.09,47,googleapis,python-firestore,Google,2017.0,,N,Y,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+47,Search engine,Search engine,OpenSearch,https://db-engines.com/en/system/OpenSearch,,,,10.3,48,,,Amazon Web Services,2021.0,2022.0,Y,N,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+48,Document,"Document store,Native XML DBMS,RDF store,Search engine",MarkLogic,https://db-engines.com/en/system/MarkLogic,Y,,marklogic/marklogic-data-hub,9.75,49,marklogic,marklogic-data-hub,MarkLogic Corp.,2001.0,2017.0,N,N,0,1,0,0,0,0,1,0,0,1,0,1,0,0,0
+49,Key-value,"Key-value store,Document store",Hazelcast,https://db-engines.com/en/system/Hazelcast,Y,,hazelcast/hazelcast,9.6,50,hazelcast,hazelcast,Hazelcast,2008.0,2022.0,Y,N,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0
+50,Relational,"Relational DBMS,Spatial DBMS",H2,https://db-engines.com/en/system/H2,Y,N,h2database/h2database,9.06,51,h2database,h2database,Thomas Mueller,2005.0,2022.0,Y,N,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0
+51,Document,Document store,Realm,https://db-engines.com/en/system/Realm,Y,,realm/realm-cocoa,9.03,52,realm,realm-cocoa,"Realm, acquired by MongoDB in May 2019",2014.0,,Y,N,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+52,Key-value,Key-value store,etcd,https://db-engines.com/en/system/etcd,Y,,etcd-io/etcd,8.71,53,etcd-io,etcd,,,2019.0,Y,N,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+53,Wide column,"Wide column store,Document store,Graph DBMS,Spatial DBMS,Search engine",Datastax Enterprise,https://db-engines.com/en/system/Datastax+Enterprise,N,,-,8.68,54,-,-,DataStax,2011.0,2020.0,N,N,0,1,0,1,0,0,0,0,0,0,0,1,1,0,1
+54,Relational,Relational DBMS,Oracle Essbase,https://db-engines.com/en/system/Oracle+Essbase,,,,8.37,55,,,Oracle,1998.0,2020.0,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+55,Relational,Relational DBMS,CockroachDB,https://db-engines.com/en/system/CockroachDB,Y,Y,cockroachdb/cockroach,7.98,56,cockroachdb,cockroach,Cockroach Labs,2015.0,2021.0,Y,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+56,Search engine,Search engine,Algolia,https://db-engines.com/en/system/Algolia,N,,-,7.83,57,-,-,,2012.0,,N,Y,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+57,Relational,"Relational DBMS,Document store,Spatial DBMS,Time Series DBMS",SingleStore,https://db-engines.com/en/system/SingleStore,,,,7.81,58,,,SingleStore Inc.,2013.0,2021.0,N,N,0,1,0,0,0,0,0,0,0,0,1,0,1,1,0
+58,Time Series,"Time Series DBMS,Relational DBMS",Kdb+,https://db-engines.com/en/system/Kdb%2B,Y,,KxSystems/kdb,7.48,59,KxSystems,kdb,"Kx Systems, a division of First Derivatives plc",2000.0,2018.0,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0
+59,Relational,"Relational DBMS,Document store,Event Store,Spatial DBMS,Search engine,Time Series DBMS",Microsoft Azure Data Explorer,https://db-engines.com/en/system/Microsoft+Azure+Data+Explorer,,,,7.34,60,,,Microsoft,2019.0,,N,Y,0,1,1,0,0,0,0,0,0,0,1,1,1,1,0
+60,Search engine,Search engine,Microsoft Azure Search,https://db-engines.com/en/system/Microsoft+Azure+Search,N,,-,7.24,61,-,-,Microsoft,2015.0,,N,Y,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+61,Document,Document store,Google Cloud Datastore,https://db-engines.com/en/system/Google+Cloud+Datastore,,,,7.1,62,,,Google,2008.0,,N,Y,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+62,Document,"Document store,Key-value store,Spatial DBMS",Aerospike,https://db-engines.com/en/system/Aerospike,Y,,aerospike/aerospike-server,6.95,63,aerospike,aerospike-server,Aerospike,2012.0,2022.0,Y,N,0,1,0,0,1,0,0,0,0,0,0,0,1,0,0
+63,Search engine,Search engine,Sphinx,https://db-engines.com/en/system/Sphinx,Y,,sphinxsearch/sphinx,6.88,64,sphinxsearch,sphinx,Sphinx Technologies Inc.,2001.0,2021.0,Y,N,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+64,Time Series,Time Series DBMS,Graphite,https://db-engines.com/en/system/Graphite,Y,,graphite-project/graphite-web,6.8,65,graphite-project,graphite-web,Chris Davis,2006.0,,Y,N,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+65,Key-value,Key-value store,Ehcache,https://db-engines.com/en/system/Ehcache,Y,,ehcache/ehcache3,6.66,66,ehcache,ehcache3,"Terracotta Inc, owned by Software AG",2009.0,2022.0,Y,N,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+66,Time Series,Time Series DBMS,Prometheus,https://db-engines.com/en/system/Prometheus,Y,,prometheus/prometheus,6.28,67,prometheus,prometheus,,2015.0,,Y,N,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+67,Key-value,"Key-value store,Relational DBMS",Ignite,https://db-engines.com/en/system/Ignite,Y,,apache/ignite,6.14,68,apache,ignite,Apache Software Foundation,2015.0,,Y,N,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0
+68,Key-value,Key-value store,Riak KV,https://db-engines.com/en/system/Riak+KV,Y,,basho/riak_kv,6.09,69,basho,riak_kv,Basho Technologies,2009.0,2015.0,Y,N,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+69,Relational,Relational DBMS,Interbase,https://db-engines.com/en/system/Interbase,,,,6.04,70,,,Embarcadero,1984.0,2019.0,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+70,Wide column,Wide column store,Microsoft Azure Table Storage,https://db-engines.com/en/system/Microsoft+Azure+Table+Storage,N,,-,6.02,71,-,-,Microsoft,2012.0,,N,Y,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+71,Relational,Relational DBMS,Ingres,https://db-engines.com/en/system/Ingres,,,,5.93,72,,,Actian Corporation,1974.0,2017.0,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+72,Relational,Relational DBMS,HyperSQL,https://db-engines.com/en/system/HyperSQL,Y,N,ryenus/hsqldb,5.91,73,ryenus,hsqldb,,2001.0,2022.0,Y,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+73,Relational,Relational DBMS,SAP SQL Anywhere,https://db-engines.com/en/system/SAP+SQL+Anywhere,,,,5.88,74,,,SAP,1992.0,2015.0,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+74,Document,"Document store,Graph DBMS,Native XML DBMS,Relational DBMS,RDF store,Search engine,Spatial DBMS",Virtuoso,https://db-engines.com/en/system/Virtuoso,Y,,openlink/virtuoso-opensource,5.84,75,openlink,virtuoso-opensource,OpenLink Software,1998.0,2022.0,Y,N,0,1,0,1,0,0,1,0,0,1,1,1,1,0,0
+75,Document,"Document store,Graph DBMS,Key-value store,Search engine",ArangoDB,https://db-engines.com/en/system/ArangoDB,Y,,arangodb/arangodb,5.84,76,arangodb,arangodb,ArangoDB Inc.,2012.0,2022.0,Y,N,0,1,0,1,1,0,0,0,0,0,0,1,0,0,0
+76,Content,Content stores,Jackrabbit,https://db-engines.com/en/system/Jackrabbit,Y,,apache/jackrabbit,5.79,77,apache,jackrabbit,Apache Software Foundation,2006.0,,Y,N,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+77,Relational,Relational DBMS,Derby,https://db-engines.com/en/system/Derby,Y,N,apache/derby,5.66,78,apache,derby,Apache Software Foundation,1997.0,2022.0,Y,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+78,Time Series,"Time Series DBMS,Relational DBMS",TimescaleDB,https://db-engines.com/en/system/TimescaleDB,Y,,timescale/timescaledb,5.32,79,timescale,timescaledb,Timescale,2017.0,2022.0,Y,N,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0
+79,Key-value,"Key-value store,Wide column store",Google Cloud Bigtable,https://db-engines.com/en/system/Google+Cloud+Bigtable,N,,-,5.24,80,-,-,Google,2015.0,,N,Y,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1
+80,Document,"Document store,Graph DBMS,Key-value store",OrientDB,https://db-engines.com/en/system/OrientDB,Y,,orientechnologies/orientdb,5.04,81,orientechnologies,orientdb,OrientDB LTD; CallidusCloud; SAP,2010.0,2021.0,Y,N,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0
+81,Wide column,Wide column store,Accumulo,https://db-engines.com/en/system/Accumulo,Y,,apache/accumulo,4.98,82,apache,accumulo,,2008.0,2020.0,Y,N,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+82,Wide column,"Wide column store,Key-value store",ScyllaDB,https://db-engines.com/en/system/ScyllaDB,Y,,scylladb/scylla,4.95,83,scylladb,scylla,ScyllaDB,2015.0,2022.0,Y,N,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1
+83,Relational,Relational DBMS,SAP IQ,https://db-engines.com/en/system/SAP+IQ,,,,4.72,84,,,"SAP, formerly Sybase",1994.0,2019.0,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+84,Multivalue,Multivalue DBMS,Adabas,https://db-engines.com/en/system/Adabas,N,,-,4.63,85,-,-,Software AG,1971.0,,N,N,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+85,Key-value,Key-value store,RocksDB,https://db-engines.com/en/system/RocksDB,Y,,facebook/rocksdb,4.61,86,facebook,rocksdb,"Facebook, Inc.",2013.0,2022.0,Y,N,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+86,Document,"Document store,Graph DBMS,Spatial DBMS,Time Series DBMS",RavenDB,https://db-engines.com/en/system/RavenDB,Y,,ravendb/ravendb,4.55,87,ravendb,ravendb,Hibernating Rhinos,2010.0,2022.0,Y,N,0,1,0,1,0,0,0,0,0,0,0,0,1,1,0
+87,Relational,Relational DBMS,OpenEdge,https://db-engines.com/en/system/OpenEdge,,,,4.5,88,,,Progress Software Corporation,1984.0,2020.0,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+88,Document,"Document store,Key-value store,Relational DBMS",Oracle NoSQL,https://db-engines.com/en/system/Oracle+NoSQL,Y,N,oracle/nosql-go-sdk,4.42,89,oracle,nosql-go-sdk,Oracle,2011.0,2022.0,Y,N,0,1,0,0,1,0,0,0,0,0,1,0,0,0,0
+89,Multivalue,Multivalue DBMS,"UniData,UniVerse",https://db-engines.com/en/system/UniData%2CUniVerse,N,,-,4.28,90,-,-,Rocket Software,1985.0,,N,N,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+90,Relational,Relational DBMS,Google Cloud Spanner,https://db-engines.com/en/system/Google+Cloud+Spanner,,,,4.24,91,,,Google,2017.0,,N,Y,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+91,Document,Document store,IBM Cloudant,https://db-engines.com/en/system/IBM+Cloudant,,,,4.21,92,,,"IBM, Apache Software Foundation",2010.0,,N,Y,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+92,Relational,"Relational DBMS,Document store,Wide column store",YugabyteDB,https://db-engines.com/en/system/YugabyteDB,,,,4.15,93,,,Yugabyte Inc.,2017.0,2022.0,Y,N,0,1,0,0,0,0,0,0,0,0,1,0,0,0,1
+93,Relational,"Relational DBMS,Document store,Key-value store,Spatial DBMS,Search engine,Time Series DBMS,Wide column store",Trino,https://db-engines.com/en/system/Trino,Y,,trinodb/trino,3.98,94,trinodb,trino,Trino Software Foundation,2012.0,,Y,N,0,1,0,0,1,0,0,0,0,0,1,1,1,1,1
+94,Relational,"Relational DBMS,Document store",TiDB,https://db-engines.com/en/system/TiDB,Y,Y,pingcap/tidb,3.69,95,pingcap,tidb,"PingCAP, Inc.",2016.0,2022.0,Y,N,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0
+95,Relational,Relational DBMS,MaxDB,https://db-engines.com/en/system/MaxDB,,,,3.68,96,,,"SAP, acquired from Software AG (Adabas-D) in 1997",1984.0,2020.0,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+96,Key-value,Key-value store,LevelDB,https://db-engines.com/en/system/LevelDB,Y,,google/leveldb,3.68,97,google,leveldb,Google,2011.0,2021.0,Y,N,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+97,RDF,RDF store,Apache Jena - TDB,https://db-engines.com/en/system/Apache+Jena+-+TDB,Y,,apache/jena,3.63,98,apache,jena,Apache Software Foundation,2000.0,2022.0,Y,N,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+98,Document,"Document store,Spatial DBMS",RethinkDB,https://db-engines.com/en/system/RethinkDB,Y,,rethinkdb/rethinkdb,3.48,99,rethinkdb,rethinkdb,The Linux Foundation,2009.0,2020.0,Y,N,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0
+99,Document,Document store,PouchDB,https://db-engines.com/en/system/PouchDB,Y,,pouchdb/pouchdb,3.44,100,pouchdb,pouchdb,Apache Software Foundation,2012.0,2019.0,Y,N,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+100,Relational,Relational DBMS,Apache Phoenix,https://db-engines.com/en/system/Apache+Phoenix,Y,N,apache/phoenix,3.42,101,apache,phoenix,Apache Software Foundation,2014.0,2019.0,Y,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+101,Key-value,Key-value store,Infinispan,https://db-engines.com/en/system/Infinispan,Y,,infinispan/infinispan,3.42,102,infinispan,infinispan,,2009.0,2021.0,Y,N,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+102,Relational,Relational DBMS,EXASOL,https://db-engines.com/en/system/EXASOL,,,,3.37,103,,,Exasol,2000.0,,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+103,Document,"Document store,Relational DBMS",Apache Drill,https://db-engines.com/en/system/Apache+Drill,Y,N,apache/drill,3.33,104,apache,drill,Apache Software Foundation,2012.0,2022.0,Y,N,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0
+104,Relational,Relational DBMS,SAP Advantage Database Server,https://db-engines.com/en/system/SAP+Advantage+Database+Server,,,,3.3,105,,,"Sybase, SAP",1993.0,,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+105,Key-value,"Key-value store,Native XML DBMS",Oracle Berkeley DB,https://db-engines.com/en/system/Oracle+Berkeley+DB,Y,,berkeleydb/libdb,3.26,106,berkeleydb,libdb,Oracle,1994.0,2020.0,Y,N,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0
+106,Graph,"Graph DBMS,RDF store",Amazon Neptune,https://db-engines.com/en/system/Amazon+Neptune,N,,-,3.09,107,-,-,Amazon,2017.0,,N,Y,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0
+107,Relational,Relational DBMS,Percona Server for MySQL,https://db-engines.com/en/system/Percona+Server+for+MySQL,Y,N_forMySQL,percona/percona-server,3.02,108,percona,percona-server,Percona,2008.0,2022.0,Y,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+108,Graph,Graph DBMS,JanusGraph,https://db-engines.com/en/system/JanusGraph,Y,,JanusGraph/janusgraph,2.99,109,JanusGraph,janusgraph,"Linux Foundation; originally developed as,Titan,by Aurelius",2017.0,2022.0,Y,N,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+109,Navigational,Navigational DBMS,IMS,https://db-engines.com/en/system/IMS,N,,-,2.99,110,-,-,IBM,1966.0,2017.0,N,N,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+110,Key-value,"Key-value store,Object oriented DBMS,Relational DBMS,Document store",InterSystems Caché,https://db-engines.com/en/system/InterSystems+Cach%C3%A9,N,,-,2.94,111,-,-,InterSystems,1997.0,2020.0,N,N,0,1,0,0,1,0,0,0,1,0,1,0,0,0,0
+111,Document,Document store,CloudKit,https://db-engines.com/en/system/CloudKit,,,,2.87,112,,,,2016.0,,N,Y,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+112,Relational,"Relational DBMS,Document store",Citus,https://db-engines.com/en/system/Citus,Y,,citusdata/citus,2.87,113,citusdata,citus,,2010.0,2018.0,Y,N,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0
+113,Relational,"Relational DBMS,Document store,Spatial DBMS",EDB Postgres,https://db-engines.com/en/system/EDB+Postgres,,,,2.72,114,,,EnterpriseDB,2005.0,2021.0,N,N,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0
+114,Time Series,Time Series DBMS,RRDtool,https://db-engines.com/en/system/RRDtool,Y,,oetiker/rrdtool-1.x,2.69,115,oetiker,rrdtool-1.x,Tobias Oetiker,1999.0,2022.0,Y,N,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+115,Key-value,Key-value store,Oracle Coherence,https://db-engines.com/en/system/Oracle+Coherence,,,,2.69,116,,,Oracle,2007.0,2016.0,N,N,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+116,Key-value,Key-value store,Amazon SimpleDB,https://db-engines.com/en/system/Amazon+SimpleDB,,,,2.65,117,,,Amazon,2007.0,,N,Y,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+117,Relational,Relational DBMS,4D,https://db-engines.com/en/system/4D,,,,2.64,118,,,"4D, Inc",1984.0,2021.0,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+118,Time Series,Time Series DBMS,OpenTSDB,https://db-engines.com/en/system/OpenTSDB,Y,,OpenTSDB/opentsdb,2.62,119,OpenTSDB,opentsdb,currently maintained by Yahoo and other contributors,2011.0,,Y,N,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+119,Key-value,Key-value store,LMDB,https://db-engines.com/en/system/LMDB,Y,,LMDB/lmdb,2.6,120,LMDB,lmdb,Symas,2011.0,2021.0,Y,N,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+120,Search engine,Search engine,Amazon CloudSearch,https://db-engines.com/en/system/Amazon+CloudSearch,N,,-,2.54,121,-,-,Amazon,2012.0,,N,Y,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+121,Document,"Document store,Key-value store,Object oriented DBMS,Relational DBMS",InterSystems IRIS,https://db-engines.com/en/system/InterSystems+IRIS,N,,-,2.52,122,-,-,InterSystems,2018.0,2021.0,N,N,0,1,0,0,1,0,0,0,1,0,1,0,0,0,0
+122,Graph,"Graph DBMS,RDF store",GraphDB,https://db-engines.com/en/system/GraphDB,N,,-,2.46,123,-,-,Ontotext,2000.0,2021.0,N,N,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0
+123,Relational,"Relational DBMS,Time Series DBMS",Apache Druid,https://db-engines.com/en/system/Apache+Druid,Y,,apache/druid,2.39,124,apache,druid,Apache Software Foundation and contributors,2012.0,2022.0,Y,N,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0
+124,Spatial DBMS,"Spatial DBMS,Relational DBMS",SpatiaLite,https://db-engines.com/en/system/SpatiaLite,Y,,illarionov/SpatiaLite,2.37,125,illarionov,SpatiaLite,Alessandro Furieri,2008.0,2020.0,Y,N,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0
+125,Time Series,"Time Series DBMS,Relational DBMS",DolphinDB,https://db-engines.com/en/system/DolphinDB,,,,2.32,126,,,"DolphinDB, Inc",2018.0,2022.0,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0
+126,Key-value,"Key-value store,Relational DBMS",GridGain,https://db-engines.com/en/system/GridGain,,,,2.31,127,,,"GridGain Systems, Inc.",2007.0,,N,N,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0
+127,Key-value,Key-value store,Geode,https://db-engines.com/en/system/Geode,Y,,apache/geode,2.25,128,apache,geode,Originally developed by Gemstone. They outsourced the project to Apache in 2015 but still deliver a commercial version as Gemfire.,2002.0,2017.0,Y,N,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+128,Search engine,Search engine,Coveo,https://db-engines.com/en/system/Coveo,,,,2.25,129,,,Coveo,2012.0,,N,Y,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+129,Relational,Relational DBMS,IBM Db2 warehouse,https://db-engines.com/en/system/IBM+Db2+warehouse,,,,2.21,130,,,IBM,2014.0,,N,Y,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+130,Relational,"Relational DBMS,Document store,Spatial DBMS",MonetDB,https://db-engines.com/en/system/MonetDB,Y,,MonetDB/MonetDB,2.19,131,MonetDB,MonetDB,MonetDB BV,2004.0,2021.0,Y,N,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0
+131,Relational,Relational DBMS,Datomic,https://db-engines.com/en/system/Datomic,,,,2.18,132,,,Cognitect,2012.0,2022.0,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+132,Graph,Graph DBMS,TigerGraph,https://db-engines.com/en/system/TigerGraph,N,,-,2.17,133,-,-,,2017.0,,N,N,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+133,Relational,Relational DBMS,VoltDB,https://db-engines.com/en/system/VoltDB,Y,,VoltDB/voltdb,2.1,134,VoltDB,voltdb,VoltDB Inc.,2010.0,2022.0,Y,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+134,Relational,"Relational DBMS,Spatial DBMS",HEAVY.AI,https://db-engines.com/en/system/HEAVY.AI,,,,2.1,135,,,"HEAVY.AI, Inc.",2016.0,2022.0,Y,N,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0
+135,Document,Document store,Amazon DocumentDB,https://db-engines.com/en/system/Amazon+DocumentDB,,,,2.07,136,,,,2019.0,,N,Y,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+136,Relational,Relational DBMS,TimesTen,https://db-engines.com/en/system/TimesTen,,,,2.02,137,,,"Oracle, TimesTen Performance Software, HP",1998.0,,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+137,Object oriented,Object oriented DBMS,Db4o,https://db-engines.com/en/system/Db4o,Y,,iboxdb/db4o-gpl,2.01,138,iboxdb,db4o-gpl,,2001.0,,Y,N,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+138,Time Series,"Time Series DBMS,Relational DBMS",QuestDB,https://db-engines.com/en/system/QuestDB,Y,,questdb/questd,1.93,139,questdb,questd,QuestDB Limited,2014.0,,Y,N,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0
+139,Key-value,"Key-value store,Document store,Relational DBMS,Spatial DBMS",Tarantool,https://db-engines.com/en/system/Tarantool,Y,,tarantool/tarantool,1.92,140,tarantool,tarantool,VK,2008.0,2022.0,Y,N,0,1,0,0,1,0,0,0,0,0,1,0,1,0,0
+140,Object oriented,Object oriented DBMS,ObjectStore,https://db-engines.com/en/system/ObjectStore,N,,-,1.86,141,-,-,Ignite Technologies,1988.0,2014.0,N,N,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+141,Relational,Relational DBMS,Tibero,https://db-engines.com/en/system/Tibero,,,,1.85,142,,,TmaxSoft,2003.0,2015.0,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+142,Time Series,"Time Series DBMS,Key-value store,Relational DBMS",GridDB,https://db-engines.com/en/system/GridDB,Y,,griddb/griddb,1.8,143,griddb,griddb,Toshiba Corporation,2013.0,2022.0,Y,N,0,0,0,0,1,0,0,0,0,0,1,0,0,1,0
+143,Document,"Document store,Key-value store,Relational DBMS",FoundationDB,https://db-engines.com/en/system/FoundationDB,Y,,apple/foundationdb,1.78,144,apple,foundationdb,FoundationDB,2013.0,2020.0,Y,N,0,1,0,0,1,0,0,0,0,0,1,0,0,0,0
+144,Graph,"Graph DBMS,RDF store",Stardog,https://db-engines.com/en/system/Stardog,N,,-,1.76,145,-,-,Stardog-Union,2010.0,2020.0,N,N,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0
+145,Multivalue,Multivalue DBMS,jBASE,https://db-engines.com/en/system/jBASE,N,,-,1.75,146,-,-,Zumasys,1991.0,,N,N,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+146,Relational,Relational DBMS,Apache Kylin,https://db-engines.com/en/system/Apache+Kylin,Y,,apache/kylin,1.74,147,apache,kylin,"Apache Software Foundation, originally contributed from eBay Inc",2015.0,2020.0,Y,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+147,Graph,Graph DBMS,Dgraph,https://db-engines.com/en/system/Dgraph,Y,,dgraph-io/dgraph,1.71,148,dgraph-io,dgraph,"Dgraph Labs, Inc.",2016.0,,Y,N,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+148,Document,"Document store,Graph DBMS,Relational DBMS,Time Series DBMS",Fauna,https://db-engines.com/en/system/Fauna,N,,-,1.7,149,-,-,"Fauna, Inc.",2014.0,,N,Y,0,1,0,1,0,0,0,0,0,0,1,0,0,1,0
+149,Document,Document store,Mnesia,https://db-engines.com/en/system/Mnesia,Y,,beardedeagle/mnesiac,1.69,150,beardedeagle,mnesiac,,1999.0,2018.0,Y,N,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+150,Document,Document store,LiteDB,https://db-engines.com/en/system/LiteDB,Y,,mbdavid/LiteDB,1.69,151,mbdavid,LiteDB,Mauricio David,2014.0,,Y,N,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+151,Object oriented,"Object oriented DBMS,Time Series DBMS",ObjectBox,https://db-engines.com/en/system/ObjectBox,Y,,objectbox/objectbox-java,1.67,152,objectbox,objectbox-java,ObjectBox Limited,2017.0,,Y,N,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0
+152,Native XML,Native XML DBMS,BaseX,https://db-engines.com/en/system/BaseX,Y,,BaseXdb/basex,1.66,153,BaseXdb,basex,BaseX GmbH,2007.0,2022.0,Y,N,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+153,Object oriented,Object oriented DBMS,Actian NoSQL Database,https://db-engines.com/en/system/Actian+NoSQL+Database,N,,-,1.64,154,-,-,Actian,1988.0,2017.0,N,N,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+154,Time Series,"Time Series DBMS,Relational DBMS",TDengine,https://db-engines.com/en/system/TDengine,Y,,taosdata/TDengine,1.6,155,taosdata,TDengine,"TDEngine, previously Taos Data",2019.0,2022.0,Y,N,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0
+155,Relational,Relational DBMS,mSQL,https://db-engines.com/en/system/mSQL,,,,1.58,156,,,Hughes Technologies,1994.0,2021.0,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+156,Document,Document store,Datameer,https://db-engines.com/en/system/Datameer,,,,1.54,157,,,,2009.0,,N,N,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+157,Relational,Relational DBMS,Infobright,https://db-engines.com/en/system/Infobright,,,,1.52,158,,,Ignite Technologies Inc.;  formerly InfoBright Inc.,2005.0,,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+158,Relational,Relational DBMS,GBase,https://db-engines.com/en/system/GBase,,,,1.5,159,,,,,,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+159,Relational,Relational DBMS,Oracle Rdb,https://db-engines.com/en/system/Oracle+Rdb,,,,1.5,160,,,"Oracle, originally developed by Digital Equipment Corporation (DEC)",1984.0,2021.0,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+160,Relational,Relational DBMS,NonStop SQL,https://db-engines.com/en/system/NonStop+SQL,,,,1.5,161,,,"HP, originally by Tandem",1987.0,,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+161,Key-value,Key-value store,GT.M,https://db-engines.com/en/system/GT.M,,,,1.49,162,,,,1986.0,2021.0,N,N,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+162,Relational,Relational DBMS,DataEase,https://db-engines.com/en/system/DataEase,,,,1.48,163,,,,1981.0,,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+163,Relational,Relational DBMS,HFSQL,https://db-engines.com/en/system/HFSQL,,,,1.48,164,,,PC Soft,,,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+164,Relational,Relational DBMS,SQL.JS,https://db-engines.com/en/system/SQL.JS,,,,1.46,165,,,Alon Zakai,2012.0,,Y,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+165,Relational,Relational DBMS,SQLBase,https://db-engines.com/en/system/SQLBase,,,,1.45,166,,,,1985.0,,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+166,Document,"Document store,Graph DBMS,RDF store,Spatial DBMS",AllegroGraph,https://db-engines.com/en/system/AllegroGraph,N,,-,1.44,167,-,-,Franz Inc.,2004.0,2021.0,N,N,0,1,0,1,0,0,0,0,0,1,0,0,1,0,0
+167,Relational,Relational DBMS,Cubrid,https://db-engines.com/en/system/Cubrid,Y,,CUBRID/cubrid,1.44,168,CUBRID,cubrid,"CUBRID Corporation, CUBRID Foundation",2008.0,2021.0,Y,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+168,Relational,Relational DBMS,Empress,https://db-engines.com/en/system/Empress,,,,1.37,169,,,,1981.0,2010.0,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+169,Graph,Graph DBMS,Giraph,https://db-engines.com/en/system/Giraph,Y,,apache/giraph,1.37,170,apache,giraph,,2013.0,2020.0,Y,N,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+170,Relational,Relational DBMS,DuckDB,https://db-engines.com/en/system/DuckDB,,,,1.37,171,,,,2018.0,2020.0,Y,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+171,Multivalue,Multivalue DBMS,Model 204,https://db-engines.com/en/system/Model+204,N,,-,1.33,172,-,-,,1972.0,,N,N,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+172,Relational,Relational DBMS,Altibase,https://db-engines.com/en/system/Altibase,,,,1.32,173,,,Altibase,1999.0,2021.0,Y,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+173,Relational,Relational DBMS,1010data,https://db-engines.com/en/system/1010data,,,,1.31,174,,,,2000.0,,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+174,Key-value,Key-value store,ZODB,https://db-engines.com/en/system/ZODB,Y,,zopefoundation/ZODB,1.31,175,zopefoundation,ZODB,,2009.0,2020.0,Y,N,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+175,Relational,Relational DBMS,Apache HAWQ,https://db-engines.com/en/system/Apache+HAWQ,,,,1.3,176,,,Pivotal Software; Apache,2012.0,,Y,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+176,Document,"Document store,Object oriented DBMS,Graph DBMS,Search engine",GigaSpaces,https://db-engines.com/en/system/GigaSpaces,,,,1.3,177,,,Gigaspaces Technologies,2000.0,2020.0,Y,N,0,1,0,1,0,0,0,0,1,0,0,1,0,0,0
+177,Key-value,"Key-value store,Document store,Search engine",NCache,https://db-engines.com/en/system/NCache,Y,,Alachisoft/NCache,1.3,178,Alachisoft,NCache,Alachisoft,2005.0,2021.0,Y,N,0,1,0,0,1,0,0,0,0,0,0,1,0,0,0
+178,Object oriented,Object oriented DBMS,Perst,https://db-engines.com/en/system/Perst,Y,,The-Alchemist/perst,1.28,179,The-Alchemist,perst,,2003.0,,Y,N,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+179,Graph,"Graph DBMS,Key-value store",Graph Engine,https://db-engines.com/en/system/Graph+Engine,Y,,microsoft/GraphEngine,1.27,180,microsoft,GraphEngine,Microsoft,2010.0,,Y,N,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0
+180,Graph,Graph DBMS,NebulaGraph,https://db-engines.com/en/system/NebulaGraph,,,,1.26,181,,,Vesoft Inc.,2019.0,,Y,N,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+181,Document,"Document store,Wide column store",HPE Ezmeral Data Fabric,https://db-engines.com/en/system/HPE+Ezmeral+Data+Fabric,N,,-,1.26,182,-,-,"HPE, MapR Technologies, Inc",2009.0,,N,N,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1
+182,Time Series,Time Series DBMS,Amazon Timestream,https://db-engines.com/en/system/Amazon+Timestream,,,,1.22,183,,,,2018.0,,N,Y,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+183,Native XML,Native XML DBMS,Sedna,https://db-engines.com/en/system/Sedna,Y,,sedna/sedna,1.22,184,sedna,sedna,,2006.0,,Y,N,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+184,Graph,"Graph DBMS,Relational DBMS",TypeDB,https://db-engines.com/en/system/TypeDB,Y,,vaticle/typedb,1.21,185,vaticle,typedb,Vaticle (formerly Grakn Labs),2016.0,2022.0,Y,N,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0
+185,Graph,"Graph DBMS,RDF store",Blazegraph,https://db-engines.com/en/system/Blazegraph,Y,,blazegraph/database,1.21,186,blazegraph,database,Blazegraph,2006.0,2019.0,Y,N,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0
+186,Native XML,Native XML DBMS,eXist-db,https://db-engines.com/en/system/eXist-db,Y,,eXist-db/exist,1.19,187,eXist-db,exist,,2000.0,,Y,N,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+187,Relational,Relational DBMS,MatrixOne,https://db-engines.com/en/system/MatrixOne,,,,1.18,188,,,,2021.0,,Y,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+188,Relational,Relational DBMS,Actian Vector,https://db-engines.com/en/system/Actian+Vector,,,,1.16,189,,,,,2016.0,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+189,Relational,Relational DBMS,NuoDB,https://db-engines.com/en/system/NuoDB,,,,1.16,190,,,"NuoDB, Inc.",2013.0,,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+190,Relational,Relational DBMS,Splice Machine,https://db-engines.com/en/system/Splice+Machine,,,,1.15,191,,,Splice Machine,2014.0,2021.0,Y,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+191,Event,Event Store,EventStoreDB,https://db-engines.com/en/system/EventStoreDB,Y,,EventStore/EventStore,1.13,192,EventStore,EventStore,Event Store Limited,2012.0,2021.0,Y,N,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+192,Relational,"Relational DBMS,Document store,Wide column store",OceanBase,https://db-engines.com/en/system/OceanBase,,,,1.13,193,,,OceanBase,2011.0,2022.0,Y,N,0,1,0,0,0,0,0,0,0,0,1,0,0,0,1
+193,Navigational,Navigational DBMS,IDMS,https://db-engines.com/en/system/IDMS,N,,-,1.11,194,-,-,,1973.0,,N,N,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+194,Relational,Relational DBMS,DBISAM,https://db-engines.com/en/system/DBISAM,,,,1.11,195,,,"Elevate Software, Inc.",1998.0,,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+195,RDF,RDF store,RDF4J,https://db-engines.com/en/system/RDF4J,Y,,eclipse/rdf4j,1.11,196,eclipse,rdf4j,"Since 2016 officially forked into an Eclipse project, former developer was Aduna Software.",2004.0,,Y,N,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+196,Multivalue,Multivalue DBMS,D3,https://db-engines.com/en/system/D3,N,,-,1.1,197,-,-,,1999.0,,N,N,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+197,Relational,"Relational DBMS,Search engine,Document store,Time Series DBMS",CrateDB,https://db-engines.com/en/system/CrateDB,,,,1.09,198,,,Crate,2013.0,,Y,N,0,1,0,0,0,0,0,0,0,0,1,1,0,1,0
+198,Relational,"Relational DBMS,Document store,Spatial DBMS",openGauss,https://db-engines.com/en/system/openGauss,,,,1.07,199,,,Huawei and openGauss community,2019.0,2022.0,Y,N,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0
+199,Document,Document store,BigchainDB,https://db-engines.com/en/system/BigchainDB,,,,1.07,200,,,,2016.0,,Y,N,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+200,Spatial DBMS,Spatial DBMS,GeoMesa,https://db-engines.com/en/system/GeoMesa,Y,,geomesa/geomesa-geoserver,1.06,201,geomesa,geomesa-geoserver,CCRi and others,2014.0,2022.0,Y,N,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+201,Search engine,Search engine,Meilisearch,https://db-engines.com/en/system/Meilisearch,,,,1.05,202,,,,2020.0,,Y,N,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+202,Relational,Relational DBMS,solidDB,https://db-engines.com/en/system/solidDB,,,,1.05,203,,,"Unicom Systems, Inc; IBM",1992.0,,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+203,Search engine,Search engine,Xapian,https://db-engines.com/en/system/Xapian,,,,1.04,204,,,,1986.0,2022.0,Y,N,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+204,Object oriented,Object oriented DBMS,Matisse,https://db-engines.com/en/system/Matisse,N,,-,1.03,205,-,-,Matisse Software Inc.,1986.0,,N,N,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+205,Key-value,Key-value store,Hibari,https://db-engines.com/en/system/Hibari,,,,0.98,206,,,,2005.0,,Y,N,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+206,Time Series,Time Series DBMS,VictoriaMetrics,https://db-engines.com/en/system/VictoriaMetrics,Y,,VictoriaMetrics/VictoriaMetrics,0.98,207,VictoriaMetrics,VictoriaMetrics,VictoriaMetrics,2018.0,2022.0,Y,N,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+207,Relational,Relational DBMS,FrontBase,https://db-engines.com/en/system/FrontBase,,,,0.97,208,,,,1993.0,2015.0,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+208,Relational,Relational DBMS,OpenBase,https://db-engines.com/en/system/OpenBase,,,,0.97,209,,,,1991.0,,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+209,Relational,"Relational DBMS,Time Series DBMS",eXtremeDB,https://db-engines.com/en/system/eXtremeDB,,,,0.96,210,,,McObject,2001.0,2021.0,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0
+210,Relational,Relational DBMS,R:BASE,https://db-engines.com/en/system/R%3ABASE,,,,0.95,211,,,,1981.0,,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+211,Relational,"Relational DBMS,Document store",Dolt,https://db-engines.com/en/system/Dolt,,,,0.93,212,,,DoltHub Inc,2018.0,,Y,N,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0
+212,Relational,Relational DBMS,Kognitio,https://db-engines.com/en/system/Kognitio,,,,0.93,213,,,,1992.0,,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+213,Time Series,Time Series DBMS,KairosDB,https://db-engines.com/en/system/KairosDB,Y,,kairosdb/kairosdb,0.92,214,kairosdb,kairosdb,,2013.0,2018.0,Y,N,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+214,Graph,Graph DBMS,Memgraph,https://db-engines.com/en/system/Memgraph,,,,0.91,215,,,Memgraph Ltd,2017.0,,N,N,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+215,Multivalue,Multivalue DBMS,SciDB,https://db-engines.com/en/system/SciDB,Y,,cran/scidb,0.9,216,cran,scidb,Paradigm4,2008.0,,Y,N,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+216,Relational,"Relational DBMS,Document store,Spatial DBMS",Postgres-XL,https://db-engines.com/en/system/Postgres-XL,,,,0.87,217,,,,2014.0,2018.0,Y,N,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0
+217,Key-value,Key-value store,WebSphere eXtreme Scale,https://db-engines.com/en/system/WebSphere+eXtreme+Scale,,,,0.86,218,,,,2009.0,,N,N,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+218,Relational,Relational DBMS,SQream DB,https://db-engines.com/en/system/SQream+DB,,,,0.86,219,,,SQream Technologies,2014.0,2021.0,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+219,Document,"Document store,Relational DBMS,Search engine",Rockset,https://db-engines.com/en/system/Rockset,,,,0.86,220,,,Rockset,2019.0,,N,Y,0,1,0,0,0,0,0,0,0,0,1,1,0,0,0
+220,Object oriented,Object oriented DBMS,ObjectDB,https://db-engines.com/en/system/ObjectDB,N,,-,0.86,221,-,-,,2010.0,2022.0,N,N,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+221,Key-value,Key-value store,BoltDB,https://db-engines.com/en/system/BoltDB,,,,0.85,222,,,,2013.0,,Y,N,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+222,Key-value,Key-value store,MapDB,https://db-engines.com/en/system/MapDB,,,,0.84,223,,,,2002.0,,Y,N,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+223,Time Series,Time Series DBMS,M3DB,https://db-engines.com/en/system/M3DB,Y,,m3db/m3,0.83,224,m3db,m3,,,,Y,N,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+224,Relational,Relational DBMS,Yellowbrick,https://db-engines.com/en/system/Yellowbrick,,,,0.82,225,,,Yellowbrick Data,,,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+225,Relational,Relational DBMS,NexusDB,https://db-engines.com/en/system/NexusDB,,,,0.82,226,,,,2003.0,2021.0,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+226,RDF,RDF store,4store,https://db-engines.com/en/system/4store,Y,,4store/4store,0.81,227,4store,4store,,2009.0,,Y,N,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+227,Relational,"Relational DBMS,Document store,Spatial DBMS",TDSQL for MySQL,https://db-engines.com/en/system/TDSQL+for+MySQL,,,,0.8,228,,,Tencent,2013.0,,N,Y,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0
+228,Object oriented,Object oriented DBMS,Objectivity/DB,https://db-engines.com/en/system/Objectivity%2FDB,N,,-,0.78,229,-,-,,1990.0,,N,N,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+229,Relational,Relational DBMS,ScaleArc,https://db-engines.com/en/system/ScaleArc,,,,0.78,230,,,"DevFactory, formerly Ignite",2009.0,,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+230,Wide column,Wide column store,Amazon Keyspaces,https://db-engines.com/en/system/Amazon+Keyspaces,,,,0.77,231,,,Amazon,2019.0,,N,Y,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+231,Relational,Relational DBMS,Tajo,https://db-engines.com/en/system/Tajo,,,,0.77,232,,,Apache Software Foundation,2012.0,,Y,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+232,Document,"Document store,Relational DBMS",AlaSQL,https://db-engines.com/en/system/AlaSQL,,,,0.77,233,,,Andrey Gershun & Mathias R. Wulff,2014.0,,Y,N,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0
+233,Multivalue,Multivalue DBMS,Northgate Reality,https://db-engines.com/en/system/Northgate+Reality,N,,-,0.76,234,-,-,,1973.0,,N,N,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+234,Relational,Relational DBMS,VistaDB,https://db-engines.com/en/system/VistaDB,,,,0.75,235,,,Gibraltar Software,2008.0,,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+235,Time Series,Time Series DBMS,Apache IoTDB,https://db-engines.com/en/system/Apache+IoTDB,Y,,apache/iotdb,0.73,236,apache,iotdb,Apache Software Foundation,2018.0,,Y,N,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+236,Relational,Relational DBMS,Trafodion,https://db-engines.com/en/system/Trafodion,,,,0.72,237,,,"Apache Software Foundation, originally developed by HP",2014.0,2019.0,Y,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+237,Relational,Relational DBMS,Datacom/DB,https://db-engines.com/en/system/Datacom%2FDB,,,,0.72,238,,,Broadcom (formerly CA),1972.0,,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+238,Document,Document store,Percona Server for MongoDB,https://db-engines.com/en/system/Percona+Server+for+MongoDB,,,,0.7,239,,,Percona,2015.0,2017.0,Y,N,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+239,Multivalue,Multivalue DBMS,OpenInsight,https://db-engines.com/en/system/OpenInsight,N,,-,0.7,240,-,-,,1992.0,2018.0,N,N,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+240,Object oriented,Object oriented DBMS,GemStone/S,https://db-engines.com/en/system/GemStone%2FS,N,,-,0.66,241,-,-,,1986.0,,N,N,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+241,Object oriented,Object oriented DBMS,Starcounter,https://db-engines.com/en/system/Starcounter,,,,0.65,242,,,,2006.0,2018.0,N,N,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+242,Relational,Relational DBMS,Apache Doris,https://db-engines.com/en/system/Apache+Doris,,,,0.64,243,,,"Apache Software Foundation, originally contributed from Baidu",2017.0,2021.0,Y,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+243,Document,Document store,LokiJS,https://db-engines.com/en/system/LokiJS,,,,0.64,244,,,,2014.0,,Y,N,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+244,Relational,Relational DBMS,Apache Pinot,https://db-engines.com/en/system/Apache+Pinot,,,,0.62,245,,,Apache Software Foundation and contributors,2015.0,2022.0,Y,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+245,Search engine,Search engine,Milvus,https://db-engines.com/en/system/Milvus,Y,,milvus-io/milvus,0.62,246,milvus-io,milvus,,2019.0,2022.0,Y,N,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+246,Key-value,Key-value store,Project Voldemort,https://db-engines.com/en/system/Project+Voldemort,,,,0.62,247,,,,2009.0,2017.0,Y,N,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+247,Object oriented,Object oriented DBMS,atoti,https://db-engines.com/en/system/atoti,,,,0.6,248,,,ActiveViam,,,N,N,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+248,Document,"Document store,Relational DBMS",Sequoiadb,https://db-engines.com/en/system/Sequoiadb,,,,0.6,249,,,Sequoiadb Ltd.,2013.0,,Y,N,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0
+249,Graph,Graph DBMS,InfiniteGraph,https://db-engines.com/en/system/InfiniteGraph,,,,0.6,250,,,,2010.0,,N,N,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+250,Document,Document store,HarperDB,https://db-engines.com/en/system/HarperDB,,,,0.59,251,,,HarperDB,2017.0,2021.0,N,N,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+251,Key-value,Key-value store,Tokyo Tyrant,https://db-engines.com/en/system/Tokyo+Tyrant,,,,0.59,252,,,,2007.0,,Y,N,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+252,Search engine,Search engine,SearchBlox,https://db-engines.com/en/system/SearchBlox,,,,0.58,253,,,,2003.0,,N,N,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+253,Content,Content stores,ModeShape,https://db-engines.com/en/system/ModeShape,Y,,ModeShape/modeshape,0.58,254,ModeShape,modeshape,,2010.0,,Y,N,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+254,Relational,"Relational DBMS,Document store,Spatial DBMS",Kingbase,https://db-engines.com/en/system/Kingbase,,,,0.57,255,,,BeiJing KINGBASE Information technologies inc.,1999.0,2021.0,N,N,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0
+255,Multivalue,Multivalue DBMS,Rasdaman,https://db-engines.com/en/system/Rasdaman,Y,,dioptre/rasdaman,0.57,256,dioptre,rasdaman,,1998.0,2019.0,Y,N,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+256,Wide column,"Wide column store,Search engine",Elassandra,https://db-engines.com/en/system/Elassandra,Y,,strapdata/elassandra,0.57,257,strapdata,elassandra,,,,Y,N,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1
+257,Key-value,Key-value store,Scalaris,https://db-engines.com/en/system/Scalaris,,,,0.57,258,,,,2010.0,,Y,N,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+258,Key-value,Key-value store,KeyDB,https://db-engines.com/en/system/KeyDB,,,,0.56,259,,,EQ Alpha Technology Ltd.,2019.0,,Y,N,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+259,RDF,RDF store,Strabon,https://db-engines.com/en/system/Strabon,,,,0.53,260,,,,2011.0,,Y,N,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+260,Document,"Document store,Relational DBMS",Yandex Database (YDB),https://db-engines.com/en/system/Yandex+Database+%28YDB%29,,,,0.53,261,,,Yandex,2019.0,,Y,N,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0
+261,Relational,Relational DBMS,Alibaba Cloud MaxCompute,https://db-engines.com/en/system/Alibaba+Cloud+MaxCompute,,,,0.5,262,,,Alibaba,2016.0,,N,Y,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+262,Relational,Relational DBMS,Comdb2,https://db-engines.com/en/system/Comdb2,,,,0.49,263,,,Bloomberg Finance L.P.,2004.0,,Y,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+263,Graph,Graph DBMS,HugeGraph,https://db-engines.com/en/system/HugeGraph,,,,0.48,264,,,Baidu,2018.0,,Y,N,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+264,Relational,Relational DBMS,TransLattice,https://db-engines.com/en/system/TransLattice,,,,0.48,265,,,,2007.0,,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+265,Key-value,Key-value store,Cloudflare Workers KV,https://db-engines.com/en/system/Cloudflare+Workers+KV,,,,0.48,266,,,Cloudflare,2018.0,,N,Y,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+266,Relational,Relational DBMS,Kyligence Enterprise,https://db-engines.com/en/system/Kyligence+Enterprise,,,,0.46,267,,,"Kyligence, Inc.",2016.0,,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+267,Relational,"Relational DBMS,Time Series DBMS",Raima Database Manager,https://db-engines.com/en/system/Raima+Database+Manager,,,,0.45,268,,,Raima Inc.,1984.0,2021.0,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0
+268,Relational,Relational DBMS,Brytlyt,https://db-engines.com/en/system/Brytlyt,,,,0.45,269,,,Brytlyt,2016.0,2016.0,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+269,Graph,Graph DBMS,FlockDB,https://db-engines.com/en/system/FlockDB,,,,0.44,270,,,Twitter,2010.0,2012.0,Y,N,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+270,Relational,"Relational DBMS,Document store",Alibaba Cloud AnalyticDB for MySQL,https://db-engines.com/en/system/Alibaba+Cloud+AnalyticDB+for+MySQL,,,,0.44,271,,,Alibaba,,,N,Y,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0
+271,Relational,Relational DBMS,Kinetica,https://db-engines.com/en/system/Kinetica,,,,0.44,272,,,Kinetica,2012.0,2021.0,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+272,Search engine,Search engine,Weaviate,https://db-engines.com/en/system/Weaviate,,,,0.44,273,,,SeMI Technologies B.V.,2017.0,2021.0,Y,N,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+273,Relational,Relational DBMS,PipelineDB,https://db-engines.com/en/system/PipelineDB,,,,0.43,274,,,,2015.0,,Y,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+274,Search engine,Search engine,Alibaba Cloud Log Service,https://db-engines.com/en/system/Alibaba+Cloud+Log+Service,,,,0.42,275,,,AlibabaCloud Inc.,2016.0,,N,Y,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+275,Object oriented,Object oriented DBMS,Jade,https://db-engines.com/en/system/Jade,N,,-,0.42,276,-,-,,1996.0,,N,N,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+276,Relational,Relational DBMS,Mimer SQL,https://db-engines.com/en/system/Mimer+SQL,,,,0.41,277,,,,1977.0,2022.0,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+277,Graph,Graph DBMS,Fluree,https://db-engines.com/en/system/Fluree,,,,0.41,278,,,"Fluree, PBC",2018.0,,Y,N,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+278,RDF,RDF store,Redland,https://db-engines.com/en/system/Redland,,,,0.41,279,,,,2000.0,,Y,N,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+279,Relational,Relational DBMS,ITTIA,https://db-engines.com/en/system/ITTIA,,,,0.41,280,,,,2000.0,,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+280,Object oriented,Object oriented DBMS,Actian FastObjects,https://db-engines.com/en/system/Actian+FastObjects,,,,0.41,281,,,Actian,,,N,N,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+281,Time Series,Time Series DBMS,Axibase,https://db-engines.com/en/system/Axibase,,,,0.4,282,,,Axibase Corporation,2013.0,1558.0,N,N,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+282,Graph,Graph DBMS,TinkerGraph,https://db-engines.com/en/system/TinkerGraph,,,,0.4,283,,,,2009.0,,Y,N,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+283,Document,Document store,EJDB,https://db-engines.com/en/system/EJDB,,,,0.39,284,,,Softmotions,2012.0,,Y,N,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+284,Multivalue,Multivalue DBMS,OpenQM,https://db-engines.com/en/system/OpenQM,Y,,gregjurman/openqm,0.39,285,gregjurman,openqm,Martin Phillips,1993.0,,Y,N,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+285,Relational,Relational DBMS,Valentina Server,https://db-engines.com/en/system/Valentina+Server,,,,0.38,286,,,Paradigma Software,1999.0,,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+286,Time Series,Time Series DBMS,Riak TS,https://db-engines.com/en/system/Riak+TS,Y,,basho-labs/Riak-TS-JDBC-Driver,0.37,287,basho-labs,Riak-TS-JDBC-Driver,Basho Technologies,2015.0,,Y,N,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+287,Relational,Relational DBMS,Lovefield,https://db-engines.com/en/system/Lovefield,,,,0.37,288,,,Google,2014.0,2017.0,Y,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+288,RDF,RDF store,RedStore,https://db-engines.com/en/system/RedStore,,,,0.36,289,,,,2009.0,,Y,N,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+289,RDF,RDF store,CubicWeb,https://db-engines.com/en/system/CubicWeb,,,,0.33,290,,,,2001.0,2021.0,Y,N,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+290,Relational,Relational DBMS,ElevateDB,https://db-engines.com/en/system/ElevateDB,,,,0.33,291,,,"Elevate Software, Inc.",2006.0,,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+291,Wide column,Wide column store,Alibaba Cloud Table Store,https://db-engines.com/en/system/Alibaba+Cloud+Table+Store,,,,0.33,292,,,Alibaba,2016.0,,N,Y,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+292,Graph,Graph DBMS,GraphBase,https://db-engines.com/en/system/GraphBase,,,,0.33,293,,,,,,N,N,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+293,Search engine,"Search engine,Time Series DBMS",Manticore Search,https://db-engines.com/en/system/Manticore+Search,,,,0.32,294,,,Manticore Software,2017.0,2021.0,Y,N,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0
+294,Relational,Relational DBMS,Alibaba Cloud ApsaraDB for PolarDB,https://db-engines.com/en/system/Alibaba+Cloud+ApsaraDB+for+PolarDB,,,,0.31,295,,,Alibaba,,,N,Y,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+295,Graph,"Graph DBMS,RDF store",AnzoGraph DB,https://db-engines.com/en/system/AnzoGraph+DB,,,,0.31,296,,,Cambridge Semantics,2018.0,2021.0,N,N,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0
+296,Graph,"Graph DBMS,Document store,RDF store",TerminusDB,https://db-engines.com/en/system/TerminusDB,,,,0.31,297,,,DataChemist Ltd.,2018.0,2022.0,Y,N,0,1,0,1,0,0,0,0,0,1,0,0,0,0,0
+297,Event,"Event Store,Time Series DBMS",IBM Db2 Event Store,https://db-engines.com/en/system/IBM+Db2+Event+Store,N,,-,0.31,298,-,-,IBM,2017.0,,N,N,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0
+298,Event,Event Store,NEventStore,https://db-engines.com/en/system/NEventStore,Y,,NEventStore/NEventStore,0.3,299,NEventStore,NEventStore,,2011.0,,Y,N,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+299,Relational,Relational DBMS,Alibaba Cloud AnalyticDB for PostgreSQL,https://db-engines.com/en/system/Alibaba+Cloud+AnalyticDB+for+PostgreSQL,,,,0.3,300,,,Alibaba / Pivotal Software Inc. / PostgreSQL Global Development Group,2016.0,,N,Y,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+300,Graph,Graph DBMS,HyperGraphDB,https://db-engines.com/en/system/HyperGraphDB,,,,0.3,301,,,,2007.0,,Y,N,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+301,Relational,Relational DBMS,XtremeData,https://db-engines.com/en/system/XtremeData,,,,0.3,302,,,,,,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+302,Relational,"Relational DBMS,Time Series DBMS",GeoSpock,https://db-engines.com/en/system/GeoSpock,,,,0.3,303,,,GeoSpock,,2019.0,N,Y,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0
+303,Relational,Relational DBMS,Actian PSQL,https://db-engines.com/en/system/Actian+PSQL,,,,0.29,304,,,,1982.0,2020.0,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+304,Document,Document store,Acebase,https://db-engines.com/en/system/Acebase,,,,0.28,305,,,,2018.0,,Y,N,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+305,Search engine,Search engine,Qdrant,https://db-engines.com/en/system/Qdrant,,,,0.28,306,,,Qdrant,2021.0,,Y,N,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+306,Relational,Relational DBMS,Tibco ComputeDB,https://db-engines.com/en/system/Tibco+ComputeDB,,,,0.28,307,,,Tibco,2015.0,,Y,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+307,Document,"Document store,Graph DBMS",SurrealDB,https://db-engines.com/en/system/SurrealDB,,,,0.26,308,,,SurrealDB Ltd,2022.0,,Y,N,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0
+308,Key-value,"Key-value store,Relational DBMS",LeanXcale,https://db-engines.com/en/system/LeanXcale,,,,0.26,309,,,LeanXcale,2015.0,,N,N,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0
+309,Time Series,Time Series DBMS,Heroic,https://db-engines.com/en/system/Heroic,,,,0.26,310,,,Spotify,2014.0,,Y,N,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+310,Key-value,Key-value store,Speedb,https://db-engines.com/en/system/Speedb,,,,0.26,311,,,Speedb,2020.0,,N,N,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+311,Key-value,Key-value store,Elliptics,https://db-engines.com/en/system/Elliptics,,,,0.25,312,,,,2009.0,,Y,N,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+312,RDF,RDF store,Mulgara,https://db-engines.com/en/system/Mulgara,,,,0.25,313,,,,2006.0,2012.0,Y,N,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+313,Relational,Relational DBMS,Transbase,https://db-engines.com/en/system/Transbase,,,,0.25,314,,,Transaction Software GmbH,1987.0,2020.0,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+314,Graph,"Graph DBMS,RDF store",RDFox,https://db-engines.com/en/system/RDFox,,,,0.25,315,,,,2017.0,2021.0,N,N,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0
+315,Time Series,Time Series DBMS,SiteWhere,https://db-engines.com/en/system/SiteWhere,,,,0.24,316,,,SiteWhere,2010.0,,Y,N,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+316,Relational,Relational DBMS,Transwarp KunDB,https://db-engines.com/en/system/Transwarp+KunDB,,,,0.23,317,,,Transwarp,,,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+317,Key-value,"Key-value store,Relational DBMS",Immudb,https://db-engines.com/en/system/Immudb,,,,0.22,318,,,Codenotary,2020.0,2022.0,Y,N,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0
+318,Time Series,Time Series DBMS,Hawkular Metrics,https://db-engines.com/en/system/Hawkular+Metrics,,,,0.21,319,,,Community supported by Red Hat,2014.0,,Y,N,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+319,Relational,Relational DBMS,FeatureBase,https://db-engines.com/en/system/FeatureBase,,,,0.2,320,,,Molecula and Pilosa Open Source Contributors,2017.0,2022.0,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+320,Search engine,Search engine,Typesense,https://db-engines.com/en/system/Typesense,,,,0.2,321,,,,2015.0,,Y,N,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+321,Document,"Document store,Graph DBMS,Time Series DBMS,Spatial DBMS",Bangdb,https://db-engines.com/en/system/Bangdb,,,,0.2,322,,,"Sachin Sinha, BangDB",2012.0,2021.0,Y,N,0,1,0,1,0,0,0,0,0,0,0,0,1,1,0
+322,Document,"Document store,Graph DBMS,Key-value store,Time Series DBMS",ArcadeDB,https://db-engines.com/en/system/ArcadeDB,,,,0.2,323,,,Arcade Data,2021.0,2021.0,Y,N,0,1,0,1,1,0,0,0,0,0,0,0,0,1,0
+323,Time Series,Time Series DBMS,Quasardb,https://db-engines.com/en/system/Quasardb,,,,0.2,324,,,quasardb,2009.0,2022.0,N,N,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+324,Key-value,Key-value store,Kyoto Tycoon,https://db-engines.com/en/system/Kyoto+Tycoon,,,,0.19,325,,,,2009.0,,Y,N,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+325,Relational,Relational DBMS,EsgynDB,https://db-engines.com/en/system/EsgynDB,,,,0.19,326,,,Esgyn,2015.0,,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+326,Object oriented,Object oriented DBMS,Eloquera,https://db-engines.com/en/system/Eloquera,,,,0.19,327,,,,2008.0,2014.0,N,N,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+327,Time Series,Time Series DBMS,Machbase,https://db-engines.com/en/system/Machbase,,,,0.19,327,,,Machbase,2013.0,2021.0,N,N,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+328,Document,"Document store,Object oriented DBMS",OrigoDB,https://db-engines.com/en/system/OrigoDB,,,,0.19,327,,,Robert Friberg et al,2009.0,,Y,N,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0
+329,Document,Document store,RaptorDB,https://db-engines.com/en/system/RaptorDB,,,,0.19,327,,,,,,Y,N,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+330,Document,Document store,WhiteDB,https://db-engines.com/en/system/WhiteDB,,,,0.19,327,,,,2008.0,,Y,N,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+331,Key-value,Key-value store,LedisDB,https://db-engines.com/en/system/LedisDB,,,,0.19,332,,,,2014.0,,Y,N,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+332,Key-value,"Key-value store,Relational DBMS",Faircom DB,https://db-engines.com/en/system/Faircom+DB,,,,0.18,333,,,FairCom Corporation,1979.0,2020.0,N,N,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0
+333,Graph,Graph DBMS,Sparksee,https://db-engines.com/en/system/Sparksee,,,,0.18,334,,,,2008.0,2021.0,N,N,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+334,Spatial DBMS,"Spatial DBMS,Relational DBMS",H2GIS,https://db-engines.com/en/system/H2GIS,Y,,orbisgis/h2gis,0.18,335,orbisgis,h2gis,CNRS,2013.0,,Y,N,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0
+335,Relational,Relational DBMS,ActorDB,https://db-engines.com/en/system/ActorDB,,,,0.18,336,,,,2014.0,,Y,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+336,Relational,Relational DBMS,BigObject,https://db-engines.com/en/system/BigObject,,,,0.18,336,,,"BigObject, Inc.",2015.0,,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+337,Time Series,Time Series DBMS,Blueflood,https://db-engines.com/en/system/Blueflood,Y,,rackerlabs/blueflood,0.18,336,rackerlabs,blueflood,Rackspace,2013.0,,Y,N,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+338,RDF,RDF store,BrightstarDB,https://db-engines.com/en/system/BrightstarDB,,,,0.18,336,,,,2012.0,,Y,N,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+339,Search engine,Search engine,Exorbyte,https://db-engines.com/en/system/Exorbyte,,,,0.18,336,,,,2000.0,,N,N,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+340,Key-value,Key-value store,STSdb,https://db-engines.com/en/system/STSdb,,,,0.18,336,,,STS Soft SC,2011.0,2015.0,Y,N,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+341,Key-value,Key-value store,TerarkDB,https://db-engines.com/en/system/TerarkDB,,,,0.18,336,,,Terark,2016.0,,N,N,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+342,Key-value,Key-value store,TomP2P,https://db-engines.com/en/system/TomP2P,,,,0.18,336,,,,2004.0,,Y,N,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+343,Graph,"Graph DBMS,Object oriented DBMS",VelocityDB,https://db-engines.com/en/system/VelocityDB,,,,0.18,336,,,VelocityDB Inc,2011.0,,N,N,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0
+344,Document,Document store,XTDB,https://db-engines.com/en/system/XTDB,,,,0.18,336,,,Juxt Ltd.,2019.0,2021.0,Y,N,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+345,Graph,Graph DBMS,HGraphDB,https://db-engines.com/en/system/HGraphDB,,,,0.17,346,,,,2016.0,,Y,N,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+346,Time Series,Time Series DBMS,Warp 10,https://db-engines.com/en/system/Warp+10,,,,0.15,347,,,SenX,2015.0,,Y,N,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+347,RDF,RDF store,Dydra,https://db-engines.com/en/system/Dydra,,,,0.14,348,,,,2010.0,,N,N,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+348,Relational,"Relational DBMS,Document store,Spatial DBMS",Fujitsu Enterprise Postgres,https://db-engines.com/en/system/Fujitsu+Enterprise+Postgres,,,,0.14,349,,,"PostgreSQL Global Development Group, Fujitsu Australia Software Technology",,2022.0,N,N,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0
+349,Object oriented,Object oriented DBMS,Siaqodb,https://db-engines.com/en/system/Siaqodb,,,,0.13,350,,,,,,N,N,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+350,Relational,"Relational DBMS,Spatial DBMS",Linter,https://db-engines.com/en/system/Linter,,,,0.13,351,,,relex.ru/en,1990.0,,N,N,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0
+351,Relational,Relational DBMS,Edge Intelligence,https://db-engines.com/en/system/Edge+Intelligence,,,,0.13,352,,,,2012.0,,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+352,Key-value,Key-value store,HyperLevelDB,https://db-engines.com/en/system/HyperLevelDB,,,,0.13,352,,,,2010.0,,Y,N,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+353,Document,Document store,iBoxDB,https://db-engines.com/en/system/iBoxDB,,,,0.13,352,,,,2013.0,,Y,N,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+354,Time Series,Time Series DBMS,IRONdb,https://db-engines.com/en/system/IRONdb,,,,0.13,352,,,Circonus LLC.,2017.0,2018.0,N,N,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+355,Relational,Relational DBMS,JethroData,https://db-engines.com/en/system/JethroData,,,,0.13,352,,,JethroData,2013.0,,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+356,Document,Document store,NosDB,https://db-engines.com/en/system/NosDB,,,,0.13,352,,,Alachisoft,2016.0,,Y,N,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+357,Document,Document store,SenseiDB,https://db-engines.com/en/system/SenseiDB,,,,0.13,352,,,,2010.0,,Y,N,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+358,Time Series,Time Series DBMS,SiriDB,https://db-engines.com/en/system/SiriDB,,,,0.13,352,,,Cesbit,2017.0,,Y,N,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+359,Document,Document store,ToroDB,https://db-engines.com/en/system/ToroDB,,,,0.13,352,,,8Kdata,2016.0,,Y,N,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+360,Key-value,Key-value store,Upscaledb,https://db-engines.com/en/system/Upscaledb,,,,0.13,352,,,,2007.0,,Y,N,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+361,Relational,Relational DBMS,SmallSQL,https://db-engines.com/en/system/SmallSQL,,,,0.12,362,,,,2005.0,,Y,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+362,Key-value,Key-value store,ScaleOut StateServer,https://db-engines.com/en/system/ScaleOut+StateServer,,,,0.12,363,,,,2005.0,,N,N,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+363,Key-value,Key-value store,Badger,https://db-engines.com/en/system/Badger,,,,0.11,364,,,DGraph Labs,2017.0,,Y,N,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+364,RDF,RDF store,SparkleDB,https://db-engines.com/en/system/SparkleDB,,,,0.11,365,,,,2012.0,,N,N,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+365,Time Series,Time Series DBMS,Alibaba Cloud TSDB,https://db-engines.com/en/system/Alibaba+Cloud+TSDB,,,,0.1,366,,,Alibaba,,,N,Y,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+366,Key-value,Key-value store,Resin Cache,https://db-engines.com/en/system/Resin+Cache,,,,0.09,367,,,,1998.0,2020.0,Y,N,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+367,Relational,Relational DBMS,OushuDB,https://db-engines.com/en/system/OushuDB,,,,0.08,368,,,Oushu,,2020.0,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+368,Wide column,"Wide column store,Time Series DBMS",SWC-DB,https://db-engines.com/en/system/SWC-DB,,,,0.07,369,,,Alex Kashirin,2020.0,2021.0,Y,N,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+369,Graph,"Graph DBMS,Relational DBMS",AgensGraph,https://db-engines.com/en/system/AgensGraph,,,,0.07,370,,,Bitnine Global Inc.,2016.0,2018.0,Y,N,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0
+370,Graph,Graph DBMS,Galaxybase,https://db-engines.com/en/system/Galaxybase,,,,0.06,371,,,"Chuanglin(Createlink) Technology  Co., Ltd 浙江创邻科技有限公司",2017.0,2021.0,N,N,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+371,Key-value,"Key-value store,Relational DBMS",Faircom EDGE,https://db-engines.com/en/system/Faircom+EDGE,,,,0.03,372,,,FairCom Corporation,1979.0,2020.0,N,N,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0
+372,Relational,Relational DBMS,Sadas Engine,https://db-engines.com/en/system/Sadas+Engine,,,,0.02,373,,,SADAS s.r.l.,2006.0,,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+373,Object oriented,Object oriented DBMS,WakandaDB,https://db-engines.com/en/system/WakandaDB,,,,0.02,374,,,Wakanda SAS,2012.0,2019.0,Y,N,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+374,Key-value,Key-value store,JaguarDB,https://db-engines.com/en/system/JaguarDB,,,,0.01,375,,,"DataJaguar, Inc.",2015.0,2018.0,Y,N,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+375,Key-value,Key-value store,SwayDB,https://db-engines.com/en/system/SwayDB,,,,0.0,376,,,Simer Plaha,2018.0,,Y,N,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+376,Key-value,Key-value store,BergDB,https://db-engines.com/en/system/BergDB,,,,0.0,377,,,,2013.0,,Y,N,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+377,Key-value,Key-value store,Cachelot.io,https://db-engines.com/en/system/Cachelot.io,,,,0.0,377,,,,2015.0,,Y,N,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+378,Document,"Document store,Key-value store",CortexDB,https://db-engines.com/en/system/CortexDB,,,,0.0,377,,,,2014.0,,N,N,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0
+379,Relational,Relational DBMS,CovenantSQL,https://db-engines.com/en/system/CovenantSQL,,,,0.0,377,,,,2018.0,,Y,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+380,Relational,Relational DBMS,DaggerDB,https://db-engines.com/en/system/DaggerDB,,,,0.0,377,,,,2014.0,,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+381,Relational,Relational DBMS,EdgelessDB,https://db-engines.com/en/system/EdgelessDB,,,,0.0,377,,,Edgeless Systems,2021.0,,Y,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+382,Key-value,Key-value store,Helium,https://db-engines.com/en/system/Helium,,,,0.0,377,,,Levyx Inc.,2013.0,,N,N,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+383,Search engine,Search engine,Indica,https://db-engines.com/en/system/Indica,,,,0.0,377,,,,2014.0,,N,N,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+384,Key-value,Key-value store,InfinityDB,https://db-engines.com/en/system/InfinityDB,,,,0.0,377,,,Boiler Bay Inc.,2002.0,,N,N,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+385,Document,Document store,JasDB,https://db-engines.com/en/system/JasDB,,,,0.0,377,,,,2014.0,,Y,N,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+386,Relational,Relational DBMS,K-DB,https://db-engines.com/en/system/K-DB,,,,0.0,377,,,Inspur Group,,,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+387,Time Series,Time Series DBMS,Newts,https://db-engines.com/en/system/Newts,,,,0.0,377,,,OpenNMS Group,2014.0,,Y,N,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+388,Time Series,Time Series DBMS,NSDb,https://db-engines.com/en/system/NSDb,,,,0.0,377,,,,2017.0,,Y,N,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+389,Search engine,"Search engine,Time Series DBMS",Rizhiyi,https://db-engines.com/en/system/Rizhiyi,,,,0.0,377,,,Rizhiyi,2014.0,,N,N,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0
+390,Native XML,"Native XML DBMS,Search engine",searchxml,https://db-engines.com/en/system/searchxml,,,,0.0,377,,,informationpartners gmbh,2015.0,,N,N,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0
+391,Spatial DBMS,"Spatial DBMS,Relational DBMS",SpaceTime,https://db-engines.com/en/system/SpaceTime,N,,-,0.0,377,-,-,Mireo,2020.0,,N,N,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0
+392,Key-value,Key-value store,Tkrzw,https://db-engines.com/en/system/Tkrzw,,,,0.0,377,,,Mikio Hirabayashi,2020.0,2020.0,Y,N,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+393,Relational,"Relational DBMS,Search engine",Transwarp ArgoDB,https://db-engines.com/en/system/Transwarp+ArgoDB,,,,0.0,377,,,Transwarp,,,N,N,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0
+394,Graph,Graph DBMS,Transwarp StellarDB,https://db-engines.com/en/system/Transwarp+StellarDB,,,,0.0,377,,,Transwarp,,,N,N,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+395,Relational,Relational DBMS,Yaacomo,https://db-engines.com/en/system/Yaacomo,,,,0.0,377,,,Q2WEB GmbH,2009.0,,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+396,Time Series,Time Series DBMS,Yanza,https://db-engines.com/en/system/Yanza,,,,0.0,377,,,Yanza,2015.0,,N,N,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0

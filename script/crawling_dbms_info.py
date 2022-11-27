@@ -117,15 +117,15 @@ def crawling_dbms_infos_soup(df_db_names_urls, header, use_elem_dict, save_path,
 
 
 if __name__ == '__main__':
-    ranking_crawling_path = os.path.join(pkg_rootdir, 'data/db_engines_ranking_table_full/ranking_crawling_202211_raw.csv')
+    ranking_table_path = os.path.join(pkg_rootdir, 'data/db_engines_ranking_table_full/ranking_crawling_202211_raw.csv')
     dbms_info_crawling_path = os.path.join(pkg_rootdir, 'data/db_engines_ranking_table_full/dbms_info_crawling_202211_raw.csv')
 
-    df_ranking_crawling = pd.read_csv(ranking_crawling_path, encoding='utf-8', index_col=False)
+    df_ranking_table = pd.read_csv(ranking_table_path, encoding='utf-8', index_col=False)
     # db-engines DBMS_insitelink
-    df_db_names_urls = df_ranking_crawling[['DBMS', 'DBMS_insitelink']]
+    df_db_names_urls = df_ranking_table[['DBMS', 'DBMS_insitelink']]
     df_db_names_urls.columns = ['db_names', 'urls']
 
-    # 在浏览器下获取他们的headers信息
+    # headers info when use Chrome explorer
     header = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.221 Safari/537.36 SE 2.X MetaSr 1.0',
         'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
