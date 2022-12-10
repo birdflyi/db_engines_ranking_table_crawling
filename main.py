@@ -7,7 +7,6 @@
 # @File   : main.py 
 
 import os
-import re
 import sys
 
 
@@ -46,11 +45,21 @@ tar_category_labels_updated_path = os.path.join(pkg_rootdir, 'data/db_engines_ra
 encoding = 'utf-8'
 
 # headers info when use Chrome explorer
-header = {
+header1 = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.221 Safari/537.36 SE 2.X MetaSr 1.0',
     'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
 }
-
+header2 = {
+    'user-agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36'}
+header3 = {
+    'user-agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'}
+header4 = {
+    'user-agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'}
+header5 = {
+    'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36'}
+header6 = {
+    'user-agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'}
+headers = [header1, header2, header3, header4, header5, header6]
 
 if __name__ == '__main__':
 
@@ -59,7 +68,7 @@ if __name__ == '__main__':
         use_elem_dict = {
             'main_contents': ['table', {'class': 'dbi'}],
         }
-        crawling_ranking_table_soup(url_init, header, use_elem_dict, save_path=ranking_table_crawling_path)
+        crawling_ranking_table_soup(url_init, headers[0], use_elem_dict, save_path=ranking_table_crawling_path)
 
     if UPDATE_DBMS_INFO:
         df_ranking_table = pd.read_csv(ranking_table_crawling_path, encoding=encoding, index_col=False)
@@ -70,11 +79,11 @@ if __name__ == '__main__':
         use_elem_dict = {
             'main_contents': ['table', {'class': 'tools'}],
         }
-        crawling_dbms_infos_soup(df_db_names_urls, header, use_elem_dict, save_path=dbms_info_crawling_path)
+        crawling_dbms_infos_soup(df_db_names_urls, headers, use_elem_dict, save_path=dbms_info_crawling_path)
 
     if JOIN_RANKING_TABLE_DBMS_INFO_ON_DBMS:
         use_cols_ranking_table = None
-        use_cols_dbms_infos = ["Developer", "Name", "Description", "Initial release", "Current release", "License",
+        use_cols_dbms_infos = ["Developer", "Name", "Description", "Initial release", "Current release", "License", "License_info",
                                "Cloud-based only"]
         df_ranking_table = pd.read_csv(ranking_table_crawling_path, encoding=encoding, index_col=False)
         df_dbms_infos = pd.read_csv(dbms_info_crawling_path, encoding=encoding, index_col=False)
@@ -120,16 +129,16 @@ if __name__ == '__main__':
 
         # 更新设置
         update_conf = {
-            'category': 'update__change_colname(category_label)__use_new(Database Model)',
+            'category': 'update__change_colname_as(category_label)__use_new(Database Model)',
             # update values and change the column name
             'Multi_model_info': 'build__basedon(Multi_model_info)',
-            'system': 'update__change_colname(DBMS)__use_new',  # update values and change the column name
+            'system': 'update__change_colname_as(DBMS)__use_new(DBMS)',  # update values and change the column name
             'DBMS_insitelink': 'update__use_new',  # insert values
-            'is_open_source': 'update__change_colname(has_open_source_github_repo)__reuse_old_if_cooccurrence_on(DBMS)',
+            'is_open_source': 'update__change_colname_as(has_open_source_github_repo)__reuse_old_if_cooccurrence_on(DBMS)',
             'has_company': 'update__reuse_old_if_cooccurrence_on(DBMS)',
             'github_repo_link': 'update__reuse_old_if_cooccurrence_on(DBMS)',
-            'score': 'update__change_colname(Score_Nov-2022)__use_new',  # update values and change the column name
-            'overall_rank': 'update__change_colname(Rank_Nov-2022)__use_new__dtype(int)',
+            'score': 'update__change_colname_as(Score_Nov-2022)__use_new(Score_Nov-2022)',  # update values and change the column name
+            'overall_rank': 'update__change_colname_as(Rank_Nov-2022)__use_new(Rank_Nov-2022)__dtype(int)',
             # update values and change the column name
             'org_name': 'update__reuse_old_if_cooccurrence_on(DBMS)',  # 依赖于手动更新的列github_repo_link
             'repo_name': 'update__reuse_old_if_cooccurrence_on(DBMS)',  # 依赖于手动更新的列github_repo_link

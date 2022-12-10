@@ -35,6 +35,11 @@ def join_ranking_table_dbms_info(df_ranking_table, df_dbms_infos, use_cols_ranki
     use_cols_dbms_infos = use_cols_dbms_infos or list(df_dbms_infos.columns)
     if on_df_dbms_infos not in use_cols_dbms_infos:
         use_cols_dbms_infos = [on_df_dbms_infos] + use_cols_dbms_infos
+
+    for colname in use_cols_dbms_infos:
+        if colname not in df_dbms_infos.columns:
+            print(f'Column name {colname} not in df_ranking_table.columns! Try to ignore this column...')
+            use_cols_dbms_infos.remove(colname)
     df_ranking_table_filtered = df_ranking_table[use_cols_ranking_table]
     df_dbms_infos_filtered = df_dbms_infos[use_cols_dbms_infos]
     df_ranking_table_filtered.set_index(on_df_ranking_table, inplace=True)
