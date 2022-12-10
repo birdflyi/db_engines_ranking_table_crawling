@@ -3,6 +3,13 @@
   <component name="CsvFileAttributes">
     <option name="attributeMap">
       <map>
+        <entry key="\data\db_engines_ranking_table_full\category_labels_updated.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\data\db_engines_ranking_table_full\dbms_info_crawling_202211_raw.csv">
           <value>
             <Attribute>
@@ -10,7 +17,7 @@
             </Attribute>
           </value>
         </entry>
-        <entry key="\data\db_engines_ranking_table_full\df_category_labels_updated.csv">
+        <entry key="\data\db_engines_ranking_table_full\dbms_info_crawling_202212_raw.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
@@ -31,6 +38,20 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\data\db_engines_ranking_table_full\ranking_crawling_202212_automerged.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\data\db_engines_ranking_table_full\ranking_crawling_202212_raw.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\data\db_engines_ranking_table_full\ranking_table_dbms_info_202211_joined.csv">
           <value>
             <Attribute>
@@ -45,7 +66,21 @@
             </Attribute>
           </value>
         </entry>
-        <entry key="\data\db_engines_ranking_table_full\ranking_table_dbms_info_joined_202211.csv">
+        <entry key="\data\db_engines_ranking_table_full\ranking_table_dbms_info_202212_joined.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\data\db_engines_ranking_table_full\ranking_table_dbms_info_202212_joined_recalc.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\data\existing_tagging_info\DB_EngRank_full_202211.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />

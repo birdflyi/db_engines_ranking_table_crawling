@@ -33,12 +33,12 @@ JOIN_RANKING_TABLE_DBMS_INFO_ON_DBMS = True  # join ranking_table and dbms_info 
 RECALC_RANKING_TABLE_DBMS_INFO = True
 REUSE_EXISTING_TAGGING_INFO = True
 
-src_existing_tagging_info_path = os.path.join(pkg_rootdir, 'data/existing_tagging_info/DB_EngRank_tophalf_githubprj_summary.CSV')
-ranking_table_crawling_path = os.path.join(pkg_rootdir, 'data/db_engines_ranking_table_full/ranking_crawling_202211_raw.csv')
-dbms_info_crawling_path = os.path.join(pkg_rootdir, 'data/db_engines_ranking_table_full/dbms_info_crawling_202211_raw.csv')
-ranking_table_dbms_info_joined_path = os.path.join(pkg_rootdir, 'data/db_engines_ranking_table_full/ranking_table_dbms_info_202211_joined.csv')
-src_ranking_table_dbms_info_joined_recalc_path = os.path.join(pkg_rootdir, 'data/db_engines_ranking_table_full/ranking_table_dbms_info_202211_joined_recalc.csv')
-tar_automerged_path = os.path.join(pkg_rootdir, 'data/db_engines_ranking_table_full/ranking_crawling_202211_automerged.csv')
+src_existing_tagging_info_path = os.path.join(pkg_rootdir, 'data/existing_tagging_info/DB_EngRank_full_202211.csv')
+ranking_table_crawling_path = os.path.join(pkg_rootdir, 'data/db_engines_ranking_table_full/ranking_crawling_202212_raw.csv')
+dbms_info_crawling_path = os.path.join(pkg_rootdir, 'data/db_engines_ranking_table_full/dbms_info_crawling_202212_raw.csv')
+ranking_table_dbms_info_joined_path = os.path.join(pkg_rootdir, 'data/db_engines_ranking_table_full/ranking_table_dbms_info_202212_joined.csv')
+src_ranking_table_dbms_info_joined_recalc_path = os.path.join(pkg_rootdir, 'data/db_engines_ranking_table_full/ranking_table_dbms_info_202212_joined_recalc.csv')
+tar_automerged_path = os.path.join(pkg_rootdir, 'data/db_engines_ranking_table_full/ranking_crawling_202212_automerged.csv')
 src_category_labels_path = os.path.join(pkg_rootdir, 'data/existing_tagging_info/category_labels.csv')
 tar_category_labels_updated_path = os.path.join(pkg_rootdir, 'data/db_engines_ranking_table_full/category_labels_updated.csv')
 
@@ -129,23 +129,24 @@ if __name__ == '__main__':
 
         # 更新设置
         update_conf = {
-            'category': 'update__change_colname_as(category_label)__use_new(Database Model)',
+            'category_label': 'update__use_new(Database Model)',
             # update values and change the column name
-            'Multi_model_info': 'build__basedon(Multi_model_info)',
-            'system': 'update__change_colname_as(DBMS)__use_new(DBMS)',  # update values and change the column name
+            'Multi_model_info': 'update__use_new(Multi_model_info)',
+            'DBMS': 'update__use_new',  # update values and change the column name
             'DBMS_insitelink': 'update__use_new',  # insert values
-            'is_open_source': 'update__change_colname_as(has_open_source_github_repo)__reuse_old_if_cooccurrence_on(DBMS)',
+            'has_open_source_github_repo': 'update__reuse_old_if_cooccurrence_on(DBMS)',
             'has_company': 'update__reuse_old_if_cooccurrence_on(DBMS)',
             'github_repo_link': 'update__reuse_old_if_cooccurrence_on(DBMS)',
-            'score': 'update__change_colname_as(Score_Nov-2022)__use_new(Score_Nov-2022)',  # update values and change the column name
-            'overall_rank': 'update__change_colname_as(Rank_Nov-2022)__use_new(Rank_Nov-2022)__dtype(int)',
             # update values and change the column name
+            'Score_Nov-2022': 'update__change_colname_as(Score_Dec-2022)__use_new(Score_Dec-2022)',
+            'Rank_Nov-2022': 'update__change_colname_as(Rank_Dec-2022)__use_new(Rank_Dec-2022)__dtype(int)',
             'org_name': 'update__reuse_old_if_cooccurrence_on(DBMS)',  # 依赖于手动更新的列github_repo_link
             'repo_name': 'update__reuse_old_if_cooccurrence_on(DBMS)',  # 依赖于手动更新的列github_repo_link
-            'Developer': 'update__use_new',
+            'Developer': 'update__reuse_old_if_cooccurrence_on(DBMS)',
             'initial_release_recalc': 'update__use_new',
             'current_release_recalc': 'update__use_new',
             'open_source_license': 'update__use_new(license_recalc)',
+            'License_info': 'update__use_new',
             'cloud_based_only_recalc': 'update__use_new',
         }
 
