@@ -285,6 +285,9 @@ def exe_conf(df_merged, conf_func_word, k_colname, v_exe_settings, df_old, df_ne
                 print('\t{update_conf}'.format(update_conf=update_conf))
             elif update_conf.startswith('dtype'):
                 dtype_setting = re.findall(r'dtype\(([\w\s\.-]+)\)', update_conf)[0]
+                if str(dtype_setting).lower().startswith('int'):
+                    dtype_setting = 'Int64'
+                    print("\tWarning: use default 'Int64' dtype!")
                 print('\t{update_conf}'.format(update_conf=update_conf))
 
         if change_colname_flag:  # for 'update__change_colname_as'

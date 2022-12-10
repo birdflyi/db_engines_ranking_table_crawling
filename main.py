@@ -139,12 +139,12 @@ if __name__ == '__main__':
             'github_repo_link': 'update__reuse_old_if_cooccurrence_on(DBMS)',
             # update values and change the column name
             'Score_Nov-2022': 'update__change_colname_as(Score_Dec-2022)__use_new(Score_Dec-2022)',
-            'Rank_Nov-2022': 'update__change_colname_as(Rank_Dec-2022)__use_new(Rank_Dec-2022)__dtype(int)',
+            'Rank_Nov-2022': 'update__change_colname_as(Rank_Dec-2022)__use_new(Rank_Dec-2022)__dtype(Int64)',
             'org_name': 'update__reuse_old_if_cooccurrence_on(DBMS)',  # 依赖于手动更新的列github_repo_link
             'repo_name': 'update__reuse_old_if_cooccurrence_on(DBMS)',  # 依赖于手动更新的列github_repo_link
             'Developer': 'update__reuse_old_if_cooccurrence_on(DBMS)',
-            'initial_release_recalc': 'update__use_new',
-            'current_release_recalc': 'update__use_new',
+            'initial_release_recalc': 'update__use_new__dtype(Int64)',
+            'current_release_recalc': 'update__use_new__dtype(Int64)',
             'open_source_license': 'update__use_new(license_recalc)',
             'License_info': 'update__use_new',
             'cloud_based_only_recalc': 'update__use_new',
