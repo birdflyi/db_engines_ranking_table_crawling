@@ -6,8 +6,8 @@ id,category,system,is_open_source,has_company,github_repo_link,score,overall_ran
 5,"Relational DBMS, Multi-model",IBM Db2,N,Y,-,166.56,7,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-,-
 6,Relational DBMS,SQLite,Y,N,sqlite/sqlite,128.65,9,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,sqlite,sqlite
 7,Relational DBMS,Microsoft Access,N,Y,-,116.94,11,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-,-
-8,"Relational DBMS, Multi-model",MariaDB ,Y,Y_借壳上市,MariaDB/server,100.70,12,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,MariaDB,server
-9,Relational DBMS,Hive ,Y,N_Facebook开源,apache/hive,85.58,14,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,apache,hive
+8,"Relational DBMS, Multi-model",MariaDB,Y,Y_借壳上市,MariaDB/server,100.70,12,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,MariaDB,server
+9,Relational DBMS,Hive,Y,N_Facebook开源,apache/hive,85.58,14,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,apache,hive
 10,"Relational DBMS, Multi-model",Microsoft Azure SQL Database,N,Y,-,78.26,15,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-,-
 11,Relational DBMS,Snowflake,N,Y,-,52.07,21,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-,-
 12,Relational DBMS,Firebird,Y,N,FirebirdSQL/firebird,24.83,31,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,FirebirdSQL,firebird
@@ -34,14 +34,14 @@ id,category,system,is_open_source,has_company,github_repo_link,score,overall_ran
 33,Relational DBMS,Apache Kylin,Y,,apache/kylin,1.30,151,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,apache,kylin
 34,Relational DBMS,Cubrid,Y,,CUBRID/cubrid,1.24,158,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,CUBRID,cubrid
 35,"Key-value, Multi-model",Redis,Y,,redis/redis,171.94,6,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,redis,redis
-36,"Key-value, Document,Multi-model ",Amazon DynamoDB ,N,,-,76.93,16,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,-,-
-37,"Key-value, Document,Graph,Wide column,Multi-model ",Microsoft Azure Cosmos DB ,N,,-,38.52,26,0,1,1,0,1,0,0,0,1,0,0,0,0,0,0,-,-
+36,"Key-value, Document,Multi-model ",Amazon DynamoDB,N,,-,76.93,16,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,-,-
+37,"Key-value, Document,Graph,Wide column,Multi-model ",Microsoft Azure Cosmos DB,N,,-,38.52,26,0,1,1,0,1,0,0,0,1,0,0,0,0,0,0,-,-
 38,Key-value,Memcached,Y,,memcached/memcached,25.66,30,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,memcached,memcached
 39,Key-value,etcd,Y,,etcd-io/etcd,10.32,46,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,etcd-io,etcd
-40,"Key-value, Multi-model ",Hazelcast ,Y,,hazelcast/hazelcast,9.81,47,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,hazelcast,hazelcast
+40,"Key-value, Multi-model ",Hazelcast,Y,,hazelcast/hazelcast,9.81,47,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,hazelcast,hazelcast
 41,Key-value,Ehcache,Y,,ehcache/ehcache3,7.00,57,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,ehcache,ehcache3
 42,Key-value,Riak KV,Y,,basho/riak_kv,5.59,66,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,basho,riak_kv
-43,"Key-value, Multi-model ",Aerospike ,Y,,aerospike/aerospike-server,5.33,70,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,aerospike,aerospike-server
+43,"Key-value, Multi-model ",Aerospike,Y,,aerospike/aerospike-server,5.33,70,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,aerospike,aerospike-server
 44,"Relational DBMS, Key-value, Multi-model ",Ignite,Y,,apache/ignite,4.85,74,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,apache,ignite
 45,Key-value,RocksDB,Y,,facebook/rocksdb,3.73,88,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,facebook,rocksdb
 46,Key-value,LevelDB,Y,,google/leveldb,2.97,98,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,google,leveldb
@@ -51,51 +51,51 @@ id,category,system,is_open_source,has_company,github_repo_link,score,overall_ran
 50,"Key-value, Multi-model",Tarantool,Y,,tarantool/tarantool,1.55,138,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,tarantool,tarantool
 51,Key-value,ZODB,Y,,zopefoundation/ZODB,1.01,174,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,zopefoundation,ZODB
 52,"Key-value, Multi-model ",NCache,Y,,Alachisoft/NCache,0.98,178,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Alachisoft,NCache
-53,"Document, Multi-model ",MongoDB ,Y,,mongodb/mongo,496.50,5,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,mongodb,mongo
-54,"Document, Multi-model ",Couchbase ,Y,,couchbase/couchbase-lite-ios,27.68,29,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,couchbase,couchbase-lite-ios
+53,"Document, Multi-model ",MongoDB,Y,,mongodb/mongo,496.50,5,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,mongodb,mongo
+54,"Document, Multi-model ",Couchbase,Y,,couchbase/couchbase-lite-ios,27.68,29,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,couchbase,couchbase-lite-ios
 55,Document,Firebase Realtime Database,N,,-,18.02,38,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,-,-
 56,"Document, Multi-model ",CouchDB,Y,,apache/couchdb,15.47,40,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,apache,couchdb
-57,"Document,Search engine, RDF,Native XML,Multi-model ",MarkLogic ,Y,,marklogic/marklogic-data-hub,9.60,49,0,0,1,0,0,0,1,1,0,0,1,0,0,0,0,marklogic,marklogic-data-hub
-58,Document,Realm ,Y,,realm/realm-cocoa,9.51,50,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,realm,realm-cocoa
+57,"Document,Search engine, RDF,Native XML,Multi-model ",MarkLogic,Y,,marklogic/marklogic-data-hub,9.60,49,0,0,1,0,0,0,1,1,0,0,1,0,0,0,0,marklogic,marklogic-data-hub
+58,Document,Realm,Y,,realm/realm-cocoa,9.51,50,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,realm,realm-cocoa
 59,Document,Google Cloud Firestore,Y,,googleapis/python-firestore,8.10,54,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,googleapis,python-firestore
-60,"Document,Graph, Key-value,Search engine,Multi-model ",ArangoDB ,Y,,arangodb/arangodb,4.79,75,0,1,1,0,1,0,1,0,0,0,0,0,0,0,0,arangodb,arangodb
+60,"Document,Graph, Key-value,Search engine,Multi-model ",ArangoDB,Y,,arangodb/arangodb,4.79,75,0,1,1,0,1,0,1,0,0,0,0,0,0,0,0,arangodb,arangodb
 61,"Document,Multi-model ",RavenDB,Y,,ravendb/ravendb,3.46,92,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,ravendb,ravendb
 62,"Document,Multi-model ",RethinkDB,Y,,rethinkdb/rethinkdb,3.15,96,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,rethinkdb,rethinkdb
 63,Document,PouchDB,Y,,pouchdb/pouchdb,2.86,100,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,pouchdb,pouchdb
 64,Document,Mnesia,Y,,beardedeagle/mnesiac,1.32,149,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,beardedeagle,mnesiac
 65,Document,LiteDB,Y,,mbdavid/LiteDB,1.19,161,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,mbdavid,LiteDB
-66,"Time Series, Multi-model ",InfluxDB ,Y,,influxdata/influxdb,29.50,28,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,influxdata,influxdb
-67,"Time Series, Multi-model ",Kdb+ ,Y,,KxSystems/kdb,8.13,53,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,KxSystems,kdb
+66,"Time Series, Multi-model ",InfluxDB,Y,,influxdata/influxdb,29.50,28,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,influxdata,influxdb
+67,"Time Series, Multi-model ",Kdb+,Y,,KxSystems/kdb,8.13,53,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,KxSystems,kdb
 68,Time Series,Prometheus,Y,,prometheus/prometheus,6.43,60,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,prometheus,prometheus
 69,Time Series,Graphite,Y,,graphite-project/graphite-web,5.09,71,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,graphite-project,graphite-web
-70,"Time Series, Multi-model ",TimescaleDB ,Y,,timescale/timescaledb,3.72,89,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,timescale,timescaledb
+70,"Time Series, Multi-model ",TimescaleDB,Y,,timescale/timescaledb,3.72,89,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,timescale,timescaledb
 71,"Time Series,Multi-model ",Apache Druid,Y,,apache/druid,3.27,93,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,apache,druid
 72,Time Series,RRDtool,Y,,oetiker/rrdtool-1.x,2.44,112,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,oetiker,rrdtool-1.x
 73,Time Series,OpenTSDB,Y,,OpenTSDB/opentsdb,1.87,124,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,OpenTSDB,opentsdb
-74,"Time Series,Document,Graph,Multi-model ",Fauna ,N,,-,1.73,131,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,-,-
-75,"Time Series, Multi-model ",GridDB ,Y,,griddb/griddb,1.34,147,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,griddb,griddb
+74,"Time Series,Document,Graph,Multi-model ",Fauna,N,,-,1.73,131,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,-,-
+75,"Time Series, Multi-model ",GridDB,Y,,griddb/griddb,1.34,147,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,griddb,griddb
 76,Time Series,KairosDB,Y,,kairosdb/kairosdb,0.79,197,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,kairosdb,kairosdb
 77,"Time Series, Multi-model",QuestDB,Y,,questdb/questd,0.61,222,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,questdb,questd
-78,Time Series,VictoriaMetrics ,Y,,VictoriaMetrics/VictoriaMetrics,0.59,227,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,VictoriaMetrics,VictoriaMetrics
+78,Time Series,VictoriaMetrics,Y,,VictoriaMetrics/VictoriaMetrics,0.59,227,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,VictoriaMetrics,VictoriaMetrics
 79,"Time Series, Multi-model",TDengine,Y,,taosdata/TDengine,0.33,264,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,taosdata,TDengine
 80,Time Series,Riak TS,Y,,basho-labs/Riak-TS-JDBC-Driver,0.26,276,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,basho-labs,Riak-TS-JDBC-Driver
 81,Time Series,M3DB,Y,,m3db/m3,0.24,282,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,m3db,m3
 82,Time Series,Apache IoTDB,Y,,apache/iotdb,0.17,293,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,apache,iotdb
 83,Time Series,Blueflood,Y,,rackerlabs/blueflood,0.16,297,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,rackerlabs,blueflood
-84,Graph,Neo4j ,Y,,neo4j/neo4j,57.63,18,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,neo4j,neo4j
-85,"Relational DBMS,Document, Graph,Search engine,RDF,Native XML,Multi-model ",Virtuoso ,Y,,openlink/virtuoso-opensource,4.42,79,1,0,1,0,1,0,1,1,0,0,1,0,0,0,0,openlink,virtuoso-opensource
+84,Graph,Neo4j,Y,,neo4j/neo4j,57.63,18,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,neo4j,neo4j
+85,"Relational DBMS,Document, Graph,Search engine,RDF,Native XML,Multi-model ",Virtuoso,Y,,openlink/virtuoso-opensource,4.42,79,1,0,1,0,1,0,1,1,0,0,1,0,0,0,0,openlink,virtuoso-opensource
 86,"Graph,Key-value,Document, Multi-model ",OrientDB,Y,,orientechnologies/orientdb,4.24,82,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,orientechnologies,orientdb
-87,"Graph,RDF,Multi-model ",GraphDB ,N,,-,2.61,109,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,-,-
+87,"Graph,RDF,Multi-model ",GraphDB,N,,-,2.61,109,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,-,-
 88,Graph,JanusGraph,Y,,JanusGraph/janusgraph,2.58,111,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,JanusGraph,janusgraph
 89,"Graph,RDF,Multi-model ",Amazon Neptune,N,,-,2.42,114,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,-,-
-90,Graph,TigerGraph ,N,,-,1.90,123,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,-,-
-91,Graph,Dgraph ,Y,,dgraph-io/dgraph,1.81,127,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,dgraph-io,dgraph
+90,Graph,TigerGraph,N,,-,1.90,123,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,-,-
+91,Graph,Dgraph,Y,,dgraph-io/dgraph,1.81,127,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,dgraph-io,dgraph
 92,Graph,Giraph,Y,,apache/giraph,1.28,154,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,apache,giraph
 93,Graph,Nebula Graph,Y,,vesoft-inc/nebula,1.10,168,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,vesoft-inc,nebula
 94,"Graph,Multi-model ",TypeDB,Y,,vaticle/typedb,0.83,193,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,vaticle,typedb
 95,"Graph,Key-value,Multi-model ",Graph Engine,Y,,microsoft/GraphEngine,0.80,195,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,microsoft,GraphEngine
 96,"Key-value,Object oriented,Multi-model ",InterSystems Caché,N,,-,3.23,94,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,-,-
-97,"Document,Object oriented,Multi-model ",InterSystems IRIS ,N,,-,1.74,130,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,-,-
+97,"Document,Object oriented,Multi-model ",InterSystems IRIS,N,,-,1.74,130,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,-,-
 98,Object oriented,Db4o,Y,,iboxdb/db4o-gpl,1.66,136,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,iboxdb,db4o-gpl
 99,Object oriented,ObjectStore,N,,-,1.48,140,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,-,-
 100,Object oriented,Actian NoSQL Database,N,,-,1.35,146,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,-,-
@@ -114,18 +114,18 @@ id,category,system,is_open_source,has_company,github_repo_link,score,overall_ran
 113,Search engine,Microsoft Azure Search,N,,-,6.85,58,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,-,-
 114,Search engine,Amazon CloudSearch,N,,-,2.20,116,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,-,-
 115,RDF,Apache Jena - TDB,Y,,apache/jena,2.84,102,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,apache,jena
-116,"RDF,Multi-model ",Stardog ,N,,-,1.70,135,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,-,-
-117,"RDF,Document,Graph,Multi-model ",AllegroGraph ,N,,-,1.26,156,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,-,-
+116,"RDF,Multi-model ",Stardog,N,,-,1.70,135,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,-,-
+117,"RDF,Document,Graph,Multi-model ",AllegroGraph,N,,-,1.26,156,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,-,-
 118,"Graph,RDF,Multi-model ",Blazegraph,Y,,blazegraph/database,0.92,183,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,blazegraph,database
 119,RDF,RDF4J,Y,,eclipse/rdf4j,0.66,217,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,eclipse,rdf4j
 120,RDF,4store,Y,,4store/4store,0.48,242,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,4store,4store
-121,Wide column,Cassandra ,Y,,apache/cassandra,118.99,10,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,apache,cassandra
-122,Wide column,HBase  ,Y,,apache/hbase,45.05,24,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,apache,hbase
-123,"Wide column, Multi-model ",Datastax Enterprise ,N,,-,8.95,51,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,-,-
+121,Wide column,Cassandra,Y,,apache/cassandra,118.99,10,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,apache,cassandra
+122,Wide column,HBase,Y,,apache/hbase,45.05,24,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,apache,hbase
+123,"Wide column, Multi-model ",Datastax Enterprise,N,,-,8.95,51,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,-,-
 124,Wide column,Microsoft Azure Table Storage,N,,-,5.51,68,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,-,-
 125,Wide column,Google Cloud Bigtable,N,,-,3.98,85,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,-,-
 126,Wide column,Accumulo,Y,,apache/accumulo,3.94,86,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,apache,accumulo
-127,"Key-value,Wide column,Multi-model ",ScyllaDB ,Y,,scylladb/scylla,3.54,90,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,scylladb,scylla
+127,"Key-value,Wide column,Multi-model ",ScyllaDB,Y,,scylladb/scylla,3.54,90,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,scylladb,scylla
 128,"Document,Wide column,Multi-model ",HPE Ezmeral Data Fabric,N,,-,0.92,181,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,-,-
 129,"Wide column, Multi-model ",Elassandra,Y,,strapdata/elassandra,0.64,220,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,strapdata,elassandra
 130,Multivalue,Adabas,N,,-,4.63,78,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,-,-
@@ -148,7 +148,7 @@ id,category,system,is_open_source,has_company,github_repo_link,score,overall_ran
 147,Spatial DBMS,GeoMesa,Y,,geomesa/geomesa-geoserver,0.71,207,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,geomesa,geomesa-geoserver
 148,"Spatial DBMS, Multi-model ",H2GIS,Y,,orbisgis/h2gis,0.17,295,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,orbisgis,h2gis
 149,"Spatial DBMS, Multi-model ",SpaceTime,N,,-,0.00,354,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,-,-
-150,Event,EventStoreDB ,Y,,EventStore/EventStore,0.87,189,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,EventStore,EventStore
+150,Event,EventStoreDB,Y,,EventStore/EventStore,0.87,189,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,EventStore,EventStore
 151,"Event,Time Series,Multi-model ",IBM Db2 Event Store,N,,-,0.45,248,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,-,-
 152,Event,NEventStore,Y,,NEventStore/NEventStore,0.17,296,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,NEventStore,NEventStore
 153,Content,Jackrabbit,Y,,apache/jackrabbit,5.80,63,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,apache,jackrabbit

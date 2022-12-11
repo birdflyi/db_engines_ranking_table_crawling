@@ -17,6 +17,7 @@ if pkg_rootdir not in sys.path:
     sys.path.append(pkg_rootdir)
 print('Add root directory "{}" to system path.'.format(pkg_rootdir))
 
+import re
 import urllib
 
 import pandas as pd
@@ -62,15 +63,18 @@ def crawling_dbms_info_soup(url_init, header, use_elem_dict):
                     class_value = ' '.join(th_td_tag.attrs["class"])
                     if class_value == 'attribute':  # 不包含"attribute external_att"
                         attr_key = th_td_tag.text.strip()
+                        attr_key = re.sub(r' +', ' ', attr_key)
                         # dbms_info_record_attrs_dict[attr_key] = ''
                         # print(i, "class:", attr_key)
                     elif class_value in ["value", "header"] and attr_key:
                         attr_value = th_td_tag.get_text(',', '<br/>').strip()
+                        attr_value = re.sub(r' +', ' ', attr_value)
                         dbms_info_record_attrs_dict[attr_key] = attr_value
                         if attr_key.lower() == "license":
                             license_info_value_parts = []
                             for s in s_extracts_span:
                                 temp_text = s.get_text(',', '<br/>').strip()
+                                temp_text = re.sub(r' +', ' ', temp_text)
                                 if len(temp_text):
                                     license_info_value_parts.append(temp_text)
                             dbms_info_record_attrs_dict[attr_key + "_info"] = ';'.join(license_info_value_parts)

@@ -156,7 +156,7 @@
 154,Time Series,"Time Series DBMS,Relational DBMS",TDengine,https://db-engines.com/en/system/TDengine,Y,,taosdata/TDengine,1.6,155,taosdata,TDengine,"TDEngine, previously Taos Data",2019.0,2022.0,Y,N,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0
 155,Relational,Relational DBMS,mSQL,https://db-engines.com/en/system/mSQL,,,,1.58,156,,,Hughes Technologies,1994.0,2021.0,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
 156,Document,Document store,Datameer,https://db-engines.com/en/system/Datameer,,,,1.54,157,,,,2009.0,,N,N,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
-157,Relational,Relational DBMS,Infobright,https://db-engines.com/en/system/Infobright,,,,1.52,158,,,Ignite Technologies Inc.;  formerly InfoBright Inc.,2005.0,,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+157,Relational,Relational DBMS,Infobright,https://db-engines.com/en/system/Infobright,,,,1.52,158,,,Ignite Technologies Inc.; formerly InfoBright Inc.,2005.0,,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
 158,Relational,Relational DBMS,GBase,https://db-engines.com/en/system/GBase,,,,1.5,159,,,,,,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
 159,Relational,Relational DBMS,Oracle Rdb,https://db-engines.com/en/system/Oracle+Rdb,,,,1.5,160,,,"Oracle, originally developed by Digital Equipment Corporation (DEC)",1984.0,2021.0,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
 160,Relational,Relational DBMS,NonStop SQL,https://db-engines.com/en/system/NonStop+SQL,,,,1.5,161,,,"HP, originally by Tandem",1987.0,,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
@@ -369,7 +369,7 @@
 367,Relational,Relational DBMS,OushuDB,https://db-engines.com/en/system/OushuDB,,,,0.08,368,,,Oushu,,2020.0,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
 368,Wide column,"Wide column store,Time Series DBMS",SWC-DB,https://db-engines.com/en/system/SWC-DB,,,,0.07,369,,,Alex Kashirin,2020.0,2021.0,Y,N,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
 369,Graph,"Graph DBMS,Relational DBMS",AgensGraph,https://db-engines.com/en/system/AgensGraph,,,,0.07,370,,,Bitnine Global Inc.,2016.0,2018.0,Y,N,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0
-370,Graph,Graph DBMS,Galaxybase,https://db-engines.com/en/system/Galaxybase,,,,0.06,371,,,"Chuanglin(Createlink) Technology  Co., Ltd 浙江创邻科技有限公司",2017.0,2021.0,N,N,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+370,Graph,Graph DBMS,Galaxybase,https://db-engines.com/en/system/Galaxybase,,,,0.06,371,,,"Chuanglin(Createlink) Technology Co., Ltd 浙江创邻科技有限公司",2017.0,2021.0,N,N,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
 371,Key-value,"Key-value store,Relational DBMS",Faircom EDGE,https://db-engines.com/en/system/Faircom+EDGE,,,,0.03,372,,,FairCom Corporation,1979.0,2020.0,N,N,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0
 372,Relational,Relational DBMS,Sadas Engine,https://db-engines.com/en/system/Sadas+Engine,,,,0.02,373,,,SADAS s.r.l.,2006.0,,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
 373,Object oriented,Object oriented DBMS,WakandaDB,https://db-engines.com/en/system/WakandaDB,,,,0.02,374,,,Wakanda SAS,2012.0,2019.0,Y,N,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
