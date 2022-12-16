@@ -75,7 +75,7 @@ id,category,system,is_open_source,has_company,github_repo_link,score,overall_ran
 74,"Time Series,Document,Graph,Multi-model ",Fauna,N,,-,1.73,131,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,-,-
 75,"Time Series, Multi-model ",GridDB,Y,,griddb/griddb,1.34,147,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,griddb,griddb
 76,Time Series,KairosDB,Y,,kairosdb/kairosdb,0.79,197,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,kairosdb,kairosdb
-77,"Time Series, Multi-model",QuestDB,Y,,questdb/questd,0.61,222,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,questdb,questd
+77,"Time Series, Multi-model",QuestDB,Y,,questdb/questdb,0.61,222,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,questdb,questdb
 78,Time Series,VictoriaMetrics,Y,,VictoriaMetrics/VictoriaMetrics,0.59,227,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,VictoriaMetrics,VictoriaMetrics
 79,"Time Series, Multi-model",TDengine,Y,,taosdata/TDengine,0.33,264,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,taosdata,TDengine
 80,Time Series,Riak TS,Y,,basho-labs/Riak-TS-JDBC-Driver,0.26,276,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,basho-labs,Riak-TS-JDBC-Driver

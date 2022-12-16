@@ -145,7 +145,7 @@
 143,Native XML,Native XML DBMS,BaseX,https://db-engines.com/en/system/BaseX,Y,,BaseXdb/basex,1.8,144,BaseXdb,basex,BaseX GmbH,2007,2022,Y,BSD license,N,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
 144,Object oriented,Object oriented DBMS,Db4o,https://db-engines.com/en/system/Db4o,Y,,iboxdb/db4o-gpl,1.79,145,iboxdb,db4o-gpl,,2001,,Y,commercial license available for existing customers only,N,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
 145,Key-value,"Key-value store,Document store,Relational DBMS,Spatial DBMS",Tarantool,https://db-engines.com/en/system/Tarantool,Y,,tarantool/tarantool,1.77,146,tarantool,tarantool,VK,2008,2022,Y,BSD,N,0,1,0,0,1,0,0,0,0,0,1,0,1,0,0
-146,Time Series,"Time Series DBMS,Relational DBMS",QuestDB,https://db-engines.com/en/system/QuestDB,Y,,questdb/questd,1.74,147,questdb,questd,QuestDB Limited,2014,,Y,Apache 2.0,N,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0
+146,Time Series,"Time Series DBMS,Relational DBMS",QuestDB,https://db-engines.com/en/system/QuestDB,Y,,questdb/questdb,1.74,147,questdb,questdb,QuestDB Limited,2014,,Y,Apache 2.0,N,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0
 147,Object oriented,Object oriented DBMS,ObjectStore,https://db-engines.com/en/system/ObjectStore,N,,-,1.72,148,-,-,Ignite Technologies,1988,2014,N,,N,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
 148,Graph,Graph DBMS,Dgraph,https://db-engines.com/en/system/Dgraph,Y,Y,dgraph-io/dgraph,1.72,149,dgraph-io,dgraph,"Dgraph Labs, Inc.",2016,,Y,Apache 2.0,N,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
 149,Graph,"Graph DBMS,RDF store",Stardog,https://db-engines.com/en/system/Stardog,N,,-,1.66,150,-,-,Stardog-Union,2010,2020,N,60-day fully-featured trial license; 1-year fully-featured non-commercial use license for academics/students,N,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0

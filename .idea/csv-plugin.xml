@@ -87,6 +87,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\data\existing_tagging_info\DB_EngRank_full_202212.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\data\existing_tagging_info\DB_EngRank_tophalf_githubprj_summary.CSV">
           <value>
             <Attribute>

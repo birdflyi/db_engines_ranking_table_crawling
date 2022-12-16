@@ -137,7 +137,7 @@
 135,Document,Document store,Amazon DocumentDB,https://db-engines.com/en/system/Amazon+DocumentDB,,,,2.07,136,,,,2019.0,,N,Y,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
 136,Relational,Relational DBMS,TimesTen,https://db-engines.com/en/system/TimesTen,,,,2.02,137,,,"Oracle, TimesTen Performance Software, HP",1998.0,,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
 137,Object oriented,Object oriented DBMS,Db4o,https://db-engines.com/en/system/Db4o,Y,,iboxdb/db4o-gpl,2.01,138,iboxdb,db4o-gpl,,2001.0,,Y,N,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
-138,Time Series,"Time Series DBMS,Relational DBMS",QuestDB,https://db-engines.com/en/system/QuestDB,Y,,questdb/questd,1.93,139,questdb,questd,QuestDB Limited,2014.0,,Y,N,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0
+138,Time Series,"Time Series DBMS,Relational DBMS",QuestDB,https://db-engines.com/en/system/QuestDB,Y,,questdb/questdb,1.93,139,questdb,questdb,QuestDB Limited,2014.0,,Y,N,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0
 139,Key-value,"Key-value store,Document store,Relational DBMS,Spatial DBMS",Tarantool,https://db-engines.com/en/system/Tarantool,Y,,tarantool/tarantool,1.92,140,tarantool,tarantool,VK,2008.0,2022.0,Y,N,0,1,0,0,1,0,0,0,0,0,1,0,1,0,0
 140,Object oriented,Object oriented DBMS,ObjectStore,https://db-engines.com/en/system/ObjectStore,N,,-,1.86,141,-,-,Ignite Technologies,1988.0,2014.0,N,N,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
 141,Relational,Relational DBMS,Tibero,https://db-engines.com/en/system/Tibero,,,,1.85,142,,,TmaxSoft,2003.0,2015.0,N,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
