@@ -18,6 +18,7 @@ print('--Add root directory "{}" to system path.'.format(pkg_rootdir))
 
 
 import shutil
+import socket
 import pandas as pd
 
 from script.crawling_ranking_table import crawling_ranking_table_soup
@@ -33,14 +34,30 @@ JOIN_RANKING_TABLE_DBMS_INFO_ON_DBMS = True  # join ranking_table and dbms_info 
 RECALC_RANKING_TABLE_DBMS_INFO = True
 REUSE_EXISTING_TAGGING_INFO = True
 
-src_existing_tagging_info_path = os.path.join(pkg_rootdir, 'data/existing_tagging_info/DB_EngRank_full_202211.csv')
-ranking_table_crawling_path = os.path.join(pkg_rootdir, 'data/db_engines_ranking_table_full/ranking_crawling_202212_raw.csv')
-dbms_info_crawling_path = os.path.join(pkg_rootdir, 'data/db_engines_ranking_table_full/dbms_info_crawling_202212_raw.csv')
-ranking_table_dbms_info_joined_path = os.path.join(pkg_rootdir, 'data/db_engines_ranking_table_full/ranking_table_dbms_info_202212_joined.csv')
-src_ranking_table_dbms_info_joined_recalc_path = os.path.join(pkg_rootdir, 'data/db_engines_ranking_table_full/ranking_table_dbms_info_202212_joined_recalc.csv')
-tar_automerged_path = os.path.join(pkg_rootdir, 'data/db_engines_ranking_table_full/ranking_crawling_202212_automerged.csv')
-src_category_labels_path = os.path.join(pkg_rootdir, 'data/existing_tagging_info/category_labels.csv')
-tar_category_labels_updated_path = os.path.join(pkg_rootdir, 'data/db_engines_ranking_table_full/category_labels_updated.csv')
+month_yyyyMM = "202301"
+
+
+def get_last_month_yyyyMM(curr_month_yyyyMM):
+    curr_month_yyyyMM = str(curr_month_yyyyMM)
+    assert(curr_month_yyyyMM.isdecimal() and len(curr_month_yyyyMM) == 6)
+    import datetime
+
+    curr_year = int(month_yyyyMM[:4])
+    curr_month = int(month_yyyyMM[4:6])
+    curr_month_datetime = datetime.datetime(curr_year, curr_month, 1)  # first day of current month
+    last_month_datetime = curr_month_datetime - datetime.timedelta(days=1)  # last day of last month
+    return last_month_datetime.strftime("%Y%m")
+
+
+last_month_yyyyMM = get_last_month_yyyyMM(month_yyyyMM)
+src_existing_tagging_info_path = os.path.join(pkg_rootdir, f'data/existing_tagging_info/DB_EngRank_full_{last_month_yyyyMM}.csv')
+ranking_table_crawling_path = os.path.join(pkg_rootdir, f'data/db_engines_ranking_table_full/ranking_crawling_{month_yyyyMM}_raw.csv')
+dbms_info_crawling_path = os.path.join(pkg_rootdir, f'data/db_engines_ranking_table_full/dbms_info_crawling_{month_yyyyMM}_raw.csv')
+ranking_table_dbms_info_joined_path = os.path.join(pkg_rootdir, f'data/db_engines_ranking_table_full/ranking_table_dbms_info_{month_yyyyMM}_joined.csv')
+src_ranking_table_dbms_info_joined_recalc_path = os.path.join(pkg_rootdir, f'data/db_engines_ranking_table_full/ranking_table_dbms_info_{month_yyyyMM}_joined_recalc.csv')
+tar_automerged_path = os.path.join(pkg_rootdir, f'data/db_engines_ranking_table_full/ranking_crawling_{month_yyyyMM}_automerged.csv')
+src_category_labels_path = os.path.join(pkg_rootdir, f'data/existing_tagging_info/category_labels.csv')
+tar_category_labels_updated_path = os.path.join(pkg_rootdir, f'data/db_engines_ranking_table_full/category_labels_updated.csv')
 
 encoding = 'utf-8'
 
@@ -79,7 +96,15 @@ if __name__ == '__main__':
         use_elem_dict = {
             'main_contents': ['table', {'class': 'tools'}],
         }
-        crawling_dbms_infos_soup(df_db_names_urls, headers, use_elem_dict, save_path=dbms_info_crawling_path)
+        mode = 'a'  # mode 'a' for breakpoint resumption
+        batch = 20
+        temp_save_path = dbms_info_crawling_path.rstrip('.csv') + '_temp.csv'
+        state = -1
+        while state == -1:
+            try:
+                state = crawling_dbms_infos_soup(df_db_names_urls, headers, use_elem_dict, save_path=dbms_info_crawling_path, mode=mode, temp_save_path=temp_save_path, batch=batch)
+            except socket.timeout:
+                continue
 
     if JOIN_RANKING_TABLE_DBMS_INFO_ON_DBMS:
         use_cols_ranking_table = None
@@ -138,8 +163,8 @@ if __name__ == '__main__':
             'has_company': 'update__reuse_old_if_cooccurrence_on(DBMS)',
             'github_repo_link': 'update__reuse_old_if_cooccurrence_on(DBMS)',
             # update values and change the column name
-            'Score_Nov-2022': 'update__change_colname_as(Score_Dec-2022)__use_new(Score_Dec-2022)',
-            'Rank_Nov-2022': 'update__change_colname_as(Rank_Dec-2022)__use_new(Rank_Dec-2022)__dtype(Int64)',
+            'Score_Dec-2022': 'update__change_colname_as(Score_Jan-2023)__use_new(Score_Jan-2023)',  # always keep update
+            'Rank_Dec-2022': 'update__change_colname_as(Rank_Jan-2023)__use_new(Rank_Jan-2023)__dtype(Int64)',  # always keep update
             'org_name': 'update__reuse_old_if_cooccurrence_on(DBMS)',  # 依赖于手动更新的列github_repo_link
             'repo_name': 'update__reuse_old_if_cooccurrence_on(DBMS)',  # 依赖于手动更新的列github_repo_link
             'Developer': 'update__reuse_old_if_cooccurrence_on(DBMS)',
