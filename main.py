@@ -28,13 +28,13 @@ from script.recalc_ranking_table_dbms_info import recalc_ranking_table_dbms_info
 from script.reuse_existing_tagging_info import merge_info_to_csv
 
 
-UPDATE_RANKING_TABLE = False  # This will take a long time to crawl the DB-Engines website if set to True...
-UPDATE_DBMS_INFO = False  # This will take a long long time to crawl many DB-Engines websites if set to True......
+UPDATE_RANKING_TABLE = True  # This will take a long time to crawl the DB-Engines website if set to True...
+UPDATE_DBMS_INFO = True  # This will take a long long time to crawl many DB-Engines websites if set to True......
 JOIN_RANKING_TABLE_DBMS_INFO_ON_DBMS = True  # join ranking_table and dbms_info on filed 'DBMS' and 'Name'
 RECALC_RANKING_TABLE_DBMS_INFO = True
 REUSE_EXISTING_TAGGING_INFO = True
 
-month_yyyyMM = "202301"
+month_yyyyMM = "202302"
 
 
 def get_last_month_yyyyMM(curr_month_yyyyMM):

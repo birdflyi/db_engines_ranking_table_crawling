@@ -15,7 +15,6 @@ if pkg_rootdir not in sys.path:
     sys.path.append(pkg_rootdir)
 print('Add root directory "{}" to system path.'.format(pkg_rootdir))
 
-import re
 
 import pandas as pd
 

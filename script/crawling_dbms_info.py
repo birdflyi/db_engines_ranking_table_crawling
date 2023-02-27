@@ -186,12 +186,14 @@ def crawling_dbms_infos_soup(df_db_names_urls, headers, use_elem_dict, save_path
                                      use_all_impl_cols=use_all_impl_cols, **kwargs)
         else:
             print(f'Index >= {len_db_names}. Done!')
+            # save to csv
             shutil.copyfile(temp_save_path, save_path)
+            print(save_path, 'saved!')
             return STATE_OK
-
-    # save to csv
-    df_dbms_infos.to_csv(save_path, encoding='utf-8', index=False)
-    print(save_path, 'saved!')
+    else:
+        # save to csv
+        df_dbms_infos.to_csv(save_path, encoding='utf-8', index=False)
+        print(save_path, 'saved!')
     return STATE_OK
 
 
