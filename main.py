@@ -26,30 +26,23 @@ from script.crawling_dbms_info import crawling_dbms_infos_soup
 from script.join_ranking_table_dbms_info import join_ranking_table_dbms_info
 from script.recalc_ranking_table_dbms_info import recalc_ranking_table_dbms_info
 from script.reuse_existing_tagging_info import merge_info_to_csv
+from script.time_format import TimeFormat
 
 
-UPDATE_RANKING_TABLE = True  # This will take a long time to crawl the DB-Engines website if set to True...
-UPDATE_DBMS_INFO = True  # This will take a long long time to crawl many DB-Engines websites if set to True......
+UPDATE_RANKING_TABLE = False  # This will take a long time to crawl the DB-Engines website if set to True...
+UPDATE_DBMS_INFO = False  # This will take a long long time to crawl many DB-Engines websites if set to True......
 JOIN_RANKING_TABLE_DBMS_INFO_ON_DBMS = True  # join ranking_table and dbms_info on filed 'DBMS' and 'Name'
 RECALC_RANKING_TABLE_DBMS_INFO = True
 REUSE_EXISTING_TAGGING_INFO = True
 
+format_time_in_filename = "%Y%m"
+format_time_in_colname = "%b-%Y"
+
 month_yyyyMM = "202302"
+curr_month = TimeFormat(month_yyyyMM, format_time_in_filename, format_time_in_filename)
 
 
-def get_last_month_yyyyMM(curr_month_yyyyMM):
-    curr_month_yyyyMM = str(curr_month_yyyyMM)
-    assert(curr_month_yyyyMM.isdecimal() and len(curr_month_yyyyMM) == 6)
-    import datetime
-
-    curr_year = int(month_yyyyMM[:4])
-    curr_month = int(month_yyyyMM[4:6])
-    curr_month_datetime = datetime.datetime(curr_year, curr_month, 1)  # first day of current month
-    last_month_datetime = curr_month_datetime - datetime.timedelta(days=1)  # last day of last month
-    return last_month_datetime.strftime("%Y%m")
-
-
-last_month_yyyyMM = get_last_month_yyyyMM(month_yyyyMM)
+last_month_yyyyMM = curr_month.get_last_month()
 src_existing_tagging_info_path = os.path.join(pkg_rootdir, f'data/existing_tagging_info/DB_EngRank_full_{last_month_yyyyMM}.csv')
 ranking_table_crawling_path = os.path.join(pkg_rootdir, f'data/db_engines_ranking_table_full/ranking_crawling_{month_yyyyMM}_raw.csv')
 dbms_info_crawling_path = os.path.join(pkg_rootdir, f'data/db_engines_ranking_table_full/dbms_info_crawling_{month_yyyyMM}_raw.csv')
@@ -163,8 +156,8 @@ if __name__ == '__main__':
             'has_company': 'update__reuse_old_if_cooccurrence_on(DBMS)',
             'github_repo_link': 'update__reuse_old_if_cooccurrence_on(DBMS)',
             # update values and change the column name
-            'Score_Dec-2022': 'update__change_colname_as(Score_Jan-2023)__use_new(Score_Jan-2023)',  # always keep update
-            'Rank_Dec-2022': 'update__change_colname_as(Rank_Jan-2023)__use_new(Rank_Jan-2023)__dtype(Int64)',  # always keep update
+            f'Score_{curr_month.get_last_month(format_time_in_colname)}': f'update__change_colname_as(Score_{curr_month.get_curr_month(format_time_in_colname)})__use_new(Score_{curr_month.get_curr_month(format_time_in_colname)})',  # automatically updated with the variable "month_yyyyMM"
+            f'Rank_{curr_month.get_last_month(format_time_in_colname)}': f'update__change_colname_as(Rank_{curr_month.get_curr_month(format_time_in_colname)})__use_new(Rank_{curr_month.get_curr_month(format_time_in_colname)})__dtype(Int64)',  # automatically updated with the variable "month_yyyyMM"
             'org_name': 'update__reuse_old_if_cooccurrence_on(DBMS)',  # 依赖于手动更新的列github_repo_link
             'repo_name': 'update__reuse_old_if_cooccurrence_on(DBMS)',  # 依赖于手动更新的列github_repo_link
             'Developer': 'update__reuse_old_if_cooccurrence_on(DBMS)',
