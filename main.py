@@ -25,7 +25,7 @@ from script.crawling_ranking_table import crawling_ranking_table_soup
 from script.crawling_dbms_info import crawling_dbms_infos_soup
 from script.join_ranking_table_dbms_info import join_ranking_table_dbms_info
 from script.recalc_ranking_table_dbms_info import recalc_ranking_table_dbms_info
-from script.reuse_existing_tagging_info import merge_info_to_csv
+from script.reuse_existing_tagging_info import merge_info_to_csv, trim_spaces
 from script.time_format import TimeFormat
 
 
@@ -168,6 +168,8 @@ if __name__ == '__main__':
             'cloud_based_only_recalc': 'update__use_new',
         }
 
+        df_src_existing_tagging_info["DBMS"] = df_src_existing_tagging_info["DBMS"].apply(trim_spaces)
+        df_ranking_table_dbms_info_joined_recalc["DBMS"] = df_ranking_table_dbms_info_joined_recalc["DBMS"].apply(trim_spaces)
         merge_info_to_csv(df_src_existing_tagging_info, df_ranking_table_dbms_info_joined_recalc, df_category_labels, update_conf,
                           save_automerged_path=tar_automerged_path,
                           save_category_labels_path=tar_category_labels_updated_path)

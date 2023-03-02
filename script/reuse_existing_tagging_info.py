@@ -369,6 +369,10 @@ def merge_info_to_csv(df_src_existing_tagging, df_src_ranking_new, df_category_l
     return None
 
 
+def trim_spaces(s):
+    return re.sub(r'\s+', " ", s)
+
+
 if __name__ == '__main__':
     src_existing_tagging_info_path = os.path.join(pkg_rootdir, 'data/existing_tagging_info/DB_EngRank_tophalf_githubprj_summary.CSV')
     src_ranking_crawling_raw_path = os.path.join(pkg_rootdir, 'data/db_engines_ranking_table_full/ranking_crawling_202211_raw.csv')
@@ -430,6 +434,8 @@ if __name__ == '__main__':
         'repo_name': 'update__reuse_old_if_cooccurrence_on(DBMS)',  # 依赖于手动更新的列github_repo_link
     }
 
+    df_src_existing_tagging_info["system"] = df_src_existing_tagging_info["system"].apply(trim_spaces)
+    df_src_ranking_crawling_raw["DBMS"] = df_src_ranking_crawling_raw["DBMS"].apply(trim_spaces)
     merge_info_to_csv(df_src_existing_tagging_info, df_src_ranking_crawling_raw, df_category_labels, update_conf,
                       save_automerged_path=tar_automerged_path, save_category_labels_path=tar_category_labels_updated_path)
 
