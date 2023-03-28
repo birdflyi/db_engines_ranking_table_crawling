@@ -105,7 +105,7 @@ def crawling_dbms_infos_soup(df_db_names_urls, headers, use_elem_dict, save_path
 
     default_use_cols = ['Name', 'Description', 'Primary database model', 'Secondary database models',
                         'DB-Engines Ranking Trend Chart', 'Website', 'Technical documentation',
-                        'Developer', 'Initial release', 'Current release', 'License',
+                        'Developer', 'Initial release', 'Current release', 'License', 'License_info',
                         'Cloud-based only', 'DBaaS offerings (sponsored links)',
                         'Implementation language', 'Server operating systems', 'Data scheme',
                         'Typing', 'XML support', 'Secondary indexes', 'SQL',
@@ -122,7 +122,8 @@ def crawling_dbms_infos_soup(df_db_names_urls, headers, use_elem_dict, save_path
         if KEY_ATTR_DBENG not in use_cols:
             use_cols = [KEY_ATTR_DBENG] + use_cols
 
-    df_dbms_infos = pd.DataFrame()
+    df_dbms_infos = pd.DataFrame(columns=use_cols)
+    df_dbms_infos = df_dbms_infos.T
 
     len_db_names = len(df_db_names_urls)
 

@@ -38,7 +38,7 @@ REUSE_EXISTING_TAGGING_INFO = True
 format_time_in_filename = "%Y%m"
 format_time_in_colname = "%b-%Y"
 
-month_yyyyMM = "202302"
+month_yyyyMM = "202303"
 curr_month = TimeFormat(month_yyyyMM, format_time_in_filename, format_time_in_filename)
 
 
