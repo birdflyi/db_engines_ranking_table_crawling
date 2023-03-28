@@ -43,7 +43,7 @@ curr_month = TimeFormat(month_yyyyMM, format_time_in_filename, format_time_in_fi
 
 
 last_month_yyyyMM = curr_month.get_last_month()
-src_existing_tagging_info_path = os.path.join(pkg_rootdir, f'data/existing_tagging_info/DB_EngRank_full_{last_month_yyyyMM}.csv')
+src_existing_tagging_info_path = os.path.join(pkg_rootdir, f'data/manulabeled/ranking_crawling_{last_month_yyyyMM}_automerged_manulabled.csv')
 ranking_table_crawling_path = os.path.join(pkg_rootdir, f'data/db_engines_ranking_table_full/ranking_crawling_{month_yyyyMM}_raw.csv')
 dbms_info_crawling_path = os.path.join(pkg_rootdir, f'data/db_engines_ranking_table_full/dbms_info_crawling_{month_yyyyMM}_raw.csv')
 ranking_table_dbms_info_joined_path = os.path.join(pkg_rootdir, f'data/db_engines_ranking_table_full/ranking_table_dbms_info_{month_yyyyMM}_joined.csv')
