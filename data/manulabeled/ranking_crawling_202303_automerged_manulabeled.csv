@@ -11,11 +11,11 @@ id,category_label,Multi_model_info,DBMS,DBMS_insitelink,has_open_source_github_r
 9,Relational,Relational DBMS,Microsoft Access,https://db-engines.com/en/system/Microsoft+Access,N,Y,-,132.06,10,-,-,Microsoft,1992,2019,N,Bundled with Microsoft Office,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
 10,Relational,Relational DBMS,Snowflake,https://db-engines.com/en/system/Snowflake,Y_archivedas_twitter-archive/snowflake,Y,twitter-archive/snowflake,114.4,11,twitter-archive,snowflake,Snowflake Computing Inc.,2014,,N,,Y,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
 11,Wide column,Wide column store,Cassandra,https://db-engines.com/en/system/Cassandra,Y,N,apache/cassandra,113.79,12,apache,cassandra,Apache Software Foundation,2008,2022,Y,Apache version 2,N,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
-12,Relational,"Relational DBMS,Document store,Graph DBMS,Spatial DBMS",MariaDB,https://db-engines.com/en/system/MariaDB,Y,Y_ΩËø«…œ –,MariaDB/server,96.84,13,MariaDB,server,"MariaDB Corporation Ab (MariaDB Enterprise),,MariaDB Foundation (community MariaDB Server)",2009,2023,Y,"GPL version 2, commercial enterprise subscription available",N,0,1,0,1,0,0,0,0,0,0,1,0,1,0,0
+12,Relational,"Relational DBMS,Document store,Graph DBMS,Spatial DBMS",MariaDB,https://db-engines.com/en/system/MariaDB,Y,Y_ÂÄüÂ£≥‰∏äÂ∏Ç,MariaDB/server,96.84,13,MariaDB,server,"MariaDB Corporation Ab (MariaDB Enterprise),,MariaDB Foundation (community MariaDB Server)",2009,2023,Y,"GPL version 2, commercial enterprise subscription available",N,0,1,0,1,0,0,0,0,0,0,1,0,1,0,0
 13,Search engine,Search engine,Splunk,https://db-engines.com/en/system/Splunk,N,,-,87.97,14,-,-,Splunk Inc.,2003,,N,Limited free edition and free developer edition available,N,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
 14,Document,"Document store,Key-value store",Amazon DynamoDB,https://db-engines.com/en/system/Amazon+DynamoDB,N,,-,80.77,15,-,-,Amazon,2012,,N,free tier for a limited amount of database operations,Y,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0
 15,Relational,"Relational DBMS,Document store,Graph DBMS,Spatial DBMS",Microsoft Azure SQL Database,https://db-engines.com/en/system/Microsoft+Azure+SQL+Database,N,,-,77.44,16,-,-,Microsoft,2010,,N,,Y,0,1,0,1,0,0,0,0,0,0,1,0,1,0,0
-16,Relational,Relational DBMS,Hive,https://db-engines.com/en/system/Hive,Y,N_Facebookø™‘¥,apache/hive,70.91,17,apache,hive,Apache Software Foundation,2012,2022,Y,Apache Version 2,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+16,Relational,Relational DBMS,Hive,https://db-engines.com/en/system/Hive,Y,N_FacebookÂºÄÊ∫ê,apache/hive,70.91,17,apache,hive,Apache Software Foundation,2012,2022,Y,Apache Version 2,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
 17,Relational,"Relational DBMS,Document store,Graph DBMS,Spatial DBMS,Time Series DBMS",Teradata,https://db-engines.com/en/system/Teradata,N,,-,63.74,18,-,-,Teradata,1984,2019,N,,N,0,1,0,1,0,0,0,0,0,0,1,0,1,1,0
 18,Document,"Document store,Relational DBMS",Databricks,https://db-engines.com/en/system/Databricks,N,N,-,60.86,19,-,-,Databricks,2013,,Y,,Y,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0
 19,Graph,Graph DBMS,Neo4j,https://db-engines.com/en/system/Neo4j,Y,Y,neo4j/neo4j,53.51,20,neo4j,neo4j,"Neo4j, Inc.",2007,2023,Y,"GPL version3, commercial licenses available",N,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
@@ -41,8 +41,8 @@ id,category_label,Multi_model_info,DBMS,DBMS_insitelink,has_open_source_github_r
 39,Relational,Relational DBMS,Netezza,https://db-engines.com/en/system/Netezza,N,,-,16.31,40,-,-,IBM,2000,,N,,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
 40,Relational,Relational DBMS,dBASE,https://db-engines.com/en/system/dBASE,N,,-,15.03,41,-,-,Asthon Tate,1979,2019,N,,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
 41,Document,"Document store,Spatial DBMS",CouchDB,https://db-engines.com/en/system/CouchDB,Y,N,apache/couchdb,14.46,42,apache,couchdb,Apache Software Foundation,2005,2023,Y,Apache version 2,N,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0
-42,Relational,"Relational DBMS,Time Series DBMS",ClickHouse,https://db-engines.com/en/system/ClickHouse,Y,Y_–¬≥…¡¢,ClickHouse/ClickHouse,14.24,43,ClickHouse,ClickHouse,Clickhouse Inc.,2016,2023,Y,Apache 2.0,N,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0
-43,Relational,Relational DBMS,Presto,https://db-engines.com/en/system/Presto,Y,N_Facebookø™‘¥,prestodb/presto,13.89,44,prestodb,presto,Facebook; Presto Foundation,2013,,Y,Apache 2.0,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+42,Relational,"Relational DBMS,Time Series DBMS",ClickHouse,https://db-engines.com/en/system/ClickHouse,Y,Y_Êñ∞ÊàêÁ´ã,ClickHouse/ClickHouse,14.24,43,ClickHouse,ClickHouse,Clickhouse Inc.,2016,2023,Y,Apache 2.0,N,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0
+43,Relational,Relational DBMS,Presto,https://db-engines.com/en/system/Presto,Y,N_FacebookÂºÄÊ∫ê,prestodb/presto,13.89,44,prestodb,presto,Facebook; Presto Foundation,2013,,Y,Apache 2.0,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
 44,Document,Document store,Google Cloud Firestore,https://db-engines.com/en/system/Google+Cloud+Firestore,N,,-,11.36,45,-,-,Google,2017,,N,,Y,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
 45,Search engine,Search engine,OpenSearch,https://db-engines.com/en/system/OpenSearch,Y,Y,opensearch-project/OpenSearch,11.12,46,opensearch-project,OpenSearch,Amazon Web Services,2021,2023,Y,Apache Version 2.0,N,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
 46,Relational,"Relational DBMS,Document store,Spatial DBMS",Greenplum,https://db-engines.com/en/system/Greenplum,Y,Y,greenplum-db/gpdb,10.86,47,greenplum-db,gpdb,Pivotal Software Inc.,2005,2020,Y,Apache 2.0,N,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0
@@ -110,7 +110,7 @@ id,category_label,Multi_model_info,DBMS,DBMS_insitelink,has_open_source_github_r
 108,Relational,Relational DBMS,SAP Advantage Database Server,https://db-engines.com/en/system/SAP+Advantage+Database+Server,N,,-,2.99,109,-,-,"Sybase, SAP",1993,,N,,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
 109,Key-value,Key-value store,LMDB,https://db-engines.com/en/system/LMDB,Y,,LMDB/lmdb,2.99,110,LMDB,lmdb,Symas,2011,2021,Y,,N,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
 110,Document,Document store,CloudKit,https://db-engines.com/en/system/CloudKit,Y,,jcrosby/cloudkit,2.98,111,jcrosby,cloudkit,,2016,,N,,Y,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
-111,Key-value,"Key-value store,Object oriented DBMS,Relational DBMS,Document store",InterSystems Cach®¶,https://db-engines.com/en/system/InterSystems+Cach%C3%A9,N,,-,2.96,112,-,-,InterSystems,1997,2020,N,,N,0,1,0,0,1,0,0,0,1,0,1,0,0,0,0
+111,Key-value,"Key-value store,Object oriented DBMS,Relational DBMS,Document store",InterSystems Cach√©,https://db-engines.com/en/system/InterSystems+Cach%C3%A9,N,,-,2.96,112,-,-,InterSystems,1997,2020,N,,N,0,1,0,0,1,0,0,0,1,0,1,0,0,0,0
 112,Relational,"Relational DBMS,Document store",TiDB,https://db-engines.com/en/system/TiDB,Y,Y,pingcap/tidb,2.92,113,pingcap,tidb,"PingCAP, Inc.",2016,2023,Y,Apache 2.0,N,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0
 113,Relational,Relational DBMS,4D,https://db-engines.com/en/system/4D,N,,-,2.88,114,-,-,"4D, Inc",1984,2021,N,,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
 114,Key-value,Key-value store,Amazon SimpleDB,https://db-engines.com/en/system/Amazon+SimpleDB,N,,-,2.83,115,-,-,Amazon,2007,,N,,Y,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
@@ -393,7 +393,7 @@ id,category_label,Multi_model_info,DBMS,DBMS_insitelink,has_open_source_github_r
 391,Relational,Relational DBMS,CovenantSQL,https://db-engines.com/en/system/CovenantSQL,Y,,CovenantSQL/CovenantSQL,0,389,CovenantSQL,CovenantSQL,,2018,,Y,,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
 392,Relational,Relational DBMS,DaggerDB,https://db-engines.com/en/system/DaggerDB,N,,-,0,389,-,-,,2014,,N,,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
 393,Relational,Relational DBMS,EdgelessDB,https://db-engines.com/en/system/EdgelessDB,Y,,edgelesssys/edgelessdb,0,389,edgelesssys,edgelessdb,Edgeless Systems,2021,,Y,GPL V2,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-394,Graph,Graph DBMS,Galaxybase,https://db-engines.com/en/system/Galaxybase,N,,-,0,389,-,-,"Chuanglin(Createlink)  Technology Co., Ltd ’„Ω≠¥¥¡⁄ø∆ºº”–œﬁπ´Àæ",2017,,N,,N,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+394,Graph,Graph DBMS,Galaxybase,https://db-engines.com/en/system/Galaxybase,N,,-,0,389,-,-,"Chuanglin(Createlink)  Technology Co., Ltd ÊµôÊ±üÂàõÈÇªÁßëÊäÄÊúâÈôêÂÖ¨Âè∏",2017,,N,,N,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
 395,Key-value,Key-value store,Helium,https://db-engines.com/en/system/Helium,N,,-,0,389,-,-,Levyx Inc.,2013,,N,,N,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
 396,Search engine,Search engine,Indica,https://db-engines.com/en/system/Indica,N,,-,0,389,-,-,,2014,,N,parts of it are open source,N,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
 397,Key-value,Key-value store,JaguarDB,https://db-engines.com/en/system/JaguarDB,Y,Y,datajaguar/jaguardb,0,389,datajaguar,jaguardb,"DataJaguar,  Inc.",2015,,Y,GPL V3.0,N,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
