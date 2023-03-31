@@ -163,7 +163,7 @@ id,category_label,Multi_model_info,DBMS,DBMS_insitelink,has_open_source_github_r
 161,Document,Document store,Datameer,https://db-engines.com/en/system/Datameer,N,,-,1.64,162,-,-,,2009,,N,,N,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
 162,Relational,Relational DBMS,DataEase,https://db-engines.com/en/system/DataEase,N,,-,1.6,163,-,-,,1981,,N,,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
 163,Object oriented,Object oriented DBMS,Matisse,https://db-engines.com/en/system/Matisse,Y_GithubFork,,zhihu/Matisse,1.6,164,zhihu,Matisse,Matisse Software Inc.,1986,,N,free developer license available,N,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
-164,Key-value,Key-value store,GT.M,https://db-engines.com/en/system/GT.M,Y_NotGithub_SourceForge,,-,1.59,165,-,-,,1986,2021,N,,N,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+164,Key-value,Key-value store,GT.M,https://db-engines.com/en/system/GT.M,N,,-,1.59,165,-,-,,1986,2021,N,,N,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
 165,Relational,Relational DBMS,NonStop SQL,https://db-engines.com/en/system/NonStop+SQL,N,,-,1.56,166,-,-,"HP, originally by Tandem",1987,,N,,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
 166,Relational,Relational DBMS,Cubrid,https://db-engines.com/en/system/Cubrid,Y,,CUBRID/cubrid,1.55,167,CUBRID,cubrid,"CUBRID Corporation, CUBRID Foundation",2008,2021,Y,Apache Version 2.0,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
 167,Graph,Graph DBMS,Giraph,https://db-engines.com/en/system/Giraph,Y,,apache/giraph,1.55,168,apache,giraph,,2013,2020,Y,Apache Version 2,N,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
@@ -171,7 +171,7 @@ id,category_label,Multi_model_info,DBMS,DBMS_insitelink,has_open_source_github_r
 169,Relational,Relational DBMS,Oracle Rdb,https://db-engines.com/en/system/Oracle+Rdb,N,,-,1.52,170,-,-,"Oracle, originally developed by Digital Equipment Corporation (DEC)",1984,2021,N,,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
 170,Document,"Document store,Object oriented DBMS,Graph DBMS,Search engine",GigaSpaces,https://db-engines.com/en/system/GigaSpaces,N_Image_Gigaspaces/docker,Y,-,1.52,171,-,-,Gigaspaces Technologies,2000,2020,Y,Apache Version 2; Commercial licenses available,N,0,1,0,1,0,0,0,0,1,0,0,1,0,0,0
 171,Relational,Relational DBMS,GBase,https://db-engines.com/en/system/GBase,N,,-,1.52,172,-,-,,,,N,,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-172,Relational,Relational DBMS,mSQL,https://db-engines.com/en/system/mSQL,Y_NotGithub,,-,1.49,173,-,-,Hughes Technologies,1994,2021,N,free licenses can be provided,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+172,Relational,Relational DBMS,mSQL,https://db-engines.com/en/system/mSQL,N,,-,1.49,173,-,-,Hughes Technologies,1994,2021,N,free licenses can be provided,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
 173,Search engine,Search engine,Pinecone,https://db-engines.com/en/system/Pinecone,N,Y,-,1.48,174,-,-,"Pinecone Systems, Inc",2019,,N,,Y,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
 174,Document,"Document store,Key-value store,Relational DBMS",FoundationDB,https://db-engines.com/en/system/FoundationDB,Y,,apple/foundationdb,1.46,175,apple,foundationdb,FoundationDB,2013,2020,Y,Apache 2.0,N,0,1,0,0,1,0,0,0,0,0,1,0,0,0,0
 175,Relational,Relational DBMS,MatrixOne,https://db-engines.com/en/system/MatrixOne,Y,,matrixorigin/matrixone,1.42,176,matrixorigin,matrixone,,2021,,Y,Apache Version 2.0,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
@@ -350,7 +350,7 @@ id,category_label,Multi_model_info,DBMS,DBMS_insitelink,has_open_source_github_r
 348,Document,Document store,Acebase,https://db-engines.com/en/system/Acebase,Y,,appy-one/acebase,0.19,349,appy-one,acebase,,2018,,Y,MIT License,N,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
 349,Time Series,Time Series DBMS,SiteWhere,https://db-engines.com/en/system/SiteWhere,Y,,sitewhere/sitewhere,0.18,350,sitewhere,sitewhere,SiteWhere,2010,,Y,Common Public Attribution License Version 1.0,N,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
 350,Key-value,"Key-value store,Relational DBMS",Faircom DB,https://db-engines.com/en/system/Faircom+DB,N,,-,0.18,351,-,-,FairCom Corporation,1979,2020,N,"Restricted, free version available",N,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0
-351,Document,Document store,RaptorDB,https://db-engines.com/en/system/RaptorDB,Y,,-,0.18,352,-,-,,,,Y,Apache Version 2,N,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+351,Document,Document store,RaptorDB,https://db-engines.com/en/system/RaptorDB,Y,,mgholam/RaptorDB-Document,0.18,352,mgholam,RaptorDB-Document,,,,Y,Apache Version 2,N,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
 352,Key-value,Key-value store,TomP2P,https://db-engines.com/en/system/TomP2P,Y,,tomp2p/TomP2P,0.18,353,tomp2p,TomP2P,,2004,,Y,Apache Version 2,N,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
 353,Relational,Relational DBMS,EsgynDB,https://db-engines.com/en/system/EsgynDB,N,,-,0.18,354,-,-,Esgyn,2015,,N,,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
 354,Relational,Relational DBMS,AntDB,https://db-engines.com/en/system/AntDB,Y,,ADBSQL/AntDB,0.17,355,ADBSQL,AntDB,AsiaInfo Technologies Limited,,,N,"community version available at,github.com/ADBSQL/AntDB",N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
