@@ -364,7 +364,7 @@ def merge_info_to_csv(df_src_existing_tagging, df_src_ranking_new, df_category_l
                       save_automerged_path, save_category_labels_path=None):
     df_tar_automerged, df_category_labels_updated = merge_info(df_src_existing_tagging, df_src_ranking_new,
                                                                df_category_labels, update_conf)
-    df_tar_automerged.to_csv(save_automerged_path, encoding=encoding, index=True)
+    df_tar_automerged.to_csv(save_automerged_path, encoding=encoding, index=False)
     df_category_labels_updated.to_csv(save_category_labels_path, encoding=encoding, index=False)
     return None
 
