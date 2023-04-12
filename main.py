@@ -23,6 +23,7 @@ import pandas as pd
 
 from script.crawling_ranking_table import crawling_ranking_table_soup
 from script.crawling_dbms_info import crawling_dbms_infos_soup
+from script.db_info_fusion import merge_info_start_checkpoint_last_month_manulabeled
 from script.join_ranking_table_dbms_info import join_ranking_table_dbms_info
 from script.recalc_ranking_table_dbms_info import recalc_ranking_table_dbms_info
 from script.reuse_existing_tagging_info import merge_info_to_csv, trim_spaces
@@ -38,11 +39,12 @@ REUSE_EXISTING_TAGGING_INFO = True
 format_time_in_filename = "%Y%m"
 format_time_in_colname = "%b-%Y"
 
-month_yyyyMM = "202303"
+month_yyyyMM = "202304"
 curr_month = TimeFormat(month_yyyyMM, format_time_in_filename, format_time_in_filename)
 
 
-last_month_yyyyMM = curr_month.get_last_month()
+last_month_yyyyMM = curr_month.get_last_month(format_time_in_filename)
+curr_month_yyyyMM = curr_month.get_curr_month(format_time_in_filename)
 src_existing_tagging_info_path = os.path.join(pkg_rootdir, f'data/manulabeled/ranking_crawling_{last_month_yyyyMM}_automerged_manulabeled.csv')
 ranking_table_crawling_path = os.path.join(pkg_rootdir, f'data/db_engines_ranking_table_full/ranking_crawling_{month_yyyyMM}_raw.csv')
 dbms_info_crawling_path = os.path.join(pkg_rootdir, f'data/db_engines_ranking_table_full/dbms_info_crawling_{month_yyyyMM}_raw.csv')
@@ -51,6 +53,7 @@ src_ranking_table_dbms_info_joined_recalc_path = os.path.join(pkg_rootdir, f'dat
 tar_automerged_path = os.path.join(pkg_rootdir, f'data/db_engines_ranking_table_full/ranking_crawling_{month_yyyyMM}_automerged.csv')
 src_category_labels_path = os.path.join(pkg_rootdir, f'data/existing_tagging_info/category_labels.csv')
 tar_category_labels_updated_path = os.path.join(pkg_rootdir, f'data/db_engines_ranking_table_full/category_labels_updated.csv')
+tar_existing_tagging_info_path = src_existing_tagging_info_path.replace(f'{last_month_yyyyMM}', f'{curr_month_yyyyMM}')
 
 encoding = 'utf-8'
 
@@ -174,5 +177,21 @@ if __name__ == '__main__':
                           save_automerged_path=tar_automerged_path,
                           save_category_labels_path=tar_category_labels_updated_path)
 
+        last_month_dtype = {f'Score_{curr_month.get_last_month(format_time_in_colname)}': str, f'Rank_{curr_month.get_last_month(format_time_in_colname)}': str, 'initial_release_recalc': str, 'current_release_recalc': str}
+        curr_month_dtype = {f'Score_{curr_month.get_curr_month(format_time_in_colname)}': str, f'Rank_{curr_month.get_curr_month(format_time_in_colname)}': str, 'initial_release_recalc': str, 'current_release_recalc': str}
+        update_start_checkpoint_path = tar_automerged_path
+        df_update_start_checkpoint = pd.read_csv(update_start_checkpoint_path, encoding=encoding, index_col=False, dtype=curr_month_dtype)
+        df_last_month_manulabeled = pd.read_csv(src_existing_tagging_info_path, encoding=encoding, index_col=False, dtype=last_month_dtype)
+        use_col_last_month_manulabeled = list(df_last_month_manulabeled.columns.values)
+        stop_colnames = [f'Score_{curr_month.get_last_month(format_time_in_colname)}', f'Rank_{curr_month.get_last_month(format_time_in_colname)}']
+        for sc in stop_colnames:
+            use_col_last_month_manulabeled.remove(sc)
+        df_last_month_manulabeled = df_last_month_manulabeled[use_col_last_month_manulabeled]
+        merge_info_start_checkpoint_last_month_manulabeled(df_update_start_checkpoint, df_last_month_manulabeled,
+                                                           save_path=tar_existing_tagging_info_path,
+                                                           input_key_colname_pair=["DBMS", "DBMS"],
+                                                           output_key_colname="DBMS",
+                                                           conflict_delimiter="#start_checkpoint>|<last_month_manulabeled#",
+                                                           encoding=encoding)
         if OVERWRITE_CATEGORY_LABELS:
             shutil.copy(tar_category_labels_updated_path, src_category_labels_path)
