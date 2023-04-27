@@ -423,7 +423,7 @@ if __name__ == '__main__':
         'Multi_model_info': 'build__basedon(Multi_model_info)',
         'system': 'update__change_colname_as(DBMS)__use_new(DBMS)',  # update values and change the column name
         'DBMS_insitelink': 'update__use_new',  # insert values
-        'is_open_source': 'update__change_colname_as(has_open_source_github_repo)__reuse_old_if_cooccurrence_on(DBMS)',
+        'is_open_source': 'update__change_colname_as(has_github_repo)__reuse_old_if_cooccurrence_on(DBMS)',
         'has_company': 'update__reuse_old_if_cooccurrence_on(DBMS)',
         'github_repo_link': 'update__reuse_old_if_cooccurrence_on(DBMS)',
         'score': 'update__change_colname_as(Score_Nov-2022)__use_new(Score_Nov-2022)',

@@ -155,7 +155,7 @@ if __name__ == '__main__':
             'Multi_model_info': 'update__use_new(Multi_model_info)',
             'DBMS': 'update__use_new',  # update values and change the column name
             'DBMS_insitelink': 'update__use_new',  # insert values
-            'has_open_source_github_repo': 'update__reuse_old_if_cooccurrence_on(DBMS)',
+            'has_github_repo': 'update__reuse_old_if_cooccurrence_on(DBMS)',
             'has_company': 'update__reuse_old_if_cooccurrence_on(DBMS)',
             'github_repo_link': 'update__reuse_old_if_cooccurrence_on(DBMS)',
             # update values and change the column name
