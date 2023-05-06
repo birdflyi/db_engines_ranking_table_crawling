@@ -146,10 +146,10 @@ def crawling_dbms_infos_soup(df_db_names_urls, headers, use_elem_dict, save_path
 
         assert(len_df1 == idx_start_end[0] and idx_start_end[0] <= idx_start_end[1])
 
-    print('idx_start_end:', idx_start_end)
+    print('order_id_start_end:', idx_start_end[0] + 1, idx_start_end[1])
     for i in list(range(len_db_names))[idx_start_end[0]: idx_start_end[1]]:
         db_name, url = df_db_names_urls.iloc[i]
-        print(f"{i}/{len_db_names}: Crawling data for {db_name} on {url} ...")
+        print(f"{i + 1}/{len_db_names}: Crawling data for {db_name} on {url} ...")
         header = headers[i % len(headers)]
         dbms_info_record_attrs_dict = crawling_dbms_info_soup(url, header, use_elem_dict)
         if use_all_impl_cols:
@@ -168,7 +168,7 @@ def crawling_dbms_infos_soup(df_db_names_urls, headers, use_elem_dict, save_path
             df_dbms_infos[db_name] = series_dbms_info
         else:
             print(f"Unmatched dbms name, expect {db_name} but get {crawling_db_name} please check the website: {url}")
-        time.sleep(0.5)
+        # time.sleep(0.5)
         # break
 
     df_dbms_infos = df_dbms_infos.T

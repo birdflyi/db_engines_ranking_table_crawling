@@ -31,7 +31,7 @@ from script.time_format import TimeFormat
 
 
 UPDATE_RANKING_TABLE = False  # This will take a long time to crawl the DB-Engines website if set to True...
-UPDATE_DBMS_INFO = False  # This will take a long long time to crawl many DB-Engines websites if set to True......
+UPDATE_DBMS_INFO = True  # This will take a long long time to crawl many DB-Engines websites if set to True......
 JOIN_RANKING_TABLE_DBMS_INFO_ON_DBMS = True  # join ranking_table and dbms_info on filed 'DBMS' and 'Name'
 RECALC_RANKING_TABLE_DBMS_INFO = True
 REUSE_EXISTING_TAGGING_INFO = True
@@ -39,7 +39,7 @@ REUSE_EXISTING_TAGGING_INFO = True
 format_time_in_filename = "%Y%m"
 format_time_in_colname = "%b-%Y"
 
-month_yyyyMM = "202304"
+month_yyyyMM = "202305"
 curr_month = TimeFormat(month_yyyyMM, format_time_in_filename, format_time_in_filename)
 
 
@@ -119,7 +119,7 @@ if __name__ == '__main__':
     if REUSE_EXISTING_TAGGING_INFO:
         OVERWRITE_CATEGORY_LABELS = True
 
-        df_src_existing_tagging_info = pd.read_csv(src_existing_tagging_info_path, encoding=encoding, index_col=0)
+        df_src_existing_tagging_info = pd.read_csv(src_existing_tagging_info_path, encoding=encoding, index_col=None)
         df_ranking_table_dbms_info_joined_recalc = pd.read_csv(src_ranking_table_dbms_info_joined_recalc_path, encoding=encoding, index_col=False)
 
         try:
