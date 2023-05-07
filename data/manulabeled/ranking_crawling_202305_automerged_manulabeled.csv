@@ -230,7 +230,7 @@ OpenInsight,Multivalue,Multivalue DBMS,https://db-engines.com/en/system/OpenInsi
 Graph Engine,Graph,"Graph DBMS,Key-value store",https://db-engines.com/en/system/Graph+Engine,Y,,microsoft/GraphEngine,1.02,229,microsoft,GraphEngine,Microsoft,2010,,Y,MIT License,N,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0
 CrateDB,Document,"Document store,Time Series DBMS,Relational DBMS,Search engine",https://db-engines.com/en/system/CrateDB,Y,,crate/crate,1.01,230,crate,crate,Crate,2013,,Y,,N,0,1,0,0,0,0,0,0,0,0,1,1,0,1,0
 ScaleArc,Relational,Relational DBMS,https://db-engines.com/en/system/ScaleArc,N,,-,0.99,231,-,-,"DevFactory, formerly Ignite",2009,,N,limited edition free,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-BoltDB,Key-value,Key-value store,https://db-engines.com/en/system/BoltDB,Y_archivedas_boltdb/bolt,N,etcd-io/bbolt,0.99,232,etcd-io,bbolt,,2013,,Y,MIT License,N,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+BoltDB,Key-value,Key-value store,https://db-engines.com/en/system/BoltDB,Y_archivedas_boltdb/bolt,N,boltdb/bolt,0.99,232,boltdb,bolt,,2013,,Y,MIT License,N,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
 R:BASE,Relational,Relational DBMS,https://db-engines.com/en/system/R%3ABASE,N,,-,0.99,233,-,-,,1981,,N,,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
 StarRocks,Relational,Relational DBMS,https://db-engines.com/en/system/StarRocks,,,,0.98,234,,,,2020,2023,Y,Apache Version 2.0,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
 SQream DB,Relational,Relational DBMS,https://db-engines.com/en/system/SQream+DB,N,,-,0.97,235,-,-,SQream Technologies,2017,2022,N,,N,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
