@@ -103,7 +103,7 @@ def crawling_dbms_infos_soup(df_db_names_urls, headers, use_elem_dict, save_path
 
     KEY_ATTR_DBENG = 'Name'
 
-    default_use_cols = ['Name', 'Description', 'Primary database model', 'Secondary database models',
+    default_use_cols = [KEY_ATTR_DBENG, 'Description', 'Primary database model', 'Secondary database models',
                         'DB-Engines Ranking Trend Chart', 'Website', 'Technical documentation',
                         'Developer', 'Initial release', 'Current release', 'License', 'License_info',
                         'Cloud-based only', 'DBaaS offerings (sponsored links)',
@@ -114,20 +114,22 @@ def crawling_dbms_infos_soup(df_db_names_urls, headers, use_elem_dict, save_path
                         'Replication methods', 'MapReduce', 'Consistency concepts',
                         'Foreign keys', 'Transaction concepts', 'Concurrency', 'Durability',
                         'In-memory capabilities', 'User concepts']
-    use_cols = use_cols or default_use_cols
     if use_all_impl_cols:
+        use_cols = default_use_cols
         if use_cols:
             print("Warning: use_all_impl_cols=True will disable the parameter use_cols!")
     else:
-        if KEY_ATTR_DBENG not in use_cols:
-            use_cols = [KEY_ATTR_DBENG] + use_cols
+        use_cols = use_cols or default_use_cols
+
+    if KEY_ATTR_DBENG not in use_cols:
+        use_cols = [KEY_ATTR_DBENG] + use_cols
 
     df_dbms_infos = pd.DataFrame(columns=use_cols)
     df_dbms_infos = df_dbms_infos.T
 
     len_db_names = len(df_db_names_urls)
 
-    df1 = pd.DataFrame()
+    df1 = pd.DataFrame(columns=use_cols)
     batch = 100
     idx_start_end = [0, len_db_names]
     if ADD_MODE:
@@ -135,6 +137,7 @@ def crawling_dbms_infos_soup(df_db_names_urls, headers, use_elem_dict, save_path
         index_col = kwargs.get('index_col', False)
         try:
             df1 = pd.read_csv(temp_save_path, encoding=encoding, index_col=index_col)
+            df1 = df1[use_cols]
         except FileNotFoundError:
             df1.to_csv(temp_save_path, encoding='utf-8', index=False)
         except BaseException:
@@ -146,14 +149,16 @@ def crawling_dbms_infos_soup(df_db_names_urls, headers, use_elem_dict, save_path
 
         assert(len_df1 == idx_start_end[0] and idx_start_end[0] <= idx_start_end[1])
 
-    print('order_id_start_end:', idx_start_end[0] + 1, idx_start_end[1])
+    order_id_start_end = [idx_start_end[0] + 1, idx_start_end[1]]
+    print('order_id_start_end:', order_id_start_end)
     for i in list(range(len_db_names))[idx_start_end[0]: idx_start_end[1]]:
         db_name, url = df_db_names_urls.iloc[i]
         print(f"{i + 1}/{len_db_names}: Crawling data for {db_name} on {url} ...")
         header = headers[i % len(headers)]
         dbms_info_record_attrs_dict = crawling_dbms_info_soup(url, header, use_elem_dict)
         if use_all_impl_cols:
-            use_cols = list(dbms_info_record_attrs_dict.keys())
+            temp_use_cols = list(dbms_info_record_attrs_dict.keys())
+            use_cols.extend(e for e in temp_use_cols if e not in use_cols)
         try:
             crawling_db_name = dbms_info_record_attrs_dict[KEY_ATTR_DBENG]
         except ValueError:
@@ -168,7 +173,7 @@ def crawling_dbms_infos_soup(df_db_names_urls, headers, use_elem_dict, save_path
             df_dbms_infos[db_name] = series_dbms_info
         else:
             print(f"Unmatched dbms name, expect {db_name} but get {crawling_db_name} please check the website: {url}")
-        # time.sleep(0.5)
+        time.sleep(0.5)
         # break
 
     df_dbms_infos = df_dbms_infos.T
@@ -176,17 +181,20 @@ def crawling_dbms_infos_soup(df_db_names_urls, headers, use_elem_dict, save_path
 
     if ADD_MODE:
         df2 = df_dbms_infos
-        join = kwargs.get('join', 'outer')
-        df_dbms_infos_batched = pd.concat([df1, df2], join=join)
-        df_dbms_infos_batched.to_csv(temp_save_path, encoding='utf-8', index=False)
-        print(f"{temp_save_path} saved! idx_start_end:{idx_start_end}.")
-        if idx_start_end[1] < len_db_names:
+        has_new_data = idx_start_end[1] < len_db_names or len(df2)
+        if has_new_data:
+            # save the data crawled in this batch
+            join = kwargs.get('join', 'outer')
+            df_dbms_infos_batched = pd.concat([df1, df2], join=join)
+            df_dbms_infos_batched.to_csv(temp_save_path, encoding='utf-8', index=False)
+            print(f"{temp_save_path} saved! idx_start_end:{idx_start_end}.")
+            # Recursive crawling when this batch has new data
             new_idx_start_end = [idx_start_end[1], min(idx_start_end[1] + batch, len_db_names)]
             kwargs['idx_start_end'] = new_idx_start_end
             crawling_dbms_infos_soup(df_db_names_urls, headers, use_elem_dict, save_path, use_cols=use_cols,
                                      use_all_impl_cols=use_all_impl_cols, **kwargs)
-        else:
-            print(f'Index >= {len_db_names}. Done!')
+        else:  # The exit of recursive crawling
+            print(f'Index >= {len_db_names}, the crawling tasks has done! idx_start_end:{idx_start_end}.')
             # save to csv
             shutil.copyfile(temp_save_path, save_path)
             print(save_path, 'saved!')
