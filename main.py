@@ -30,7 +30,7 @@ from script.reuse_existing_tagging_info import merge_info_to_csv, trim_spaces
 from script.time_format import TimeFormat
 
 
-UPDATE_RANKING_TABLE = False  # This will take a long time to crawl the DB-Engines website if set to True...
+UPDATE_RANKING_TABLE = True  # This will take a long time to crawl the DB-Engines website if set to True...
 UPDATE_DBMS_INFO = True  # This will take a long long time to crawl many DB-Engines websites if set to True......
 JOIN_RANKING_TABLE_DBMS_INFO_ON_DBMS = True  # join ranking_table and dbms_info on filed 'DBMS' and 'Name'
 RECALC_RANKING_TABLE_DBMS_INFO = True
@@ -39,7 +39,7 @@ REUSE_EXISTING_TAGGING_INFO = True
 format_time_in_filename = "%Y%m"
 format_time_in_colname = "%b-%Y"
 
-month_yyyyMM = "202305"
+month_yyyyMM = "202306"
 curr_month = TimeFormat(month_yyyyMM, format_time_in_filename, format_time_in_filename)
 
 
@@ -150,25 +150,25 @@ if __name__ == '__main__':
 
         # 更新设置
         update_conf = {
-            'category_label': 'update__use_new(Database Model)',
+            'category_label': 'update__use_new_only_val(Database Model)',
             # update values and change the column name
-            'Multi_model_info': 'update__use_new(Multi_model_info)',
-            'DBMS': 'update__use_new',  # update values and change the column name
-            'DBMS_insitelink': 'update__use_new',  # insert values
+            'Multi_model_info': 'update__use_new_only_val(Multi_model_info)',
+            'DBMS': 'update__use_new_col',  # update values and use the new column name(default use the old column name)
+            'DBMS_insitelink': 'update__use_new_col',  # insert values
             'has_github_repo': 'update__reuse_old_if_cooccurrence_on(DBMS)',
             'has_company': 'update__reuse_old_if_cooccurrence_on(DBMS)',
             'github_repo_link': 'update__reuse_old_if_cooccurrence_on(DBMS)',
             # update values and change the column name
-            f'Score_{curr_month.get_last_month(format_time_in_colname)}': f'update__change_colname_as(Score_{curr_month.get_curr_month(format_time_in_colname)})__use_new(Score_{curr_month.get_curr_month(format_time_in_colname)})',  # automatically updated with the variable "month_yyyyMM"
-            f'Rank_{curr_month.get_last_month(format_time_in_colname)}': f'update__change_colname_as(Rank_{curr_month.get_curr_month(format_time_in_colname)})__use_new(Rank_{curr_month.get_curr_month(format_time_in_colname)})__dtype(Int64)',  # automatically updated with the variable "month_yyyyMM"
+            f'Score_{curr_month.get_last_month(format_time_in_colname)}': f'update__change_colname_as(Score_{curr_month.get_curr_month(format_time_in_colname)})__use_new_only_val(Score_{curr_month.get_curr_month(format_time_in_colname)})',  # automatically updated with the variable "month_yyyyMM"
+            f'Rank_{curr_month.get_last_month(format_time_in_colname)}': f'update__change_colname_as(Rank_{curr_month.get_curr_month(format_time_in_colname)})__use_new_only_val(Rank_{curr_month.get_curr_month(format_time_in_colname)})__dtype(Int64)',  # automatically updated with the variable "month_yyyyMM"
             'org_name': 'update__reuse_old_if_cooccurrence_on(DBMS)',  # 依赖于手动更新的列github_repo_link
             'repo_name': 'update__reuse_old_if_cooccurrence_on(DBMS)',  # 依赖于手动更新的列github_repo_link
             'Developer': 'update__reuse_old_if_cooccurrence_on(DBMS)',
-            'initial_release_recalc': 'update__use_new__dtype(Int64)',
-            'current_release_recalc': 'update__use_new__dtype(Int64)',
-            'open_source_license': 'update__use_new(license_recalc)',
-            'License_info': 'update__use_new',
-            'cloud_based_only_recalc': 'update__use_new',
+            'initial_release_recalc': 'update__use_new_col__dtype(Int64)',
+            'current_release_recalc': 'update__use_new_col__dtype(Int64)',
+            'open_source_license': 'update__use_new_only_val(license_recalc)',
+            'License_info': 'update__use_new_col',
+            'cloud_based_only_recalc': 'update__use_new_col',
         }
 
         df_src_existing_tagging_info["DBMS"] = df_src_existing_tagging_info["DBMS"].apply(trim_spaces)
