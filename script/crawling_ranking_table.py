@@ -133,7 +133,7 @@ def crawling_ranking_table_soup(url_init, header, use_elem_dict, save_path):
                                 multi_model_extract_span = s_extract_span
                                 update_flag = not (USE_FIRST_MATCHED_SPAN__MULTI_MODEL_INFO and set_flag__multi_model_info)
                                 if update_flag:
-                                    multi_model_info = multi_model_extract_span.text.strip()
+                                    multi_model_info = multi_model_extract_span.get_text(',', '<br/>').strip()
                                     set_flag__multi_model_info = True
             else:
                 record_item = record_elem.text.strip()

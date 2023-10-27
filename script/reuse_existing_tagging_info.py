@@ -26,7 +26,8 @@ encoding = 'utf-8'
 
 def auto_gen_dbms_model_type_dict_by_keys(keys, values, ignore_keys=None,
                                           k_convert_dtype_func=None, v_convert_dtype_func=None,
-                                          v2k_map_rule_func=str.startswith, keep='first', default_value='set_same_as_key'):
+                                          v2k_map_rule_func=str.startswith, keep='first',
+                                          default_value='set_same_as_key', drop_unused_default_values=True):
     if keep not in ['first', 'last']:
         print("Argument keep must be in ['first', 'last']! But got keep=", keep)
         return
@@ -75,6 +76,11 @@ def auto_gen_dbms_model_type_dict_by_keys(keys, values, ignore_keys=None,
             if k not in dict_dbms_model_type.keys():  # 注意需要到最后都未被赋值的合法key才能被赋值default_value
                 dict_dbms_model_type[k] = temp_default_value
 
+    if type(default_value) == dict and not drop_unused_default_values:
+        for k, v in dict(default_value).items():
+            if v not in dict_dbms_model_type.values() and k not in dict_dbms_model_type.keys():
+                dict_dbms_model_type[k] = v
+
     return dict_dbms_model_type
 
 
@@ -95,8 +101,11 @@ def merge_info(df_src_existing_tagging, df_src_ranking_new, df_category_labels, 
     # 建立key:Database Model到value:Multi_model_info的映射表，
     ignore_keys = ['Multi-model']
     dict_existing_category_labels = df_category_labels.set_index(['category_label'])['category_name'].to_dict()
+    # the category_label(as key) must be unique, while the category_name may not.
+    # set drop_unused_default_values=False to keep unused default key-values in category_labels.csv
     dict_dbms_model_type = auto_gen_dbms_model_type_dict_by_keys(types_Database_Model, types_Multi_model_info,
-                                                                 ignore_keys=ignore_keys, default_value=dict_existing_category_labels)
+                                                                 ignore_keys=ignore_keys, default_value=dict_existing_category_labels,
+                                                                 drop_unused_default_values=False)
     # 保存dict_dbms_model_type为dataframe，并作为最终结果返回
     df_category_labels_updated = pd.DataFrame(list(dict_dbms_model_type.items()), columns=['category_label', 'category_name'])
 
