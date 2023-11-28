@@ -1,0 +1,417 @@
+Rank_Nov-2023,Rank_Oct-2023,Rank_Nov-2022,DBMS,Database Model,Score_Nov-2023,Score_Oct-2023,Score_Nov-2022,DBMS_insitelink,Multi_model_info
+1.,1.,1.,Oracle,"Relational, Multi-model",1277.03,+15.61,+35.34,https://db-engines.com/en/system/Oracle,"Relational DBMS,Document store,Graph DBMS,RDF store,Spatial DBMS"
+2.,2.,2.,MySQL,"Relational, Multi-model",1115.24,-18.07,-90.30,https://db-engines.com/en/system/MySQL,"Relational DBMS,Document store,Spatial DBMS"
+3.,3.,3.,Microsoft SQL Server,"Relational, Multi-model",911.42,+14.54,-1.09,https://db-engines.com/en/system/Microsoft+SQL+Server,"Relational DBMS,Document store,Graph DBMS,Spatial DBMS"
+4.,4.,4.,PostgreSQL,"Relational, Multi-model",636.86,-1.96,+13.70,https://db-engines.com/en/system/PostgreSQL,"Relational DBMS,Document store,Graph DBMS,Spatial DBMS,Vector DBMS"
+5.,5.,5.,MongoDB,"Document, Multi-model",428.55,-2.87,-49.35,https://db-engines.com/en/system/MongoDB,"Document store,Spatial DBMS,Search engine,Time Series DBMS,Vector DBMS"
+6.,6.,6.,Redis,"Key-value, Multi-model",160.02,-2.95,-22.03,https://db-engines.com/en/system/Redis,"Key-value store,Document store,Graph DBMS,Spatial DBMS,Search engine,Time Series DBMS,Vector DBMS"
+7.,7.,7.,Elasticsearch,"Search engine, Multi-model",139.62,+2.48,-10.70,https://db-engines.com/en/system/Elasticsearch,"Search engine,Document store,Spatial DBMS,Vector DBMS"
+8.,8.,8.,IBM Db2,"Relational, Multi-model",136.00,+1.13,-13.56,https://db-engines.com/en/system/IBM+Db2,"Relational DBMS,Document store,RDF store,Spatial DBMS"
+9.,9.,10.,SQLite,Relational,124.58,-0.56,-10.05,https://db-engines.com/en/system/SQLite,
+10.,10.,9.,Microsoft Access,Relational,124.49,+0.18,-10.53,https://db-engines.com/en/system/Microsoft+Access,
+11.,11.,12.,Snowflake,Relational,121.00,-2.24,+10.84,https://db-engines.com/en/system/Snowflake,
+12.,12.,11.,Cassandra,"Wide column, Multi-model",109.17,+0.34,-8.96,https://db-engines.com/en/system/Cassandra,"Wide column store,Vector DBMS"
+13.,13.,13.,MariaDB,"Relational, Multi-model",102.09,+2.43,-2.82,https://db-engines.com/en/system/MariaDB,"Relational DBMS,Document store,Graph DBMS,Spatial DBMS"
+14.,14.,14.,Splunk,Search engine,97.32,+4.95,+3.10,https://db-engines.com/en/system/Splunk,
+15.,15.,16.,Microsoft Azure SQL Database,"Relational, Multi-model",83.17,+2.24,-0.49,https://db-engines.com/en/system/Microsoft+Azure+SQL+Database,"Relational DBMS,Document store,Graph DBMS,Spatial DBMS"
+16.,16.,15.,Amazon DynamoDB,Multi-model,82.24,+1.32,-3.16,https://db-engines.com/en/system/Amazon+DynamoDB,"Document store,Key-value store"
+17.,17.,19.,Databricks,Multi-model,77.22,+1.40,+16.33,https://db-engines.com/en/system/Databricks,"Document store,Relational DBMS"
+18.,18.,17.,Hive,Relational,68.64,-0.54,-13.25,https://db-engines.com/en/system/Hive,
+19.,20.,22.,Google BigQuery,Relational,59.31,+2.74,+5.18,https://db-engines.com/en/system/Google+BigQuery,
+20.,19.,18.,Teradata,"Relational, Multi-model",57.33,-1.23,-7.90,https://db-engines.com/en/system/Teradata,"Relational DBMS,Document store,Graph DBMS,Spatial DBMS,Time Series DBMS"
+21.,21.,21.,FileMaker,Relational,52.44,-0.88,-1.87,https://db-engines.com/en/system/FileMaker,
+22.,23.,20.,Neo4j,Graph,49.70,+1.26,-7.60,https://db-engines.com/en/system/Neo4j,
+23.,22.,23.,SAP HANA,"Relational, Multi-model",49.12,-0.32,-2.33,https://db-engines.com/en/system/SAP+HANA,"Relational DBMS,Document store,Graph DBMS,Spatial DBMS"
+24.,24.,24.,Solr,"Search engine, Multi-model",44.62,-0.74,-6.71,https://db-engines.com/en/system/Solr,"Search engine,Spatial DBMS"
+25.,25.,25.,SAP Adaptive Server,"Relational, Multi-model",41.49,-0.43,-2.10,https://db-engines.com/en/system/SAP+Adaptive+Server,"Relational DBMS,Spatial DBMS"
+26.,26.,26.,HBase,Wide column,34.16,-0.53,-6.25,https://db-engines.com/en/system/HBase,
+27.,27.,27.,Microsoft Azure Cosmos DB,Multi-model,34.11,-0.18,-5.64,https://db-engines.com/en/system/Microsoft+Azure+Cosmos+DB,"Document store,Graph DBMS,Key-value store,Wide column store,Spatial DBMS"
+28.,28.,29.,InfluxDB,"Time Series, Multi-model",29.02,-0.72,-0.94,https://db-engines.com/en/system/InfluxDB,"Time Series DBMS,Spatial DBMS"
+29.,29.,28.,PostGIS,"Spatial DBMS, Multi-model",26.92,-0.39,-3.86,https://db-engines.com/en/system/PostGIS,"Spatial DBMS,Relational DBMS"
+30.,30.,34.,Microsoft Azure Synapse Analytics,Relational,26.79,-0.34,+3.76,https://db-engines.com/en/system/Microsoft+Azure+Synapse+Analytics,
+31.,31.,32.,Firebird,Relational,25.64,-0.04,+0.28,https://db-engines.com/en/system/Firebird,
+32.,32.,30.,Couchbase,"Document, Multi-model",22.50,+0.09,-6.12,https://db-engines.com/en/system/Couchbase,"Document store,Key-value store,Spatial DBMS,Search engine,Time Series DBMS"
+33.,34.,31.,Amazon Redshift,Relational,21.37,+0.33,-5.67,https://db-engines.com/en/system/Amazon+Redshift,
+34.,33.,35.,Informix,"Relational, Multi-model",20.65,-0.77,-2.17,https://db-engines.com/en/system/Informix,"Relational DBMS,Document store,Spatial DBMS,Time Series DBMS"
+35.,35.,33.,Memcached,Key-value,19.80,-1.04,-4.65,https://db-engines.com/en/system/Memcached,
+36.,36.,36.,Spark SQL,Relational,19.23,+0.50,-2.67,https://db-engines.com/en/system/Spark+SQL,
+37.,37.,39.,Impala,"Relational, Multi-model",18.24,-0.27,+0.32,https://db-engines.com/en/system/Impala,"Relational DBMS,Document store"
+38.,38.,37.,Firebase Realtime Database,Document,17.78,+0.29,-2.06,https://db-engines.com/en/system/Firebase+Realtime+Database,
+39.,39.,44.,ClickHouse,"Relational, Multi-model",15.98,+0.86,+2.10,https://db-engines.com/en/system/ClickHouse,"Relational DBMS,Time Series DBMS"
+40.,40.,42.,Presto,Relational,13.77,-0.45,-1.38,https://db-engines.com/en/system/Presto,
+41.,42.,38.,Vertica,"Relational, Multi-model",13.76,-0.12,-5.94,https://db-engines.com/en/system/Vertica,"Relational DBMS,Spatial DBMS,Time Series DBMS"
+42.,43.,43.,dBASE,Relational,13.67,-0.17,-0.58,https://db-engines.com/en/system/dBASE,
+43.,44.,40.,Netezza,Relational,13.60,-0.18,-3.67,https://db-engines.com/en/system/Netezza,
+44.,46.,48.,OpenSearch,"Search engine, Multi-model",13.31,+0.39,+3.01,https://db-engines.com/en/system/OpenSearch,"Search engine,Vector DBMS"
+45.,41.,,Apache Flink,Relational,13.26,-0.64,,https://db-engines.com/en/system/Apache+Flink,
+46.,45.,41.,CouchDB,"Document, Multi-model",12.80,-0.65,-3.19,https://db-engines.com/en/system/CouchDB,"Document store,Spatial DBMS"
+47.,48.,47.,Google Cloud Firestore,Document,11.01,+0.69,-0.08,https://db-engines.com/en/system/Google+Cloud+Firestore,
+48.,47.,46.,Greenplum,"Relational, Multi-model",10.74,+0.29,-1.56,https://db-engines.com/en/system/Greenplum,"Relational DBMS,Document store,Spatial DBMS"
+49.,49.,45.,Amazon Aurora,"Relational, Multi-model",9.69,+0.55,-2.97,https://db-engines.com/en/system/Amazon+Aurora,"Relational DBMS,Document store"
+50.,51.,51.,H2,"Relational, Multi-model",9.05,+0.44,-0.01,https://db-engines.com/en/system/H2,"Relational DBMS,Spatial DBMS"
+51.,53.,59.,Kdb,Multi-model,8.87,+0.48,+1.39,https://db-engines.com/en/system/Kdb,"Time Series DBMS,Vector DBMS,Relational DBMS"
+52.,50.,53.,etcd,Key-value,8.61,-0.13,-0.10,https://db-engines.com/en/system/etcd,
+53.,54.,52.,Realm,Document,8.26,+0.05,-0.77,https://db-engines.com/en/system/Realm,
+54.,55.,49.,MarkLogic,Multi-model,8.17,-0.03,-1.59,https://db-engines.com/en/system/MarkLogic,"Document store,Native XML DBMS,RDF store,Search engine"
+55.,56.,50.,Hazelcast,"Key-value, Multi-model",8.07,-0.10,-1.53,https://db-engines.com/en/system/Hazelcast,"Key-value store,Document store"
+56.,58.,67.,Prometheus,Time Series,7.82,+0.54,+1.54,https://db-engines.com/en/system/Prometheus,
+57.,52.,55.,Oracle Essbase,Relational,7.78,-0.71,-0.59,https://db-engines.com/en/system/Oracle+Essbase,
+58.,60.,54.,Datastax Enterprise,"Wide column, Multi-model",7.26,+0.48,-1.42,https://db-engines.com/en/system/Datastax+Enterprise,"Wide column store,Document store,Graph DBMS,Spatial DBMS,Search engine,Vector DBMS"
+59.,65.,63.,Aerospike,Multi-model,7.22,+0.78,+0.27,https://db-engines.com/en/system/Aerospike,"Document store,Key-value store,Spatial DBMS"
+60.,62.,60.,Microsoft Azure Data Explorer,"Relational, Multi-model",6.99,+0.44,-0.35,https://db-engines.com/en/system/Microsoft+Azure+Data+Explorer,"Relational DBMS,Document store,Event Store,Spatial DBMS,Search engine,Time Series DBMS"
+61.,57.,57.,Algolia,Search engine,6.84,-0.48,-0.99,https://db-engines.com/en/system/Algolia,
+62.,63.,66.,Ehcache,Key-value,6.77,+0.23,+0.11,https://db-engines.com/en/system/Ehcache,
+63.,59.,78.,Derby,Relational,6.65,-0.40,+0.99,https://db-engines.com/en/system/Derby,
+64.,61.,56.,CockroachDB,Relational,6.57,-0.03,-1.42,https://db-engines.com/en/system/CockroachDB,
+65.,66.,83.,ScyllaDB,"Wide column, Multi-model",6.56,+0.38,+1.61,https://db-engines.com/en/system/ScyllaDB,"Wide column store,Key-value store"
+66.,64.,61.,Microsoft Azure Search,Search engine,6.43,-0.06,-0.82,https://db-engines.com/en/system/Microsoft+Azure+Search,
+67.,69.,70.,Interbase,Relational,6.11,+0.12,+0.07,https://db-engines.com/en/system/Interbase,
+68.,72.,71.,Microsoft Azure Table Storage,Wide column,6.08,+0.31,+0.06,https://db-engines.com/en/system/Microsoft+Azure+Table+Storage,
+69.,68.,64.,Sphinx,Search engine,5.99,-0.02,-0.88,https://db-engines.com/en/system/Sphinx,
+70.,67.,77.,Jackrabbit,Content,5.98,-0.12,+0.19,https://db-engines.com/en/system/Jackrabbit,
+71.,70.,94.,Trino,"Relational, Multi-model",5.95,-0.03,+1.97,https://db-engines.com/en/system/Trino,"Relational DBMS,Document store,Key-value store,Spatial DBMS,Search engine,Time Series DBMS,Wide column store"
+72.,71.,58.,SingleStore,"Relational, Multi-model",5.72,-0.05,-2.09,https://db-engines.com/en/system/SingleStore,"Relational DBMS,Document store,Spatial DBMS,Time Series DBMS,Vector DBMS"
+73.,78.,72.,Ingres,Relational,5.69,+0.44,-0.25,https://db-engines.com/en/system/Ingres,
+74.,76.,75.,Virtuoso,Multi-model,5.62,+0.19,-0.22,https://db-engines.com/en/system/Virtuoso,"Document store,Graph DBMS,Native XML DBMS,Relational DBMS,RDF store,Search engine,Spatial DBMS"
+75.,77.,79.,TimescaleDB,"Time Series, Multi-model",5.53,+0.15,+0.21,https://db-engines.com/en/system/TimescaleDB,"Time Series DBMS,Relational DBMS"
+76.,75.,74.,SAP SQL Anywhere,Relational,5.46,+0.03,-0.41,https://db-engines.com/en/system/SAP+SQL+Anywhere,
+77.,73.,62.,Google Cloud Datastore,Document,5.34,-0.25,-1.76,https://db-engines.com/en/system/Google+Cloud+Datastore,
+78.,79.,65.,Graphite,Time Series,5.21,-0.01,-1.59,https://db-engines.com/en/system/Graphite,
+79.,81.,73.,HyperSQL,Relational,4.89,-0.14,-1.02,https://db-engines.com/en/system/HyperSQL,
+80.,82.,85.,Adabas,Multivalue,4.85,+0.16,+0.22,https://db-engines.com/en/system/Adabas,
+81.,74.,69.,Riak KV,Key-value,4.84,-0.59,-1.25,https://db-engines.com/en/system/Riak+KV,
+82.,83.,84.,SAP IQ,Relational,4.61,-0.03,-0.11,https://db-engines.com/en/system/SAP+IQ,
+83.,88.,76.,ArangoDB,Multi-model,4.54,+0.27,-1.30,https://db-engines.com/en/system/ArangoDB,"Document store,Graph DBMS,Key-value store,Search engine"
+84.,80.,98.,Apache Jena - TDB,RDF,4.45,-0.73,+0.83,https://db-engines.com/en/system/Apache+Jena+-+TDB,
+85.,90.,90.,"UniData,UniVerse",Multivalue,4.38,+0.27,+0.10,https://db-engines.com/en/system/UniData%2CUniVerse,
+86.,89.,68.,Ignite,Multi-model,4.35,+0.10,-1.79,https://db-engines.com/en/system/Ignite,"Key-value store,Relational DBMS"
+87.,84.,80.,Google Cloud Bigtable,Multi-model,4.26,-0.35,-0.97,https://db-engines.com/en/system/Google+Cloud+Bigtable,"Key-value store,Wide column store"
+88.,96.,95.,TiDB,"Relational, Multi-model",4.16,+0.44,+0.47,https://db-engines.com/en/system/TiDB,"Relational DBMS,Document store"
+89.,85.,82.,Accumulo,Wide column,4.14,-0.47,-0.84,https://db-engines.com/en/system/Accumulo,
+90.,91.,86.,RocksDB,Key-value,4.11,+0.08,-0.51,https://db-engines.com/en/system/RocksDB,
+91.,93.,89.,Oracle NoSQL,Multi-model,4.06,+0.12,-0.36,https://db-engines.com/en/system/Oracle+NoSQL,"Document store,Key-value store,Relational DBMS"
+92.,92.,88.,OpenEdge,Relational,4.05,+0.06,-0.45,https://db-engines.com/en/system/OpenEdge,
+93.,98.,171.,DuckDB,Relational,4.02,+0.38,+2.65,https://db-engines.com/en/system/DuckDB,
+94.,94.,126.,DolphinDB,"Time Series, Multi-model",4.00,+0.06,+1.68,https://db-engines.com/en/system/DolphinDB,"Time Series DBMS,Relational DBMS"
+95.,86.,,GemFire,"Key-value, Multi-model",3.97,-0.45,,https://db-engines.com/en/system/GemFire,"Key-value store,Document store"
+96.,87.,81.,OrientDB,Multi-model,3.78,-0.49,-1.26,https://db-engines.com/en/system/OrientDB,"Document store,Graph DBMS,Key-value store"
+97.,97.,91.,Google Cloud Spanner,Relational,3.59,-0.11,-0.65,https://db-engines.com/en/system/Google+Cloud+Spanner,
+98.,95.,87.,RavenDB,"Document, Multi-model",3.55,-0.29,-0.99,https://db-engines.com/en/system/RavenDB,"Document store,Graph DBMS,Spatial DBMS,Time Series DBMS"
+99.,101.,102.,Infinispan,Key-value,3.54,+0.00,+0.12,https://db-engines.com/en/system/Infinispan,
+100.,102.,96.,MaxDB,Relational,3.43,-0.10,-0.25,https://db-engines.com/en/system/MaxDB,
+101.,99.,92.,IBM Cloudant,Document,3.39,-0.24,-0.82,https://db-engines.com/en/system/IBM+Cloudant,
+102.,100.,106.,Oracle Berkeley DB,Multi-model,3.39,-0.15,+0.12,https://db-engines.com/en/system/Oracle+Berkeley+DB,"Key-value store,Native XML DBMS"
+103.,109.,93.,YugabyteDB,"Relational, Multi-model",3.37,+0.33,-0.79,https://db-engines.com/en/system/YugabyteDB,"Relational DBMS,Document store,Wide column store"
+104.,110.,97.,LevelDB,Key-value,3.33,+0.32,-0.35,https://db-engines.com/en/system/LevelDB,
+105.,105.,,Pinecone,Vector,3.32,+0.21,,https://db-engines.com/en/system/Pinecone,
+106.,107.,135.,HEAVY.AI,"Relational, Multi-model",3.10,+0.01,+1.00,https://db-engines.com/en/system/HEAVY.AI,"Relational DBMS,Spatial DBMS"
+107.,118.,215.,Memgraph,Graph,3.09,+0.29,+2.18,https://db-engines.com/en/system/Memgraph,
+108.,106.,124.,Apache Druid,Multi-model,3.09,-0.01,+0.70,https://db-engines.com/en/system/Apache+Druid,"Relational DBMS,Time Series DBMS"
+109.,112.,118.,4D,Relational,3.04,+0.10,+0.41,https://db-engines.com/en/system/4D,
+110.,122.,112.,CloudKit,Document,3.00,+0.26,+0.13,https://db-engines.com/en/system/CloudKit,
+111.,103.,99.,RethinkDB,"Document, Multi-model",2.98,-0.32,-0.51,https://db-engines.com/en/system/RethinkDB,"Document store,Spatial DBMS"
+112.,123.,103.,EXASOL,Relational,2.95,+0.24,-0.42,https://db-engines.com/en/system/EXASOL,
+113.,111.,104.,Apache Drill,Multi-model,2.94,-0.04,-0.38,https://db-engines.com/en/system/Apache+Drill,"Document store,Relational DBMS"
+114.,114.,100.,PouchDB,Document,2.92,+0.05,-0.51,https://db-engines.com/en/system/PouchDB,
+115.,121.,101.,Apache Phoenix,Relational,2.86,+0.10,-0.56,https://db-engines.com/en/system/Apache+Phoenix,
+116.,113.,114.,EDB Postgres,"Relational, Multi-model",2.86,-0.07,+0.13,https://db-engines.com/en/system/EDB+Postgres,"Relational DBMS,Document store,Spatial DBMS"
+117.,116.,155.,TDengine,"Time Series, Multi-model",2.85,-0.02,+1.25,https://db-engines.com/en/system/TDengine,"Time Series DBMS,Relational DBMS"
+118.,104.,122.,InterSystems IRIS,Multi-model,2.80,-0.47,+0.28,https://db-engines.com/en/system/InterSystems+IRIS,"Document store,Key-value store,Object oriented DBMS,Relational DBMS"
+119.,108.,115.,RRDtool,Time Series,2.79,-0.27,+0.10,https://db-engines.com/en/system/RRDtool,
+120.,129.,123.,GraphDB,Multi-model,2.75,+0.16,+0.29,https://db-engines.com/en/system/GraphDB,"Graph DBMS,RDF store"
+121.,117.,113.,Citus,"Relational, Multi-model",2.70,-0.14,-0.17,https://db-engines.com/en/system/Citus,"Relational DBMS,Document store"
+122.,115.,111.,InterSystems Caché,Multi-model,2.67,-0.20,-0.27,https://db-engines.com/en/system/InterSystems+Cach%C3%A9,"Key-value store,Object oriented DBMS,Relational DBMS,Document store"
+123.,126.,129.,Coveo,Search engine,2.66,+0.01,+0.41,https://db-engines.com/en/system/Coveo,
+124.,132.,110.,IMS,Navigational,2.65,+0.19,-0.34,https://db-engines.com/en/system/IMS,
+125.,125.,120.,LMDB,Key-value,2.54,-0.11,-0.06,https://db-engines.com/en/system/LMDB,
+126.,120.,181.,NebulaGraph,Graph,2.54,-0.24,+1.27,https://db-engines.com/en/system/NebulaGraph,
+127.,130.,107.,Amazon Neptune,Multi-model,2.49,-0.06,-0.60,https://db-engines.com/en/system/Amazon+Neptune,"Graph DBMS,RDF store"
+128.,124.,116.,Oracle Coherence,Key-value,2.47,-0.22,-0.22,https://db-engines.com/en/system/Oracle+Coherence,
+129.,119.,128.,Geode,Key-value,2.44,-0.35,+0.19,https://db-engines.com/en/system/Geode,
+130.,127.,117.,Amazon SimpleDB,Key-value,2.43,-0.20,-0.21,https://db-engines.com/en/system/Amazon+SimpleDB,
+131.,128.,108.,Percona Server for MySQL,Relational,2.36,-0.24,-0.66,https://db-engines.com/en/system/Percona+Server+for+MySQL,
+132.,131.,121.,Amazon CloudSearch,Search engine,2.31,-0.20,-0.22,https://db-engines.com/en/system/Amazon+CloudSearch,
+133.,137.,145.,Stardog,Multi-model,2.30,+0.04,+0.54,https://db-engines.com/en/system/Stardog,"Graph DBMS,RDF store"
+134.,146.,,Firebolt,Relational,2.29,+0.22,,https://db-engines.com/en/system/Firebolt,
+135.,134.,132.,Datomic,Relational,2.28,-0.03,+0.11,https://db-engines.com/en/system/Datomic,
+136.,136.,125.,SpatiaLite,"Spatial DBMS, Multi-model",2.23,-0.07,-0.14,https://db-engines.com/en/system/SpatiaLite,"Spatial DBMS,Relational DBMS"
+137.,133.,131.,MonetDB,"Relational, Multi-model",2.22,-0.12,+0.03,https://db-engines.com/en/system/MonetDB,"Relational DBMS,Document store,Spatial DBMS"
+138.,152.,146.,jBASE,Multivalue,2.20,+0.25,+0.45,https://db-engines.com/en/system/jBASE,
+139.,141.,153.,BaseX,Native XML,2.19,+0.00,+0.53,https://db-engines.com/en/system/BaseX,
+140.,138.,,Chroma,Vector,2.16,-0.09,,https://db-engines.com/en/system/Chroma,
+141.,139.,169.,Empress,Relational,2.16,-0.05,+0.78,https://db-engines.com/en/system/Empress,
+142.,140.,136.,Amazon DocumentDB,Document,2.11,-0.08,+0.04,https://db-engines.com/en/system/Amazon+DocumentDB,
+143.,135.,109.,JanusGraph,Graph,2.10,-0.20,-0.89,https://db-engines.com/en/system/JanusGraph,
+144.,155.,150.,Mnesia,Document,2.05,+0.17,+0.36,https://db-engines.com/en/system/Mnesia,
+145.,148.,142.,Tibero,Relational,2.03,-0.01,+0.19,https://db-engines.com/en/system/Tibero,
+146.,142.,139.,QuestDB,"Time Series, Multi-model",2.01,-0.14,+0.09,https://db-engines.com/en/system/QuestDB,"Time Series DBMS,Relational DBMS"
+147.,150.,143.,GridDB,"Time Series, Multi-model",2.00,+0.03,+0.20,https://db-engines.com/en/system/GridDB,"Time Series DBMS,Key-value store,Relational DBMS"
+148.,145.,133.,TigerGraph,Graph,1.98,-0.11,-0.19,https://db-engines.com/en/system/TigerGraph,
+149.,143.,138.,Db4o,Object oriented,1.94,-0.19,-0.06,https://db-engines.com/en/system/Db4o,
+150.,158.,273.,Weaviate,Vector,1.94,+0.13,+1.50,https://db-engines.com/en/system/Weaviate,
+151.,151.,140.,Tarantool,Multi-model,1.94,-0.02,+0.02,https://db-engines.com/en/system/Tarantool,"Document store,Key-value store,Relational DBMS,Spatial DBMS"
+152.,147.,127.,GridGain,Multi-model,1.91,-0.13,-0.40,https://db-engines.com/en/system/GridGain,"Key-value store,Relational DBMS"
+153.,156.,148.,Dgraph,Graph,1.91,+0.05,+0.20,https://db-engines.com/en/system/Dgraph,
+154.,144.,166.,SQLBase,Relational,1.91,-0.20,+0.46,https://db-engines.com/en/system/SQLBase,
+155.,149.,119.,OpenTSDB,Time Series,1.87,-0.13,-0.76,https://db-engines.com/en/system/OpenTSDB,
+156.,168.,184.,Sedna,Native XML,1.80,+0.11,+0.58,https://db-engines.com/en/system/Sedna,
+157.,159.,193.,OceanBase,"Relational, Multi-model",1.79,-0.01,+0.66,https://db-engines.com/en/system/OceanBase,"Relational DBMS,Document store,Wide column store"
+158.,154.,149.,Fauna,Multi-model,1.79,-0.11,+0.08,https://db-engines.com/en/system/Fauna,"Document store,Graph DBMS,Relational DBMS,Time Series DBMS"
+159.,166.,157.,Datameer,Document,1.77,+0.06,+0.23,https://db-engines.com/en/system/Datameer,
+160.,167.,,PlanetScale,"Relational, Multi-model",1.76,+0.06,,https://db-engines.com/en/system/PlanetScale,"Relational DBMS,Document store,Spatial DBMS"
+161.,157.,154.,Actian NoSQL Database,Object oriented,1.76,-0.07,+0.12,https://db-engines.com/en/system/Actian+NoSQL+Database,
+162.,162.,137.,TimesTen,Relational,1.72,-0.02,-0.30,https://db-engines.com/en/system/TimesTen,
+163.,153.,134.,VoltDB,Relational,1.71,-0.18,-0.39,https://db-engines.com/en/system/VoltDB,
+164.,176.,144.,FoundationDB,Multi-model,1.70,+0.17,-0.08,https://db-engines.com/en/system/FoundationDB,"Document store,Key-value store,Relational DBMS"
+165.,171.,158.,Infobright,Relational,1.62,+0.04,+0.10,https://db-engines.com/en/system/Infobright,
+166.,161.,130.,IBM Db2 warehouse,Relational,1.61,-0.16,-0.60,https://db-engines.com/en/system/IBM+Db2+warehouse,
+167.,163.,161.,NonStop SQL,Relational,1.59,-0.14,+0.10,https://db-engines.com/en/system/NonStop+SQL,
+168.,160.,141.,ObjectStore,Object oriented,1.58,-0.20,-0.28,https://db-engines.com/en/system/ObjectStore,
+169.,172.,156.,mSQL,Relational,1.57,+0.01,-0.01,https://db-engines.com/en/system/mSQL,
+170.,169.,151.,LiteDB,Document,1.56,-0.06,-0.13,https://db-engines.com/en/system/LiteDB,
+171.,187.,246.,Milvus,Vector,1.50,+0.16,+0.88,https://db-engines.com/en/system/Milvus,
+172.,170.,163.,DataEase,Relational,1.50,-0.08,+0.02,https://db-engines.com/en/system/DataEase,
+173.,178.,168.,Cubrid,Relational,1.50,+0.03,+0.06,https://db-engines.com/en/system/Cubrid,
+174.,180.,197.,D3,Multivalue,1.49,+0.05,+0.39,https://db-engines.com/en/system/D3,
+175.,194.,207.,VictoriaMetrics,Time Series,1.48,+0.20,+0.50,https://db-engines.com/en/system/VictoriaMetrics,
+176.,174.,147.,Apache Kylin,Relational,1.46,-0.08,-0.28,https://db-engines.com/en/system/Apache+Kylin,
+177.,165.,170.,Giraph,Graph,1.44,-0.27,+0.06,https://db-engines.com/en/system/Giraph,
+178.,164.,162.,GT.M,Key-value,1.43,-0.31,-0.06,https://db-engines.com/en/system/GT.M,
+179.,175.,152.,ObjectBox,"Object oriented, Multi-model",1.37,-0.18,-0.30,https://db-engines.com/en/system/ObjectBox,"Object oriented DBMS,Time Series DBMS"
+180.,182.,164.,HFSQL,Relational,1.37,-0.06,-0.11,https://db-engines.com/en/system/HFSQL,
+181.,205.,202.,Meilisearch,Search engine,1.35,+0.16,+0.30,https://db-engines.com/en/system/Meilisearch,
+182.,173.,188.,MatrixOne,Relational,1.34,-0.21,+0.15,https://db-engines.com/en/system/MatrixOne,
+183.,177.,179.,Perst,Object oriented,1.31,-0.18,+0.03,https://db-engines.com/en/system/Perst,
+184.,179.,159.,GBase,Relational,1.29,-0.15,-0.20,https://db-engines.com/en/system/GBase,
+185.,184.,160.,Oracle Rdb,Relational,1.29,-0.10,-0.20,https://db-engines.com/en/system/Oracle+Rdb,
+186.,185.,177.,GigaSpaces,Multi-model,1.29,-0.09,-0.01,https://db-engines.com/en/system/GigaSpaces,"Document store,Object oriented DBMS,Graph DBMS,Search engine"
+187.,197.,,Vitess,"Relational, Multi-model",1.27,+0.02,,https://db-engines.com/en/system/Vitess,"Relational DBMS,Document store,Spatial DBMS"
+188.,189.,234.,Northgate Reality,Multivalue,1.26,-0.06,+0.49,https://db-engines.com/en/system/Northgate+Reality,
+189.,181.,165.,SQL.JS,Relational,1.26,-0.18,-0.20,https://db-engines.com/en/system/SQL.JS,
+190.,183.,192.,EventStoreDB,Event,1.25,-0.17,+0.12,https://db-engines.com/en/system/EventStoreDB,
+191.,193.,182.,HPE Ezmeral Data Fabric,Multi-model,1.24,-0.07,-0.02,https://db-engines.com/en/system/HPE+Ezmeral+Data+Fabric,"Document store,Wide column store"
+192.,204.,167.,AllegroGraph,Multi-model,1.20,+0.00,-0.24,https://db-engines.com/en/system/AllegroGraph,"Document store,Graph DBMS,RDF store,Spatial DBMS"
+193.,196.,224.,M3DB,Time Series,1.20,-0.07,+0.37,https://db-engines.com/en/system/M3DB,
+194.,186.,176.,Apache HAWQ,Relational,1.19,-0.17,-0.11,https://db-engines.com/en/system/Apache+HAWQ,
+195.,220.,,StarRocks,Relational,1.15,+0.14,,https://db-engines.com/en/system/StarRocks,
+196.,208.,203.,solidDB,Relational,1.14,-0.02,+0.09,https://db-engines.com/en/system/solidDB,
+197.,195.,190.,NuoDB,Relational,1.14,-0.13,-0.02,https://db-engines.com/en/system/NuoDB,
+198.,203.,178.,NCache,"Key-value, Multi-model",1.14,-0.06,-0.16,https://db-engines.com/en/system/NCache,"Key-value store,Document store,Search engine"
+199.,192.,199.,openGauss,"Relational, Multi-model",1.14,-0.17,+0.07,https://db-engines.com/en/system/openGauss,"Relational DBMS,Document store,Spatial DBMS"
+200.,188.,174.,1010data,Relational,1.14,-0.19,-0.17,https://db-engines.com/en/system/1010data,
+201.,206.,236.,Apache IoTDB,Time Series,1.12,-0.06,+0.39,https://db-engines.com/en/system/Apache+IoTDB,
+202.,227.,306.,Qdrant,Vector,1.12,+0.16,+0.84,https://db-engines.com/en/system/Qdrant,
+203.,210.,172.,Model 204,Multivalue,1.11,-0.02,-0.22,https://db-engines.com/en/system/Model+204,
+204.,191.,175.,ZODB,Key-value,1.11,-0.20,-0.20,https://db-engines.com/en/system/ZODB,
+205.,207.,200.,BigchainDB,Document,1.10,-0.07,+0.03,https://db-engines.com/en/system/BigchainDB,
+206.,216.,308.,SurrealDB,Multi-model,1.10,+0.05,+0.84,https://db-engines.com/en/system/SurrealDB,"Document store,Graph DBMS"
+207.,198.,204.,Xapian,Search engine,1.09,-0.16,+0.04,https://db-engines.com/en/system/Xapian,
+208.,199.,195.,DBISAM,Relational,1.08,-0.16,-0.03,https://db-engines.com/en/system/DBISAM,
+209.,202.,189.,Actian Vector,Relational,1.08,-0.15,-0.09,https://db-engines.com/en/system/Actian+Vector,
+210.,200.,206.,Hibari,Key-value,1.07,-0.17,+0.09,https://db-engines.com/en/system/Hibari,
+211.,190.,212.,Dolt,"Relational, Multi-model",1.06,-0.25,+0.13,https://db-engines.com/en/system/Dolt,"Relational DBMS,Document store"
+212.,218.,185.,TypeDB,Multi-model,1.05,+0.00,-0.16,https://db-engines.com/en/system/TypeDB,"Graph DBMS,Relational DBMS"
+213.,201.,173.,Altibase,Relational,1.04,-0.19,-0.28,https://db-engines.com/en/system/Altibase,
+214.,209.,183.,Amazon Timestream,Time Series,1.00,-0.14,-0.21,https://db-engines.com/en/system/Amazon+Timestream,
+215.,219.,221.,ObjectDB,Object oriented,0.99,-0.04,+0.14,https://db-engines.com/en/system/ObjectDB,
+216.,213.,186.,Blazegraph,Multi-model,0.99,-0.09,-0.22,https://db-engines.com/en/system/Blazegraph,"Graph DBMS,RDF store"
+217.,211.,231.,Amazon Keyspaces,Wide column,0.98,-0.13,+0.21,https://db-engines.com/en/system/Amazon+Keyspaces,
+218.,214.,228.,TDSQL for MySQL,"Relational, Multi-model",0.97,-0.10,+0.16,https://db-engines.com/en/system/TDSQL+for+MySQL,"Relational DBMS,Document store,Spatial DBMS"
+219.,212.,194.,IDMS,Navigational,0.97,-0.13,-0.14,https://db-engines.com/en/system/IDMS,
+220.,215.,196.,RDF4J,RDF,0.97,-0.09,-0.14,https://db-engines.com/en/system/RDF4J,
+221.,223.,201.,GeoMesa,Spatial DBMS,0.95,-0.02,-0.11,https://db-engines.com/en/system/GeoMesa,
+222.,222.,187.,eXist-db,Native XML,0.94,-0.04,-0.25,https://db-engines.com/en/system/eXist-db,
+223.,225.,218.,WebSphere eXtreme Scale,Key-value,0.94,-0.02,+0.08,https://db-engines.com/en/system/WebSphere+eXtreme+Scale,
+224.,221.,220.,Rockset,"Document, Multi-model",0.93,-0.06,+0.08,https://db-engines.com/en/system/Rockset,"Document store,Relational DBMS,Search engine"
+225.,240.,225.,Yellowbrick,Relational,0.93,+0.10,+0.11,https://db-engines.com/en/system/Yellowbrick,
+226.,234.,219.,SQream DB,Relational,0.93,+0.04,+0.07,https://db-engines.com/en/system/SQream+DB,
+227.,226.,238.,Datacom/DB,Relational,0.92,-0.04,+0.20,https://db-engines.com/en/system/Datacom%2FDB,
+228.,254.,321.,Typesense,Search engine,0.92,+0.16,+0.72,https://db-engines.com/en/system/Typesense,
+229.,217.,223.,MapDB,Key-value,0.92,-0.13,+0.08,https://db-engines.com/en/system/MapDB,
+230.,249.,229.,Objectivity/DB,Object oriented,0.92,+0.12,+0.14,https://db-engines.com/en/system/Objectivity%2FDB,
+231.,235.,198.,CrateDB,Multi-model,0.90,+0.04,-0.19,https://db-engines.com/en/system/CrateDB,"Document store,Spatial DBMS,Search engine,Time Series DBMS,Vector DBMS,Relational DBMS"
+232.,228.,210.,eXtremeDB,Multi-model,0.88,-0.05,-0.08,https://db-engines.com/en/system/eXtremeDB,"Relational DBMS,Time Series DBMS"
+233.,224.,216.,SciDB,Multivalue,0.86,-0.11,-0.04,https://db-engines.com/en/system/SciDB,
+234.,236.,233.,AlaSQL,Multi-model,0.83,-0.03,+0.06,https://db-engines.com/en/system/AlaSQL,"Document store,Relational DBMS"
+235.,232.,214.,KairosDB,Time Series,0.82,-0.09,-0.10,https://db-engines.com/en/system/KairosDB,
+236.,237.,272.,Kinetica,"Relational, Multi-model",0.81,-0.03,+0.37,https://db-engines.com/en/system/Kinetica,"Relational DBMS,Spatial DBMS,Time Series DBMS"
+237.,239.,262.,Alibaba Cloud MaxCompute,Relational,0.81,-0.02,+0.32,https://db-engines.com/en/system/Alibaba+Cloud+MaxCompute,
+238.,250.,259.,KeyDB,Key-value,0.81,+0.02,+0.25,https://db-engines.com/en/system/KeyDB,
+239.,231.,240.,OpenInsight,Multivalue,0.80,-0.11,+0.11,https://db-engines.com/en/system/OpenInsight,
+240.,244.,271.,Alibaba Cloud AnalyticDB for MySQL,"Relational, Multi-model",0.80,-0.01,+0.36,https://db-engines.com/en/system/Alibaba+Cloud+AnalyticDB+for+MySQL,"Relational DBMS,Document store"
+241.,248.,241.,GemStone/S,Object oriented,0.79,+0.00,+0.14,https://db-engines.com/en/system/GemStone%2FS,
+242.,243.,,Vald,Vector,0.78,-0.04,,https://db-engines.com/en/system/Vald,
+243.,247.,243.,Apache Doris,Relational,0.78,-0.02,+0.13,https://db-engines.com/en/system/Apache+Doris,
+244.,229.,230.,ScaleArc,Relational,0.77,-0.16,0.00,https://db-engines.com/en/system/ScaleArc,
+245.,251.,,RisingWave,Relational,0.77,-0.01,,https://db-engines.com/en/system/RisingWave,
+246.,230.,208.,FrontBase,Relational,0.77,-0.15,-0.19,https://db-engines.com/en/system/FrontBase,
+247.,246.,217.,Postgres-XL,"Relational, Multi-model",0.76,-0.04,-0.11,https://db-engines.com/en/system/Postgres-XL,"Relational DBMS,Document store,Spatial DBMS"
+248.,255.,245.,Apache Pinot,Relational,0.74,-0.01,+0.12,https://db-engines.com/en/system/Apache+Pinot,
+249.,245.,310.,Heroic,Time Series,0.73,-0.07,+0.47,https://db-engines.com/en/system/Heroic,
+250.,241.,235.,VistaDB,Relational,0.71,-0.12,-0.05,https://db-engines.com/en/system/VistaDB,
+251.,238.,258.,Scalaris,Key-value,0.71,-0.13,+0.14,https://db-engines.com/en/system/Scalaris,
+252.,233.,226.,NexusDB,Relational,0.70,-0.20,-0.12,https://db-engines.com/en/system/NexusDB,
+253.,268.,239.,Percona Server for MongoDB,Document,0.69,+0.08,-0.02,https://db-engines.com/en/system/Percona+Server+for+MongoDB,
+254.,252.,180.,Graph Engine,Multi-model,0.68,-0.09,-0.59,https://db-engines.com/en/system/Graph+Engine,"Graph DBMS,Key-value store"
+255.,259.,222.,BoltDB,Key-value,0.66,-0.04,-0.19,https://db-engines.com/en/system/BoltDB,
+256.,242.,248.,atoti,Object oriented,0.66,-0.17,+0.06,https://db-engines.com/en/system/atoti,
+257.,264.,,Vespa,Multi-model,0.64,0.00,,https://db-engines.com/en/system/Vespa,"Search engine,Vector DBMS"
+258.,258.,244.,LokiJS,Document,0.64,-0.09,0.00,https://db-engines.com/en/system/LokiJS,
+259.,276.,268.,Raima Database Manager,Multi-model,0.62,+0.05,+0.16,https://db-engines.com/en/system/Raima+Database+Manager,"Relational DBMS,Time Series DBMS"
+260.,266.,,Databend,Relational,0.61,0.00,,https://db-engines.com/en/system/Databend,
+261.,253.,211.,R:BASE,Relational,0.60,-0.16,-0.36,https://db-engines.com/en/system/R%3ABASE,
+262.,262.,279.,Redland,RDF,0.60,-0.06,+0.19,https://db-engines.com/en/system/Redland,
+263.,260.,251.,HarperDB,Document,0.59,-0.08,-0.01,https://db-engines.com/en/system/HarperDB,
+264.,256.,191.,Splice Machine,Relational,0.58,-0.16,-0.57,https://db-engines.com/en/system/Splice+Machine,
+265.,277.,300.,Alibaba Cloud AnalyticDB for PostgreSQL,Relational,0.57,+0.01,+0.27,https://db-engines.com/en/system/Alibaba+Cloud+AnalyticDB+for+PostgreSQL,
+266.,257.,254.,ModeShape,Content,0.57,-0.17,-0.01,https://db-engines.com/en/system/ModeShape,
+267.,261.,260.,Strabon,RDF,0.56,-0.10,+0.03,https://db-engines.com/en/system/Strabon,
+268.,270.,276.,Jade,Object oriented,0.56,-0.04,+0.14,https://db-engines.com/en/system/Jade,
+269.,265.,249.,Sequoiadb,Multi-model,0.55,-0.08,-0.05,https://db-engines.com/en/system/Sequoiadb,"Document store,Relational DBMS"
+270.,284.,,CnosDB,Time Series,0.54,+0.05,,https://db-engines.com/en/system/CnosDB,
+271.,280.,280.,ITTIA,"Time Series, Multi-model",0.54,+0.02,+0.13,https://db-engines.com/en/system/ITTIA,"Time Series DBMS,Relational DBMS"
+272.,269.,312.,Elliptics,Key-value,0.53,-0.07,+0.28,https://db-engines.com/en/system/Elliptics,
+273.,279.,257.,Elassandra,"Wide column, Multi-model",0.52,-0.01,-0.05,https://db-engines.com/en/system/Elassandra,"Wide column store,Search engine"
+274.,263.,256.,Rasdaman,Multivalue,0.52,-0.14,-0.05,https://db-engines.com/en/system/Rasdaman,
+275.,272.,255.,Kingbase,"Relational, Multi-model",0.52,-0.08,-0.06,https://db-engines.com/en/system/Kingbase,"Relational DBMS,Document store,Spatial DBMS"
+276.,267.,253.,SearchBlox,Search engine,0.51,-0.10,-0.08,https://db-engines.com/en/system/SearchBlox,
+277.,271.,250.,InfiniteGraph,Graph,0.48,-0.12,-0.12,https://db-engines.com/en/system/InfiniteGraph,
+278.,275.,227.,4store,RDF,0.48,-0.09,-0.34,https://db-engines.com/en/system/4store,
+279.,297.,295.,Alibaba Cloud ApsaraDB for PolarDB,Relational,0.48,+0.04,+0.16,https://db-engines.com/en/system/Alibaba+Cloud+ApsaraDB+for+PolarDB,
+280.,273.,242.,Starcounter,Object oriented,0.47,-0.11,-0.18,https://db-engines.com/en/system/Starcounter,
+281.,286.,282.,Axibase,Time Series,0.47,-0.01,+0.07,https://db-engines.com/en/system/Axibase,
+282.,307.,275.,Alibaba Cloud Log Service,Search engine,0.46,+0.08,+0.04,https://db-engines.com/en/system/Alibaba+Cloud+Log+Service,
+283.,287.,267.,Kyligence Enterprise,Relational,0.45,-0.02,0.00,https://db-engines.com/en/system/Kyligence+Enterprise,
+284.,300.,320.,FeatureBase,Relational,0.45,+0.02,+0.24,https://db-engines.com/en/system/FeatureBase,
+285.,274.,288.,Lovefield,Relational,0.44,-0.14,+0.07,https://db-engines.com/en/system/Lovefield,
+286.,278.,247.,Project Voldemort,Key-value,0.44,-0.10,-0.18,https://db-engines.com/en/system/Project+Voldemort,
+287.,295.,269.,Brytlyt,Relational,0.43,-0.01,-0.02,https://db-engines.com/en/system/Brytlyt,
+288.,306.,327.,Machbase Neo,Time Series,0.43,+0.04,+0.24,https://db-engines.com/en/system/Machbase+Neo,
+289.,298.,281.,Actian FastObjects,Object oriented,0.43,-0.01,+0.02,https://db-engines.com/en/system/Actian+FastObjects,
+290.,289.,285.,OpenQM,Multivalue,0.43,-0.04,+0.04,https://db-engines.com/en/system/OpenQM,
+291.,299.,315.,RDFox,Multi-model,0.42,0.00,+0.17,https://db-engines.com/en/system/RDFox,"Graph DBMS,RDF store,Relational DBMS"
+292.,292.,296.,AnzoGraph DB,Multi-model,0.42,-0.04,+0.11,https://db-engines.com/en/system/AnzoGraph+DB,"Graph DBMS,RDF store"
+293.,285.,278.,Fluree,Graph,0.42,-0.07,+0.01,https://db-engines.com/en/system/Fluree,
+294.,303.,318.,Immudb,"Key-value, Multi-model",0.42,+0.02,+0.19,https://db-engines.com/en/system/Immudb,"Key-value store,Relational DBMS"
+295.,281.,277.,Mimer SQL,Relational,0.41,-0.10,+0.00,https://db-engines.com/en/system/Mimer+SQL,
+296.,296.,261.,YDB,Multi-model,0.41,-0.03,-0.12,https://db-engines.com/en/system/YDB,"Document store,Relational DBMS"
+297.,301.,289.,RedStore,RDF,0.40,-0.02,+0.04,https://db-engines.com/en/system/RedStore,
+298.,283.,301.,HyperGraphDB,Graph,0.40,-0.11,+0.10,https://db-engines.com/en/system/HyperGraphDB,
+299.,302.,,Marqo,Search engine,0.39,-0.01,,https://db-engines.com/en/system/Marqo,
+300.,282.,284.,EJDB,Document,0.38,-0.13,-0.01,https://db-engines.com/en/system/EJDB,
+301.,291.,232.,Tajo,Relational,0.37,-0.09,-0.39,https://db-engines.com/en/system/Tajo,
+302.,290.,,Deep Lake,Vector,0.36,-0.10,,https://db-engines.com/en/system/Deep+Lake,
+303.,311.,,AntDB,Relational,0.35,+0.01,,https://db-engines.com/en/system/AntDB,
+304.,304.,309.,LeanXcale,Multi-model,0.35,-0.04,+0.09,https://db-engines.com/en/system/LeanXcale,"Key-value store,Relational DBMS"
+305.,288.,313.,Mulgara,RDF,0.35,-0.13,+0.09,https://db-engines.com/en/system/Mulgara,
+306.,331.,349.,Fujitsu Enterprise Postgres,"Relational, Multi-model",0.34,+0.09,+0.20,https://db-engines.com/en/system/Fujitsu+Enterprise+Postgres,"Relational DBMS,Document store,Spatial DBMS"
+307.,293.,270.,FlockDB,Graph,0.33,-0.12,-0.11,https://db-engines.com/en/system/FlockDB,
+308.,316.,336.,STSdb,Key-value,0.33,+0.00,+0.16,https://db-engines.com/en/system/STSdb,
+309.,336.,,PieCloudDB,Relational,0.33,+0.09,,https://db-engines.com/en/system/PieCloudDB,
+310.,294.,314.,Transbase,Relational,0.33,-0.12,+0.08,https://db-engines.com/en/system/Transbase,
+311.,305.,291.,ElevateDB,Relational,0.32,-0.07,-0.01,https://db-engines.com/en/system/ElevateDB,
+312.,314.,287.,Riak TS,Time Series,0.31,-0.02,-0.06,https://db-engines.com/en/system/Riak+TS,
+313.,319.,266.,Cloudflare Workers KV,Key-value,0.31,-0.02,-0.17,https://db-engines.com/en/system/Cloudflare+Workers+KV,
+314.,348.,333.,Faircom DB,Multi-model,0.30,+0.08,+0.12,https://db-engines.com/en/system/Faircom+DB,"Key-value store,Relational DBMS"
+315.,312.,299.,NEventStore,Event,0.30,-0.04,0.00,https://db-engines.com/en/system/NEventStore,
+316.,308.,263.,Comdb2,Relational,0.30,-0.07,-0.20,https://db-engines.com/en/system/Comdb2,
+317.,321.,,YottaDB,"Key-value, Multi-model",0.30,-0.02,,https://db-engines.com/en/system/YottaDB,"Key-value store,Relational DBMS"
+318.,326.,324.,Quasardb,Time Series,0.29,0.00,+0.09,https://db-engines.com/en/system/Quasardb,
+319.,315.,311.,Speedb,Key-value,0.29,-0.05,+0.03,https://db-engines.com/en/system/Speedb,
+320.,352.,326.,EsgynDB,Relational,0.29,+0.08,+0.10,https://db-engines.com/en/system/EsgynDB,
+321.,338.,307.,Tibco ComputeDB,Relational,0.28,+0.04,+0.00,https://db-engines.com/en/system/Tibco+ComputeDB,
+322.,323.,264.,HugeGraph,Graph,0.27,-0.03,-0.21,https://db-engines.com/en/system/HugeGraph,
+323.,318.,286.,Valentina Server,Relational,0.27,-0.06,-0.11,https://db-engines.com/en/system/Valentina+Server,
+324.,317.,274.,PipelineDB,Relational,0.27,-0.06,-0.17,https://db-engines.com/en/system/PipelineDB,
+325.,322.,322.,Bangdb,Multi-model,0.27,-0.05,+0.07,https://db-engines.com/en/system/Bangdb,"Document store,Graph DBMS,Time Series DBMS,Spatial DBMS"
+326.,324.,348.,Dydra,RDF,0.27,-0.03,+0.12,https://db-engines.com/en/system/Dydra,
+327.,327.,283.,TinkerGraph,Graph,0.27,-0.02,-0.13,https://db-engines.com/en/system/TinkerGraph,
+328.,362.,298.,IBM Db2 Event Store,Multi-model,0.26,+0.09,-0.04,https://db-engines.com/en/system/IBM+Db2+Event+Store,"Event Store,Time Series DBMS"
+329.,335.,,Ultipa,Graph,0.26,+0.02,,https://db-engines.com/en/system/Ultipa,
+330.,349.,292.,Alibaba Cloud Table Store,Wide column,0.26,+0.04,-0.07,https://db-engines.com/en/system/Alibaba+Cloud+Table+Store,
+331.,313.,304.,Actian PSQL,Relational,0.26,-0.08,-0.03,https://db-engines.com/en/system/Actian+PSQL,
+332.,310.,290.,CubicWeb,RDF,0.26,-0.10,-0.08,https://db-engines.com/en/system/CubicWeb,
+333.,329.,336.,Exorbyte,Search engine,0.25,-0.02,+0.07,https://db-engines.com/en/system/Exorbyte,
+334.,320.,293.,GraphBase,Graph,0.25,-0.07,-0.08,https://db-engines.com/en/system/GraphBase,
+335.,309.,252.,Tokyo Tyrant,Key-value,0.25,-0.11,-0.34,https://db-engines.com/en/system/Tokyo+Tyrant,
+336.,334.,,Skytable,Key-value,0.25,+0.00,,https://db-engines.com/en/system/Skytable,
+337.,337.,297.,TerminusDB,"Graph, Multi-model",0.25,+0.00,-0.06,https://db-engines.com/en/system/TerminusDB,"Graph DBMS,Document store,RDF store"
+338.,365.,364.,Badger,Key-value,0.25,+0.09,+0.13,https://db-engines.com/en/system/Badger,
+339.,351.,,GreptimeDB,Time Series,0.23,+0.03,,https://db-engines.com/en/system/GreptimeDB,
+340.,330.,265.,TransLattice,Relational,0.23,-0.03,-0.24,https://db-engines.com/en/system/TransLattice,
+341.,344.,323.,ArcadeDB,Multi-model,0.23,0.00,+0.03,https://db-engines.com/en/system/ArcadeDB,"Document store,Graph DBMS,Key-value store,Time Series DBMS"
+342.,346.,317.,Transwarp KunDB,Relational,0.22,-0.01,0.00,https://db-engines.com/en/system/Transwarp+KunDB,
+343.,328.,334.,Sparksee,Graph,0.22,-0.06,+0.04,https://db-engines.com/en/system/Sparksee,
+344.,325.,,MyScale,Multi-model,0.21,-0.08,,https://db-engines.com/en/system/MyScale,"Relational DBMS,Vector DBMS"
+345.,333.,336.,BigObject,Relational,0.21,-0.03,+0.04,https://db-engines.com/en/system/BigObject,
+346.,342.,351.,Linter,"Relational, Multi-model",0.21,-0.03,+0.08,https://db-engines.com/en/system/Linter,"Relational DBMS,Spatial DBMS"
+347.,347.,294.,Manticore Search,"Search engine, Multi-model",0.20,-0.02,-0.12,https://db-engines.com/en/system/Manticore+Search,"Search engine,Time Series DBMS"
+348.,366.,,Dragonfly,Key-value,0.20,+0.06,,https://db-engines.com/en/system/Dragonfly,
+349.,332.,,Tigris,Multi-model,0.19,-0.06,,https://db-engines.com/en/system/Tigris,"Document store,Key-value store,Search engine,Time Series DBMS"
+350.,364.,335.,H2GIS,"Spatial DBMS, Multi-model",0.19,+0.03,+0.02,https://db-engines.com/en/system/H2GIS,"Spatial DBMS,Relational DBMS"
+351.,359.,336.,VelocityDB,Multi-model,0.19,+0.01,+0.02,https://db-engines.com/en/system/VelocityDB,"Graph DBMS,Object oriented DBMS"
+352.,345.,327.,Eloquera,Object oriented,0.18,-0.05,0.00,https://db-engines.com/en/system/Eloquera,
+353.,353.,352.,HyperLevelDB,Key-value,0.18,-0.03,+0.05,https://db-engines.com/en/system/HyperLevelDB,
+354.,354.,336.,XTDB,Document,0.17,-0.03,0.00,https://db-engines.com/en/system/XTDB,
+355.,357.,336.,Blueflood,Time Series,0.17,-0.02,-0.01,https://db-engines.com/en/system/Blueflood,
+356.,341.,352.,SenseiDB,Document,0.17,-0.07,+0.05,https://db-engines.com/en/system/SenseiDB,
+357.,379.,366.,Alibaba Cloud TSDB,Time Series,0.16,+0.07,+0.06,https://db-engines.com/en/system/Alibaba+Cloud+TSDB,
+358.,363.,336.,TerarkDB,Key-value,0.16,-0.01,-0.02,https://db-engines.com/en/system/TerarkDB,
+359.,361.,327.,OrigoDB,Multi-model,0.15,-0.02,-0.03,https://db-engines.com/en/system/OrigoDB,"Document store,Object oriented DBMS"
+360.,340.,336.,TomP2P,Key-value,0.15,-0.09,-0.02,https://db-engines.com/en/system/TomP2P,
+361.,343.,302.,XtremeData,Relational,0.15,-0.09,-0.14,https://db-engines.com/en/system/XtremeData,
+362.,355.,350.,Siaqodb,Object oriented,0.15,-0.05,+0.02,https://db-engines.com/en/system/Siaqodb,
+363.,367.,,YTsaurus,Multi-model,0.15,+0.01,,https://db-engines.com/en/system/YTsaurus,"Document store,Key-value store"
+364.,386.,347.,Warp 10,Time Series,0.14,+0.09,0.00,https://db-engines.com/en/system/Warp+10,
+365.,368.,,openGemini,Time Series,0.14,+0.00,,https://db-engines.com/en/system/openGemini,
+366.,350.,352.,Upscaledb,Key-value,0.14,-0.07,+0.01,https://db-engines.com/en/system/Upscaledb,
+367.,376.,325.,Kyoto Tycoon,Key-value,0.13,+0.02,-0.06,https://db-engines.com/en/system/Kyoto+Tycoon,
+368.,391.,,gStore,Multi-model,0.13,+0.11,,https://db-engines.com/en/system/gStore,"Graph DBMS,RDF store"
+369.,381.,368.,OushuDB,Relational,0.13,+0.06,+0.04,https://db-engines.com/en/system/OushuDB,
+370.,370.,377.,Indica,Search engine,0.12,-0.01,+0.12,https://db-engines.com/en/system/Indica,
+371.,339.,336.,BrightstarDB,RDF,0.12,-0.12,-0.05,https://db-engines.com/en/system/BrightstarDB,
+372.,384.,377.,InfinityDB,Key-value,0.12,+0.06,+0.12,https://db-engines.com/en/system/InfinityDB,
+373.,360.,352.,NosDB,Document,0.11,-0.07,-0.02,https://db-engines.com/en/system/NosDB,
+374.,388.,,Transwarp Hippo,Vector,0.11,+0.07,,https://db-engines.com/en/system/Transwarp+Hippo,
+375.,358.,305.,Acebase,Document,0.11,-0.08,-0.18,https://db-engines.com/en/system/Acebase,
+376.,371.,352.,SiriDB,Time Series,0.10,-0.03,-0.02,https://db-engines.com/en/system/SiriDB,
+377.,356.,316.,SiteWhere,Time Series,0.10,-0.10,-0.14,https://db-engines.com/en/system/SiteWhere,
+378.,390.,377.,Transwarp ArgoDB,"Relational, Multi-model",0.10,+0.07,+0.10,https://db-engines.com/en/system/Transwarp+ArgoDB,"Relational DBMS,Search engine"
+379.,385.,377.,NSDb,Time Series,0.09,+0.03,+0.09,https://db-engines.com/en/system/NSDb,
+380.,398.,375.,JaguarDB,Multi-model,0.09,+0.08,+0.07,https://db-engines.com/en/system/JaguarDB,"Key-value store,Vector DBMS"
+381.,389.,374.,WakandaDB,Object oriented,0.08,+0.05,+0.06,https://db-engines.com/en/system/WakandaDB,
+382.,400.,377.,Transwarp StellarDB,Graph,0.08,+0.08,+0.08,https://db-engines.com/en/system/Transwarp+StellarDB,
+383.,400.,371.,Galaxybase,Graph,0.07,+0.07,+0.02,https://db-engines.com/en/system/Galaxybase,
+384.,380.,,DataFS,"Object oriented, Multi-model",0.07,-0.01,,https://db-engines.com/en/system/DataFS,"Object oriented DBMS,Graph DBMS"
+385.,400.,373.,Sadas Engine,Relational,0.07,+0.07,+0.05,https://db-engines.com/en/system/Sadas+Engine,
+386.,383.,319.,Hawkular Metrics,Time Series,0.07,+0.00,-0.14,https://db-engines.com/en/system/Hawkular+Metrics,
+387.,382.,370.,AgensGraph,Multi-model,0.06,0.00,0.00,https://db-engines.com/en/system/AgensGraph,"Graph DBMS,Relational DBMS"
+388.,392.,372.,Faircom EDGE,Multi-model,0.06,+0.04,+0.03,https://db-engines.com/en/system/Faircom+EDGE,"Key-value store,Relational DBMS"
+389.,387.,377.,Cachelot.io,Key-value,0.06,+0.01,+0.06,https://db-engines.com/en/system/Cachelot.io,
+390.,371.,352.,iBoxDB,Document,0.05,-0.09,-0.08,https://db-engines.com/en/system/iBoxDB,
+391.,394.,363.,ScaleOut StateServer,Key-value,0.05,+0.03,-0.07,https://db-engines.com/en/system/ScaleOut+StateServer,
+392.,400.,377.,Tkrzw,Key-value,0.05,+0.05,+0.05,https://db-engines.com/en/system/Tkrzw,
+393.,397.,369.,SWC-DB,"Wide column, Multi-model",0.05,+0.04,-0.02,https://db-engines.com/en/system/SWC-DB,"Wide column store,Time Series DBMS"
+394.,369.,332.,LedisDB,Key-value,0.05,-0.09,-0.14,https://db-engines.com/en/system/LedisDB,
+395.,399.,376.,SwayDB,Key-value,0.04,+0.04,+0.04,https://db-engines.com/en/system/SwayDB,
+396.,400.,377.,Newts,Time Series,0.03,+0.03,+0.03,https://db-engines.com/en/system/Newts,
+397.,371.,336.,ActorDB,Relational,0.03,-0.10,-0.14,https://db-engines.com/en/system/ActorDB,
+397.,371.,352.,Edge Intelligence,Relational,0.03,-0.10,-0.09,https://db-engines.com/en/system/Edge+Intelligence,
+397.,371.,327.,WhiteDB,Document,0.03,-0.10,-0.15,https://db-engines.com/en/system/WhiteDB,
+400.,393.,362.,SmallSQL,Relational,0.02,+0.00,-0.10,https://db-engines.com/en/system/SmallSQL,
+401.,400.,377.,SpaceTime,"Spatial DBMS, Multi-model",0.02,+0.02,+0.02,https://db-engines.com/en/system/SpaceTime,"Spatial DBMS,Relational DBMS"
+402.,395.,365.,SparkleDB,RDF,0.02,+0.00,-0.09,https://db-engines.com/en/system/SparkleDB,
+403.,396.,367.,Resin Cache,Key-value,0.01,0.00,-0.07,https://db-engines.com/en/system/Resin+Cache,
+404.,378.,352.,JethroData,Relational,0.01,-0.09,-0.12,https://db-engines.com/en/system/JethroData,
+405.,400.,377.,BergDB,Key-value,0.00,±0.00,±0.00,https://db-engines.com/en/system/BergDB,
+405.,400.,377.,CortexDB,Multi-model,0.00,±0.00,±0.00,https://db-engines.com/en/system/CortexDB,"Document store,Key-value store"
+405.,400.,377.,CovenantSQL,Relational,0.00,±0.00,±0.00,https://db-engines.com/en/system/CovenantSQL,
+405.,400.,377.,DaggerDB,Relational,0.00,±0.00,±0.00,https://db-engines.com/en/system/DaggerDB,
+405.,400.,377.,EdgelessDB,Relational,0.00,±0.00,±0.00,https://db-engines.com/en/system/EdgelessDB,
+405.,400.,377.,Helium,Key-value,0.00,±0.00,±0.00,https://db-engines.com/en/system/Helium,
+405.,400.,346.,HGraphDB,Graph,0.00,±0.00,-0.17,https://db-engines.com/en/system/HGraphDB,
+405.,400.,377.,JasDB,Document,0.00,±0.00,±0.00,https://db-engines.com/en/system/JasDB,
+405.,400.,377.,K-DB,Relational,0.00,±0.00,±0.00,https://db-engines.com/en/system/K-DB,
+405.,377.,327.,RaptorDB,Document,0.00,-0.10,-0.19,https://db-engines.com/en/system/RaptorDB,
+405.,400.,377.,Rizhiyi,"Search engine, Multi-model",0.00,±0.00,±0.00,https://db-engines.com/en/system/Rizhiyi,"Search engine,Time Series DBMS"
+405.,400.,377.,searchxml,Multi-model,0.00,±0.00,±0.00,https://db-engines.com/en/system/searchxml,"Native XML DBMS,Search engine"
