@@ -8,7 +8,6 @@
 
 import os
 import shutil
-import socket
 import sys
 import time
 
@@ -30,9 +29,8 @@ from urllib import request
 STATE_OK = 0
 
 def crawling_dbms_info_soup(url_init, header, use_elem_dict):
-    socket.setdefaulttimeout(60)
     request = urllib.request.Request(url_init, headers=header)
-    response = urllib.request.urlopen(request)
+    response = urllib.request.urlopen(request, timeout=60*5)
     response_body = response.read().decode('utf-8').replace('&shy;', '')
     response.close()  # 注意关闭response
     soup = BeautifulSoup(response_body, 'lxml')  # 利用bs4库解析html
