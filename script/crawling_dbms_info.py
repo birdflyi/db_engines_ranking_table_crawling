@@ -24,15 +24,19 @@ import pandas as pd
 
 from bs4 import BeautifulSoup
 from urllib import request
+from script import selenium_request
 
 
 STATE_OK = 0
 
 def crawling_dbms_info_soup(url_init, header, use_elem_dict):
-    request = urllib.request.Request(url_init, headers=header)
-    response = urllib.request.urlopen(request, timeout=60*5)
-    response_body = response.read().decode('utf-8').replace('&shy;', '')
-    response.close()  # 注意关闭response
+    # request = urllib.request.Request(url_init, headers=header)
+    # response = urllib.request.urlopen(request, timeout=60*5)
+    # response_body = response.read().decode('utf-8').replace('&shy;', '')
+    # response.close()  # 注意关闭response
+
+    response_body = selenium_request.get_page_content(url_init, headers=header, timeout=60)
+    response_body = response_body.replace('&shy;', '')
     soup = BeautifulSoup(response_body, 'lxml')  # 利用bs4库解析html
 
     # 取出主内容

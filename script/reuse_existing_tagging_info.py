@@ -150,6 +150,9 @@ def merge_info(df_src_existing_tagging, df_src_ranking_new, df_category_labels, 
 
     # 反过来补全'Database Model'
     dict_dbms_model_type_reverse = {v: k for k, v in dict_dbms_model_type.items()}
+    for k in dict_dbms_model_type.keys():
+        if k not in dict_dbms_model_type_reverse.keys():  # if the label is just equal to category string, map to itself
+            dict_dbms_model_type_reverse[k] = k
     for i in range(len(main_label_names_list)):
         main_label_names = main_label_names_list[i]
         affiliated_label_names = Multi_model_infos[i]

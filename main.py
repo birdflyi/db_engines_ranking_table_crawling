@@ -39,40 +39,47 @@ REUSE_EXISTING_TAGGING_INFO = True
 format_time_in_filename = "%Y%m"
 format_time_in_colname = "%b-%Y"
 
-month_yyyyMM = "202505"
-curr_month = TimeFormat(month_yyyyMM, format_time_in_filename, format_time_in_filename)
+month_YYYYmm = "202507"
+curr_month = TimeFormat(month_YYYYmm, format_time_in_filename, format_time_in_filename)
 
-
-last_month_yyyyMM = curr_month.get_last_month(format_time_in_filename)
-curr_month_yyyyMM = curr_month.get_curr_month(format_time_in_filename)
-src_existing_tagging_info_path = os.path.join(pkg_rootdir, f'data/manulabeled/ranking_crawling_{last_month_yyyyMM}_automerged_manulabeled.csv')
-ranking_table_crawling_path = os.path.join(pkg_rootdir, f'data/db_engines_ranking_table_full/ranking_crawling_{month_yyyyMM}_raw.csv')
-dbms_info_crawling_path = os.path.join(pkg_rootdir, f'data/db_engines_ranking_table_full/dbms_info_crawling_{month_yyyyMM}_raw.csv')
-ranking_table_dbms_info_joined_path = os.path.join(pkg_rootdir, f'data/db_engines_ranking_table_full/ranking_table_dbms_info_{month_yyyyMM}_joined.csv')
-src_ranking_table_dbms_info_joined_recalc_path = os.path.join(pkg_rootdir, f'data/db_engines_ranking_table_full/ranking_table_dbms_info_{month_yyyyMM}_joined_recalc.csv')
-tar_automerged_path = os.path.join(pkg_rootdir, f'data/db_engines_ranking_table_full/ranking_crawling_{month_yyyyMM}_automerged.csv')
+n_interval = 2
+last_month_YYYYmm = curr_month.get_last_month(format_time_in_filename, n=n_interval)
+curr_month_YYYYmm = curr_month.get_curr_month(format_time_in_filename)
+last_month_bb_YYYY = curr_month.get_last_month(format_time_in_colname, n=n_interval)
+curr_month_bb_YYYY = curr_month.get_curr_month(format_time_in_colname)
+src_existing_tagging_info_path = os.path.join(pkg_rootdir, f'data/manulabeled/ranking_crawling_{last_month_YYYYmm}_automerged_manulabeled.csv')
+ranking_table_crawling_path = os.path.join(pkg_rootdir, f'data/db_engines_ranking_table_full/ranking_crawling_{month_YYYYmm}_raw.csv')
+dbms_info_crawling_path = os.path.join(pkg_rootdir, f'data/db_engines_ranking_table_full/dbms_info_crawling_{month_YYYYmm}_raw.csv')
+ranking_table_dbms_info_joined_path = os.path.join(pkg_rootdir, f'data/db_engines_ranking_table_full/ranking_table_dbms_info_{month_YYYYmm}_joined.csv')
+src_ranking_table_dbms_info_joined_recalc_path = os.path.join(pkg_rootdir, f'data/db_engines_ranking_table_full/ranking_table_dbms_info_{month_YYYYmm}_joined_recalc.csv')
+tar_automerged_path = os.path.join(pkg_rootdir, f'data/db_engines_ranking_table_full/ranking_crawling_{month_YYYYmm}_automerged.csv')
 src_category_labels_path = os.path.join(pkg_rootdir, f'data/existing_tagging_info/category_labels.csv')
 tar_category_labels_updated_path = os.path.join(pkg_rootdir, f'data/db_engines_ranking_table_full/category_labels_updated.csv')
-tar_existing_tagging_info_path = src_existing_tagging_info_path.replace(f'{last_month_yyyyMM}', f'{curr_month_yyyyMM}')
+tar_existing_tagging_info_path = src_existing_tagging_info_path.replace(f'{last_month_YYYYmm}', f'{curr_month_YYYYmm}')
 
 encoding = 'utf-8'
 
 # headers info when use Chrome explorer
-header1 = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.221 Safari/537.36 SE 2.X MetaSr 1.0',
-    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+headers_pattern = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Language": "en-US,en;q=0.5",
+    "Accept-Encoding": "deflate",
 }
-header2 = {
-    'user-agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36'}
-header3 = {
-    'user-agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'}
-header4 = {
-    'user-agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'}
-header5 = {
-    'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36'}
-header6 = {
-    'user-agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'}
-headers = [header1, header2, header3, header4, header5, header6]
+
+user_agents = [
+    {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.221 Safari/537.36  2.SEX MetaSr 1.0'},
+    {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36'},
+    {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'},
+    {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'},
+    {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36'},
+    {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'},
+]
+headers = []
+for user_agent in user_agents:
+    temp_headers = headers_pattern.copy()
+    temp_headers.update(user_agent)
+    headers.append(temp_headers)
 
 if __name__ == '__main__':
 
@@ -159,8 +166,8 @@ if __name__ == '__main__':
             'has_company': 'update__reuse_old_if_cooccurrence_on(DBMS)',
             'github_repo_link': 'update__reuse_old_if_cooccurrence_on(DBMS)',
             # update values and change the column name
-            f'Score_{curr_month.get_last_month(format_time_in_colname)}': f'update__change_colname_as(Score_{curr_month.get_curr_month(format_time_in_colname)})__use_new_only_val(Score_{curr_month.get_curr_month(format_time_in_colname)})',  # automatically updated with the variable "month_yyyyMM"
-            f'Rank_{curr_month.get_last_month(format_time_in_colname)}': f'update__change_colname_as(Rank_{curr_month.get_curr_month(format_time_in_colname)})__use_new_only_val(Rank_{curr_month.get_curr_month(format_time_in_colname)})__dtype(Int64)',  # automatically updated with the variable "month_yyyyMM"
+            f'Score_{last_month_bb_YYYY}': f'update__change_colname_as(Score_{curr_month_bb_YYYY})__use_new_only_val(Score_{curr_month_bb_YYYY})',  # automatically updated with the variable "month_bb_YYYY"
+            f'Rank_{last_month_bb_YYYY}': f'update__change_colname_as(Rank_{curr_month_bb_YYYY})__use_new_only_val(Rank_{curr_month_bb_YYYY})__dtype(Int64)',  # automatically updated with the variable "month_bb_YYYY"
             'org_name': 'update__reuse_old_if_cooccurrence_on(DBMS)',  # 依赖于手动更新的列github_repo_link
             'repo_name': 'update__reuse_old_if_cooccurrence_on(DBMS)',  # 依赖于手动更新的列github_repo_link
             'Developer': 'update__reuse_old_if_cooccurrence_on(DBMS)',
@@ -177,13 +184,13 @@ if __name__ == '__main__':
                           save_automerged_path=tar_automerged_path,
                           save_category_labels_path=tar_category_labels_updated_path)
 
-        last_month_dtype = {f'Score_{curr_month.get_last_month(format_time_in_colname)}': str, f'Rank_{curr_month.get_last_month(format_time_in_colname)}': str, 'initial_release_recalc': str, 'current_release_recalc': str}
-        curr_month_dtype = {f'Score_{curr_month.get_curr_month(format_time_in_colname)}': str, f'Rank_{curr_month.get_curr_month(format_time_in_colname)}': str, 'initial_release_recalc': str, 'current_release_recalc': str}
+        last_month_dtype = {f'Score_{last_month_bb_YYYY}': str, f'Rank_{last_month_bb_YYYY}': str, 'initial_release_recalc': str, 'current_release_recalc': str}
+        curr_month_dtype = {f'Score_{curr_month_bb_YYYY}': str, f'Rank_{curr_month_bb_YYYY}': str, 'initial_release_recalc': str, 'current_release_recalc': str}
         update_start_checkpoint_path = tar_automerged_path
         df_update_start_checkpoint = pd.read_csv(update_start_checkpoint_path, encoding=encoding, index_col=False, dtype=curr_month_dtype)
         df_last_month_manulabeled = pd.read_csv(src_existing_tagging_info_path, encoding=encoding, index_col=False, dtype=last_month_dtype)
         use_col_last_month_manulabeled = list(df_last_month_manulabeled.columns.values)
-        stop_colnames = [f'Score_{curr_month.get_last_month(format_time_in_colname)}', f'Rank_{curr_month.get_last_month(format_time_in_colname)}']
+        stop_colnames = [f'Score_{last_month_bb_YYYY}', f'Rank_{last_month_bb_YYYY}']
         for sc in stop_colnames:
             use_col_last_month_manulabeled.remove(sc)
         df_last_month_manulabeled = df_last_month_manulabeled[use_col_last_month_manulabeled]
