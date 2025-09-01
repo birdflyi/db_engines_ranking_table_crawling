@@ -39,10 +39,10 @@ REUSE_EXISTING_TAGGING_INFO = True
 format_time_in_filename = "%Y%m"
 format_time_in_colname = "%b-%Y"
 
-month_YYYYmm = "202507"
+month_YYYYmm = "202508"
 curr_month = TimeFormat(month_YYYYmm, format_time_in_filename, format_time_in_filename)
 
-n_interval = 2
+n_interval = 1
 last_month_YYYYmm = curr_month.get_last_month(format_time_in_filename, n=n_interval)
 curr_month_YYYYmm = curr_month.get_curr_month(format_time_in_filename)
 last_month_bb_YYYY = curr_month.get_last_month(format_time_in_colname, n=n_interval)
