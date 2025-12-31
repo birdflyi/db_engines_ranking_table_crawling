@@ -118,7 +118,7 @@ def merge_info(df_src_existing_tagging, df_src_ranking_new, df_category_labels, 
         temp_main_labels = main_labels.split(',')
         temp_main_label_names = []
         for s in temp_main_labels:
-            if len(s):
+            if len(s) and dict_dbms_model_type[s] is not np.nan:
                 temp_main_label_names.append(dict_dbms_model_type[s])
         if len(temp_main_label_names):
             main_label_names_list.append(','.join(temp_main_label_names))
