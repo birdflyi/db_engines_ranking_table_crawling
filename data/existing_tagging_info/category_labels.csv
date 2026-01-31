@@ -1,4 +1,5 @@
 category_label,category_name
+Columnar,Columnar
 Content,Content stores
 Document,Document store
 Event,Event Store
@@ -16,4 +17,3 @@ Spatial,Spatial DBMS
 Time Series,Time Series DBMS
 Vector,Vector DBMS
 Wide column,Wide column store
-Columnar,Columnar

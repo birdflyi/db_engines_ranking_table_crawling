@@ -159,8 +159,23 @@ def merge_info(df_src_existing_tagging, df_src_ranking_new, df_category_labels, 
         if not len(affiliated_label_names):
             main_label_names_list[i] = ''
         else:
-            merge_list = affiliated_label_names.split(',')[0]
-            main_label_names_list[i] = dict_dbms_model_type_reverse[merge_list]
+            first_aff_label_name = affiliated_label_names.split(',')[0]
+            if first_aff_label_name in dict_dbms_model_type_reverse.keys():
+                main_label_names_list[i] = dict_dbms_model_type_reverse[first_aff_label_name]
+            else:
+                temp_aff_label_names = affiliated_label_names.split(',')
+                for s in temp_aff_label_names:
+                    if any([ignore_key in s for ignore_key in ignore_keys]):
+                        continue
+                    else:
+                        # e.g. Handling messy formats like "CockroachDB supports relational, semi-structured JSON/document, vector/embedding, geospatial, and typed categorical/enumeration data, all exposed via SQL, on the same strongly consistent, globally distributed data platform."
+                        if any([k in s or v in s for k, v in dict_dbms_model_type.items()]):
+                            for k, v in dict_dbms_model_type.items():
+                                if k in s or v in s:
+                                    main_label_names_list[i] = k
+                                    break
+                                else:
+                                    continue
     # print(main_label_names_list)
     # print(list(df_src_ranking_new['Database Model']))
     df_src_ranking_new['Database Model'] = main_label_names_list
