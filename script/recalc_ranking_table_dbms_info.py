@@ -33,7 +33,7 @@ class RecalcFuncPool(object):
     @staticmethod
     def initial_release_recalc_func(series):
         res_series = pd.Series(series, dtype=int)
-        res_series = res_series.apply(lambda x: int(x) if pd.notna(x) else '')
+        res_series = res_series.apply(lambda x: int(float(x)) if pd.notna(x) and str(x).replace('.', '', 1).isdigit() else '')
         res_series = pd.Series(res_series, dtype=int)
         return res_series
 
