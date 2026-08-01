@@ -75,7 +75,7 @@ def crawling_ranking_table_soup(url_init, header, use_elem_dict, save_path):
         dbi_header_prefix_text, suffix_prepare_num = dbi_header_prefix_config[i]
         if suffix_prepare_num:
             for _ in range(suffix_prepare_num):
-                dbi_header_col = dbi_header_prefix_text + '_' + dbi_header_suffix_elems[idx_suffix].get_text('-', '<br/>')
+                dbi_header_col = dbi_header_prefix_text + '_' + dbi_header_suffix_elems[idx_suffix].get_text('-', '<br/>').replace('\u00ad', '')
                 dbi_header_cols.append(dbi_header_col)
                 idx_suffix += 1
         else:
@@ -103,6 +103,7 @@ def crawling_ranking_table_soup(url_init, header, use_elem_dict, save_path):
             if record_elem.name == 'th' and "class" in record_elem.attrs:
                 s_extracts_span = [s.extract() for s in record_elem(['span'])]  # must be executed before get record_elem.text
                 record_item = record_elem.text.strip()  # record_elem has been extracted multi_model tags
+                record_item = record_item.replace('\u00ad', '')  # 去除软连字符
 
                 if record_elem.attrs["class"] == ["pad-l"]:
                     # get DBMS_insitelink when record_elem = '''
@@ -137,6 +138,7 @@ def crawling_ranking_table_soup(url_init, header, use_elem_dict, save_path):
                                     set_flag__multi_model_info = True
             else:
                 record_item = record_elem.text.strip()
+                record_item = record_item.replace('\u00ad', '')
 
             record_items.append(record_item)
         record_items.append(DBMS_insitelink)

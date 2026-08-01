@@ -1,0 +1,30 @@
+# IDE 配置文件 (根据你的之前的问题，建议也加上)
+*.swp
+*.swo
+
+# IntelliJ IDEA
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# VS Code
+.vscode/
+
+# Eclipse
+.settings/
+.classpath
+.project
+
+# Python 字节码缓存
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 虚拟环境
+venv/
+.env/
+.venv/
+env/

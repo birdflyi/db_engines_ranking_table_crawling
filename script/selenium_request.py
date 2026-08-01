@@ -22,6 +22,7 @@ if pkg_rootdir not in sys.path:  # 解决ipynb引用上层路径中的模块时�
     print('-- Add root directory "{}" to system path.'.format(pkg_rootdir))
 
 
+import atexit
 import requests
 
 from selenium import webdriver
@@ -29,6 +30,29 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
+
+# ---------- 新增：全局浏览器会话管理 ----------
+_driver = None
+_request_counter = 0
+MAX_REQUESTS_BEFORE_RESET = 85  # 可根据实际情况调整
+
+
+# ---------- 添加：全局清理函数 ----------
+def _cleanup_driver():
+    """退出时强制关闭浏览器，释放user-data-dir锁"""
+    global _driver
+    if _driver is not None:
+        try:
+            print("🧹 正在关闭浏览器并释放资源...")
+            _driver.quit()
+            print("✅ 浏览器已关闭，资源已释放")
+        except Exception as e:
+            print(f"⚠️ 关闭浏览器时出错（可忽略）: {e}")
+        finally:
+            _driver = None
+
+# 注册到 atexit，确保脚本退出时执行
+atexit.register(_cleanup_driver)
 
 
 def is_challenge_complete(driver):
@@ -65,34 +89,58 @@ def is_challenge_complete(driver):
     return False
 
 
+def _get_driver():
+    """获取或创建浏览器驱动，并处理重置逻辑"""
+    global _driver, _request_counter
+
+    # 如果计数器达到阈值，关闭旧驱动并重置
+    if _driver is not None and _request_counter >= MAX_REQUESTS_BEFORE_RESET:
+        print(f"🔄 达到 {MAX_REQUESTS_BEFORE_RESET} 次请求，重建浏览器会话...")
+        try:
+            _driver.quit()
+        except Exception:
+            pass
+        _driver = None
+        _request_counter = 0
+
+    # 如果驱动不存在，创建新驱动
+    if _driver is None:
+        # 配置 Chrome 选项
+        chrome_options = Options()
+
+        # 无头模式配置
+        chrome_options.add_argument("--headless=new")
+        chrome_options.add_argument("--disable-gpu")
+        chrome_options.add_argument("--no-sandbox")
+        chrome_options.add_argument("--disable-dev-shm-usage")
+
+        # 模拟真实浏览器指纹
+        chrome_options.add_argument(
+            "user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36"
+        )
+        chrome_options.add_argument("--window-size=1920,1080")
+
+        # 禁用自动化检测标志
+        chrome_options.add_experimental_option("excludeSwitches", ["enable-automation"])
+        chrome_options.add_experimental_option('useAutomationExtension', False)
+        chrome_options.add_argument('--disable-blink-features=AutomationControlled')
+
+        # 创建持久化用户数据目录，加快后续验证（可选）
+        # user_data_dir = os.path.join(os.getcwd(), "chrome_profile")
+        # chrome_options.add_argument(f"user-data-dir={user_data_dir}")
+
+        service = Service()
+        _driver = webdriver.Chrome(service=service, options=chrome_options)
+        print("🆕 新建浏览器实例")
+
+    # 增加计数器
+    _request_counter += 1
+    return _driver
+
+
 def bypass_aws_waf(url):
-    """使用 Selenium 可靠地处理 AWS WAF 挑战并获取页面内容"""
-    # 配置 Chrome 选项
-    chrome_options = Options()
-
-    # 无头模式配置
-    chrome_options.add_argument("--headless=new")
-    chrome_options.add_argument("--disable-gpu")
-    chrome_options.add_argument("--no-sandbox")
-    chrome_options.add_argument("--disable-dev-shm-usage")
-
-    # 模拟真实浏览器指纹
-    chrome_options.add_argument(
-        "user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36")
-    chrome_options.add_argument("--window-size=1920,1080")
-
-    # 禁用自动化检测标志
-    chrome_options.add_experimental_option("excludeSwitches", ["enable-automation"])
-    chrome_options.add_experimental_option('useAutomationExtension', False)
-    chrome_options.add_argument('--disable-blink-features=AutomationControlled')
-
-    # 创建持久化用户数据目录（可选）
-    # user_data_dir = os.path.join(os.getcwd(), "chrome_profile")
-    # chrome_options.add_argument(f"user-data-dir={user_data_dir}")
-
-    # 创建 WebDriver
-    service = Service()  # 自动查找 ChromeDriver
-    driver = webdriver.Chrome(service=service, options=chrome_options)
+    """使用 Selenium 可靠地处理 AWS WAF 挑战并获取页面内容（复用全局 driver）"""
+    driver = _get_driver()  # 获取全局驱动
 
     try:
         # 执行 JavaScript 修改 navigator 属性
@@ -126,14 +174,13 @@ def bypass_aws_waf(url):
 
     except Exception as e:
         print(f"处理过程中出错: {e}")
-        # 出错时返回当前页面内容
+        # 出错时，可能驱动已损坏，重置全局驱动
+        global _driver, _request_counter
+        _cleanup_driver()  # 直接调用清理函数
+        _request_counter = 0
         return driver.page_source if 'driver' in locals() else None
 
-    finally:
-        try:
-            driver.quit()
-        except:
-            pass
+    # 注意：不再在这里调用 driver.quit()，由全局管理器控制生命周期
 
 
 def get_page_content(url, resp_encoding="utf-8", **kwargs):

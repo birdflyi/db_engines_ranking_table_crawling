@@ -36,7 +36,7 @@ def crawling_dbms_info_soup(url_init, header, use_elem_dict):
     # response.close()  # 注意关闭response
 
     response_body = selenium_request.get_page_content(url_init, headers=header, timeout=60)
-    response_body = response_body.replace('&shy;', '')
+    response_body = response_body.replace('&shy;', '').replace('\u00ad', '')
     soup = BeautifulSoup(response_body, 'lxml')  # 利用bs4库解析html
 
     # 取出主内容
