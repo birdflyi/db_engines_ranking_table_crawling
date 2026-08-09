@@ -111,8 +111,8 @@ if __name__ == '__main__':
 
     if JOIN_RANKING_TABLE_DBMS_INFO_ON_DBMS:
         use_cols_ranking_table = None
-        use_cols_dbms_infos = ["Developer", "Name", "Description", "Initial release", "Current release", "License", "License_info",
-                               "Cloud-based only"]
+        use_cols_dbms_infos = ["Developer", "Name", "Description", "Website", "Initial release", "Current release",
+                               "License", "License_info", "Cloud-based only"]
         df_ranking_table = pd.read_csv(ranking_table_crawling_path, encoding=encoding, index_col=False)
         df_dbms_infos = pd.read_csv(dbms_info_crawling_path, encoding=encoding, index_col=False)
         join_ranking_table_dbms_info(df_ranking_table, df_dbms_infos, use_cols_ranking_table, use_cols_dbms_infos,
@@ -171,6 +171,7 @@ if __name__ == '__main__':
             'org_name': 'update__reuse_old_if_cooccurrence_on(DBMS)',  # 依赖于手动更新的列github_repo_link
             'repo_name': 'update__reuse_old_if_cooccurrence_on(DBMS)',  # 依赖于手动更新的列github_repo_link
             'Developer': 'update__reuse_old_if_cooccurrence_on(DBMS)',
+            'Website': 'update__use_new_col',
             'initial_release_recalc': 'update__use_new_col__dtype(Int64)',
             'current_release_recalc': 'update__use_new_col__dtype(Int64)',
             'open_source_license': 'update__use_new_only_val(license_recalc)',
