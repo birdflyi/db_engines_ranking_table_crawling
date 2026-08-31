@@ -39,7 +39,7 @@ REUSE_EXISTING_TAGGING_INFO = True
 format_time_in_filename = "%Y%m"
 format_time_in_colname = "%b-%Y"
 
-month_YYYYmm = "202607"
+month_YYYYmm = "202608"
 curr_month = TimeFormat(month_YYYYmm, format_time_in_filename, format_time_in_filename)
 
 n_interval = 1
@@ -100,7 +100,7 @@ if __name__ == '__main__':
             'main_contents': ['table', {'class': 'tools'}],
         }
         mode = 'a'  # mode 'a' for breakpoint resumption
-        batch = 20
+        batch = 5
         temp_save_path = dbms_info_crawling_path.rstrip('.csv') + '_temp.csv'
         state = -1
         while state == -1:

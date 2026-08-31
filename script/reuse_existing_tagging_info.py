@@ -17,6 +17,7 @@ print('Add root directory "{}" to system path.'.format(pkg_rootdir))
 
 import re
 import shutil
+from collections import defaultdict
 import numpy as np
 import pandas as pd
 
@@ -60,17 +61,12 @@ def auto_gen_dbms_model_type_dict_by_keys(keys, values, ignore_keys=None,
                 print("default_value can only be set to dict or str types!")
                 return
 
-            if keep == 'first':
-                keep_flag = k not in dict_dbms_model_type.keys()  # 只有首次满足v2k_map_rule_func才更新
-            elif keep == 'last':
-                keep_flag = True  # 总是更新
-            else:
-                print("This should never be executed! Please check your keep argument in ['first', 'last']!")
-                return
-
             for v in values:
                 v = v if not v_convert_dtype_func else v_convert_dtype_func(v)
-                if v2k_map_rule_func(v, k) and keep_flag:
+                if v2k_map_rule_func(v, k):
+                    # keep='first' 仅保留首次匹配；keep='last' 则允许后续匹配覆盖已有值。
+                    if keep == 'first' and k in dict_dbms_model_type:
+                        break
                     dict_dbms_model_type[k] = v
 
             if k not in dict_dbms_model_type.keys():  # 注意需要到最后都未被赋值的合法key才能被赋值default_value
@@ -98,32 +94,122 @@ def merge_info(df_src_existing_tagging, df_src_ranking_new, df_category_labels, 
     types_Multi_model_info.sort()
     # print(types_Database_Model, types_Multi_model_info)
 
-    # 建立key:Database Model到value:Multi_model_info的映射表，
+    # 建立 category_name -> category_label 的反查表，以及
+    # category_label -> [category_name, ...] 的一键多值表。
     ignore_keys = ['Multi-model']
-    dict_existing_category_labels = df_category_labels.set_index(['category_label'])['category_name'].to_dict()
-    # the category_label(as key) must be unique, while the category_name may not.
-    # set drop_unused_default_values=False to keep unused default key-values in category_labels.csv
-    dict_dbms_model_type = auto_gen_dbms_model_type_dict_by_keys(types_Database_Model, types_Multi_model_info,
-                                                                 ignore_keys=ignore_keys, default_value=dict_existing_category_labels,
-                                                                 drop_unused_default_values=False)
-    # 保存dict_dbms_model_type为dataframe，并作为最终结果返回
-    df_category_labels_updated = pd.DataFrame(list(dict_dbms_model_type.items()), columns=['category_label', 'category_name'])
+    df_category_labels = (df_category_labels[['category_label', 'category_name']]
+                          .drop_duplicates(subset=['category_name'], keep='last')
+                          .copy())
+    valid_category_labels = df_category_labels['category_label'].notna() & df_category_labels['category_name'].notna()
+    df_valid_category_labels = df_category_labels.loc[valid_category_labels]
+
+    category_name_to_label = {}
+    category_label_to_names = defaultdict(list)
+    for category_label, category_name in df_valid_category_labels.itertuples(index=False, name=None):
+        category_name_to_label[category_name] = category_label
+        if category_name not in category_label_to_names[category_label]:
+            category_label_to_names[category_label].append(category_name)
+
+    # 默认名称仅用于补全 Multi_model_info。优先使用与 label 相同或以 label 开头的名称。
+    dict_existing_category_labels = {}
+    for category_label, category_names in category_label_to_names.items():
+        category_names = sorted(category_names)
+        preferred_names = [name for name in category_names if name == category_label]
+        if not preferred_names:
+            preferred_names = [name for name in category_names if name.startswith(category_label)]
+        dict_existing_category_labels[category_label] = (preferred_names or category_names)[0]
+
+    # 先按原有规则为每个 Database Model 元素选出对应的 Multi_model_info 名称，
+    # 再通过反查表恢复人工标注的 category_label。
+    model_type_to_category_name = auto_gen_dbms_model_type_dict_by_keys(
+        types_Database_Model, types_Multi_model_info, ignore_keys=ignore_keys,
+        default_value=dict_existing_category_labels)
+    model_type_to_category_label = {}
+    new_category_label_rows = []
+    for model_type, category_name in model_type_to_category_name.items():
+        matching_category_names = [
+            name for name in types_Multi_model_info if name.startswith(model_type)
+        ]
+        mapped_matching_names = [
+            name for name in matching_category_names if name in category_name_to_label
+        ]
+        expected_label = None
+        if model_type in category_label_to_names:
+            expected_label = model_type
+        elif model_type in category_name_to_label:
+            expected_label = category_name_to_label[model_type]
+        compatible_matching_names = [
+            name for name in mapped_matching_names
+            if expected_label is None or category_name_to_label[name] == expected_label
+        ]
+        if compatible_matching_names:
+            category_name = compatible_matching_names[0]
+            model_type_to_category_name[model_type] = category_name
+
+        if model_type in category_label_to_names:
+            category_label = model_type
+        elif model_type in category_name_to_label:
+            category_label = category_name_to_label[model_type]
+        elif category_name in category_name_to_label:
+            category_label = category_name_to_label[category_name]
+        else:
+            category_label = model_type
+
+        model_type_to_category_label[model_type] = category_label
+        if not category_name:
+            category_name = model_type
+            model_type_to_category_name[model_type] = category_name
+
+        # label 本身可直接表示已完成映射，无需为 label == name 增加冗余行。
+        is_implicit_label_name = category_label in category_label_to_names and category_name == category_label
+        if category_name not in category_name_to_label and not is_implicit_label_name:
+            new_category_label_rows.append((category_label, category_name))
+            category_name_to_label[category_name] = category_label
+            category_label_to_names[category_label].append(category_name)
+
+    if new_category_label_rows:
+        print('Warning: found new category label mappings; please review category_labels_updated.csv:')
+        for category_label, category_name in new_category_label_rows:
+            print('  {category_label} <- {category_name}'.format(
+                category_label=category_label, category_name=category_name))
+
+    if new_category_label_rows:
+        df_new_category_labels = pd.DataFrame(new_category_label_rows,
+                                              columns=['category_label', 'category_name'])
+        df_category_labels_updated = pd.concat([df_category_labels, df_new_category_labels], ignore_index=True)
+    else:
+        df_category_labels_updated = df_category_labels
+    df_category_labels_updated = (df_category_labels_updated
+                                  .drop_duplicates(subset=['category_name'], keep='last')
+                                  .sort_values(['category_label', 'category_name'])
+                                  .reset_index(drop=True))
+
+    # 后续 one-hot 计算需要保留每个 label 的全部 category_name。
+    dict_dbms_model_type = {
+        category_label: sorted(category_names)
+        for category_label, category_names in category_label_to_names.items()
+    }
 
     # 当Database Model的值仅有'Multi-model'时，替换为Multi_model_info中的首个类型的key。.replace('Multi-model', '')
     strip_blanks_inside_strs = lambda x: ','.join([s.strip() for s in str(x).split(',')]) if pd.notna(x) else ''
     drop_ignore_keys = lambda x: ','.join([s for s in strip_blanks_inside_strs(x).split(',') if s not in ignore_keys])
     main_labels_list = list(df_src_ranking_new['Database Model'].apply(drop_ignore_keys))
     main_label_names_list = []
+    main_category_labels_list = []
     for main_labels in main_labels_list:
         temp_main_labels = main_labels.split(',')
         temp_main_label_names = []
+        temp_main_category_labels = []
         for s in temp_main_labels:
-            if len(s) and dict_dbms_model_type[s] is not np.nan:
-                temp_main_label_names.append(dict_dbms_model_type[s])
+            if len(s) and s in model_type_to_category_name and pd.notna(model_type_to_category_name[s]):
+                temp_main_label_names.append(model_type_to_category_name[s])
+                temp_main_category_labels.append(model_type_to_category_label[s])
         if len(temp_main_label_names):
             main_label_names_list.append(','.join(temp_main_label_names))
+            main_category_labels_list.append(temp_main_category_labels[0])
         else:
             main_label_names_list.append('')
+            main_category_labels_list.append('')
 
     Multi_model_infos = list(df_src_ranking_new['Multi_model_info'].apply(strip_blanks_inside_strs))
 
@@ -148,37 +234,35 @@ def merge_info(df_src_existing_tagging, df_src_ranking_new, df_category_labels, 
     # print(list(df_src_ranking_new['Multi_model_info']))
     df_src_ranking_new['Multi_model_info'] = Multi_model_infos
 
-    # 反过来补全'Database Model'
-    dict_dbms_model_type_reverse = {v: k for k, v in dict_dbms_model_type.items()}
-    for k in dict_dbms_model_type.keys():
-        if k not in dict_dbms_model_type_reverse.keys():  # if the label is just equal to category string, map to itself
-            dict_dbms_model_type_reverse[k] = k
-    for i in range(len(main_label_names_list)):
-        main_label_names = main_label_names_list[i]
+    # 反过来补全'Database Model'，按 Multi_model_info 的原始顺序保留首个可识别 label。
+    for i in range(len(main_category_labels_list)):
         affiliated_label_names = Multi_model_infos[i]
         if not len(affiliated_label_names):
-            main_label_names_list[i] = ''
+            main_category_labels_list[i] = ''
         else:
-            first_aff_label_name = affiliated_label_names.split(',')[0]
-            if first_aff_label_name in dict_dbms_model_type_reverse.keys():
-                main_label_names_list[i] = dict_dbms_model_type_reverse[first_aff_label_name]
-            else:
-                temp_aff_label_names = affiliated_label_names.split(',')
-                for s in temp_aff_label_names:
-                    if any([ignore_key in s for ignore_key in ignore_keys]):
-                        continue
-                    else:
-                        # e.g. Handling messy formats like "CockroachDB supports relational, semi-structured JSON/document, vector/embedding, geospatial, and typed categorical/enumeration data, all exposed via SQL, on the same strongly consistent, globally distributed data platform."
-                        if any([k in s or v in s for k, v in dict_dbms_model_type.items()]):
-                            for k, v in dict_dbms_model_type.items():
-                                if k in s or v in s:
-                                    main_label_names_list[i] = k
-                                    break
-                                else:
-                                    continue
-    # print(main_label_names_list)
+            for s in affiliated_label_names.split(','):
+                if s in category_name_to_label:
+                    main_category_labels_list[i] = category_name_to_label[s]
+                    break
+                if s in category_label_to_names:
+                    main_category_labels_list[i] = s
+                    break
+                if any([ignore_key in s for ignore_key in ignore_keys]):
+                    continue
+
+                # Handle comma-split free-form chunks by matching a canonical label or any of its aliases.
+                # e.g. "CockroachDB supports relational, semi-structured JSON/document, vector/embedding, geospatial, and typed categorical/enumeration data, all exposed via SQL, on the same strongly consistent, globally distributed data platform."
+                matched_label = None
+                for category_label, category_names in dict_dbms_model_type.items():
+                    if category_label in s or any([category_name in s for category_name in category_names]):
+                        matched_label = category_label
+                        break
+                if matched_label:
+                    main_category_labels_list[i] = matched_label
+                    break
+    # print(main_category_labels_list)
     # print(list(df_src_ranking_new['Database Model']))
-    df_src_ranking_new['Database Model'] = main_label_names_list
+    df_src_ranking_new['Database Model'] = main_category_labels_list
 
     # 更新
     if not update_conf:
@@ -380,8 +464,16 @@ def exe_conf(df_merged, conf_func_word, k_colname, v_exe_settings, df_old, df_ne
                 print('\trecalc "{recalc_colname}" based on "{calc_basedon_colname}"'.format(
                     recalc_colname=recalc_colname, update_conf=update_conf, calc_basedon_colname=calc_basedon_colname))
         if calc_basedon_colname:
-            strs_comma_joined_include_s = lambda strs, s: int(s in [it.strip() for it in strs.split(',')] if pd.notna(strs) else False)
-            df_merged[k_colname] = df_merged[calc_basedon_colname].apply(strs_comma_joined_include_s, s=dict_dbms_model_type[k_colname])
+            def strs_comma_joined_include_any(strs, candidates):
+                if pd.isna(strs):
+                    return 0
+                split_values = [it.strip() for it in strs.split(',')]
+                return int(any([candidate in split_values for candidate in candidates]))
+
+            category_names = dict_dbms_model_type[k_colname]
+            candidates = [k_colname] + (category_names if isinstance(category_names, list) else [category_names])
+            df_merged[k_colname] = df_merged[calc_basedon_colname].apply(
+                strs_comma_joined_include_any, candidates=candidates)
     else:
         print("Warning: Unavailable configuration of {k_colname}, it will be filled in default value!".format(k_colname=k_colname))
     return df_merged, changed_colname_pairs
@@ -389,10 +481,21 @@ def exe_conf(df_merged, conf_func_word, k_colname, v_exe_settings, df_old, df_ne
 
 def merge_info_to_csv(df_src_existing_tagging, df_src_ranking_new, df_category_labels, update_conf,
                       save_automerged_path, save_category_labels_path=None):
+    # Let an existing local review copy override global rows with the same category_name.
+    # This preserves manual relabeling on rerun; main.py then syncs the merged result globally.
+    if save_category_labels_path and os.path.exists(save_category_labels_path):
+        df_local_category_labels = pd.read_csv(save_category_labels_path, encoding=encoding, index_col=False)
+        if {'category_label', 'category_name'}.issubset(df_local_category_labels.columns):
+            df_category_labels = pd.concat(
+                [df_category_labels, df_local_category_labels[['category_label', 'category_name']]],
+                ignore_index=True)
+            df_category_labels = df_category_labels.drop_duplicates(subset=['category_name'], keep='last')
+
     df_tar_automerged, df_category_labels_updated = merge_info(df_src_existing_tagging, df_src_ranking_new,
                                                                df_category_labels, update_conf)
     df_tar_automerged.to_csv(save_automerged_path, encoding=encoding, index=False)
-    df_category_labels_updated.to_csv(save_category_labels_path, encoding=encoding, index=False)
+    if save_category_labels_path:
+        df_category_labels_updated.to_csv(save_category_labels_path, encoding=encoding, index=False)
     return None
 
 

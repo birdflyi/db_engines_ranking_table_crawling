@@ -2,8 +2,10 @@ category_label,category_name
 Columnar,Columnar
 Content,Content stores
 Document,Document store
+Document,document
 Event,Event Store
 Graph,Graph DBMS
+Graph,full-text and graph queries.
 Key-value,Key-value store
 Multivalue,Multivalue DBMS
 Native XML,Native XML DBMS
@@ -11,9 +13,11 @@ Navigational,Navigational DBMS
 NoSQL,NoSQL
 Object oriented,Object oriented DBMS
 RDF,RDF store
+Relational,Multi-model — one store that answers relational
 Relational,Relational DBMS
 Search engine,Search engine
 Spatial,Spatial DBMS
 Time Series,Time Series DBMS
 Vector,Vector DBMS
+Vector,vector/embedding
 Wide column,Wide column store
